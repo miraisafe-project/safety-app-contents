@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "updatedAt": "2026-07-06",
   "categories": [
     {
@@ -12,7 +12,7 @@
       "file": "fraud_money.json",
       "categoryId": "fraud_money",
       "categoryName": "詐欺・金銭トラブル",
-      "updatedAt": "2026-07-05"
+      "updatedAt": "2026-07-06"
     },
     {
       "file": "internet_sns.json",
