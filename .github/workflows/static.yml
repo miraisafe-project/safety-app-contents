@@ -30,13 +30,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Verify static content
+        run: test -f data/stories/index.json
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
-          # Upload entire repository
+          # Upload entire repository, including data/stories/.
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
