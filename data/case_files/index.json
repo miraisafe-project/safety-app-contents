@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "updatedAt": "2026-07-06",
   "categories": [
     {
@@ -30,7 +30,7 @@
       "file": "drugs_addiction.json",
       "categoryId": "drugs_addiction",
       "categoryName": "薬物・依存",
-      "updatedAt": "2026-07-05"
+      "updatedAt": "2026-07-06"
     },
     {
       "file": "other_troubles.json",
