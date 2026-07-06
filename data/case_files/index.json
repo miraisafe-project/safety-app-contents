@@ -1,42 +1,42 @@
 {
-    "version":  1,
-    "updatedAt":  "2026-07-05",
-    "categories":  [
-                       {
-                           "file":  "yami_baito_tokuryu.json",
-                           "categoryId":  "yami_baito_tokuryu",
-                           "categoryName":  "闇バイト・トクリュウ",
-                           "updatedAt":  "2026-07-05"
-                       },
-                       {
-                           "file":  "fraud_money.json",
-                           "categoryId":  "fraud_money",
-                           "categoryName":  "詐欺・金銭トラブル",
-                           "updatedAt":  "2026-07-05"
-                       },
-                       {
-                           "file":  "internet_sns.json",
-                           "categoryId":  "internet_sns",
-                           "categoryName":  "インターネット・SNS",
-                           "updatedAt":  "2026-07-05"
-                       },
-                       {
-                           "file":  "school_family.json",
-                           "categoryId":  "school_family",
-                           "categoryName":  "学校・家庭",
-                           "updatedAt":  "2026-07-05"
-                       },
-                       {
-                           "file":  "drugs_addiction.json",
-                           "categoryId":  "drugs_addiction",
-                           "categoryName":  "薬物・依存",
-                           "updatedAt":  "2026-07-05"
-                       },
-                       {
-                           "file":  "other_troubles.json",
-                           "categoryId":  "other_troubles",
-                           "categoryName":  "その他の事件・トラブル",
-                           "updatedAt":  "2026-07-05"
-                       }
-                   ]
+  "version": 2,
+  "updatedAt": "2026-07-06",
+  "categories": [
+    {
+      "file": "yami_baito_tokuryu.json",
+      "categoryId": "yami_baito_tokuryu",
+      "categoryName": "闇バイト・トクリュウ",
+      "updatedAt": "2026-07-05"
+    },
+    {
+      "file": "fraud_money.json",
+      "categoryId": "fraud_money",
+      "categoryName": "詐欺・金銭トラブル",
+      "updatedAt": "2026-07-05"
+    },
+    {
+      "file": "internet_sns.json",
+      "categoryId": "internet_sns",
+      "categoryName": "インターネット・SNS",
+      "updatedAt": "2026-07-05"
+    },
+    {
+      "file": "school_family.json",
+      "categoryId": "school_family",
+      "categoryName": "学校・家庭",
+      "updatedAt": "2026-07-06"
+    },
+    {
+      "file": "drugs_addiction.json",
+      "categoryId": "drugs_addiction",
+      "categoryName": "薬物・依存",
+      "updatedAt": "2026-07-05"
+    },
+    {
+      "file": "other_troubles.json",
+      "categoryId": "other_troubles",
+      "categoryName": "その他の事件・トラブル",
+      "updatedAt": "2026-07-05"
+    }
+  ]
 }
