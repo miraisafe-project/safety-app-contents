@@ -1,12 +1,12 @@
 {
-  "version": 4,
+  "version": 5,
   "updatedAt": "2026-07-06",
   "categories": [
     {
       "file": "yami_baito_tokuryu.json",
       "categoryId": "yami_baito_tokuryu",
       "categoryName": "闇バイト・トクリュウ",
-      "updatedAt": "2026-07-05"
+      "updatedAt": "2026-07-06"
     },
     {
       "file": "fraud_money.json",
