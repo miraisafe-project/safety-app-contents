@@ -1,54 +1,54 @@
 {
-  "version": 1,
-  "updatedAt": "2026-07-06",
+  "version": 2,
+  "updatedAt": "2026-07-13",
   "categories": [
     {
       "file": "school.json",
       "categoryId": "school",
       "categoryName": "学校で起きていること",
-      "updatedAt": "2026-07-06"
+      "updatedAt": "2026-07-13"
     },
     {
       "file": "sns_internet.json",
       "categoryId": "sns_internet",
       "categoryName": "インターネット・SNS",
-      "updatedAt": "2026-07-06"
+      "updatedAt": "2026-07-13"
     },
     {
       "file": "home_relationships.json",
       "categoryId": "home_relationships",
       "categoryName": "家庭・人間関係",
-      "updatedAt": "2026-07-06"
+      "updatedAt": "2026-07-13"
     },
     {
       "file": "shady_jobs.json",
       "categoryId": "shady_jobs",
       "categoryName": "闇バイト・怪しい案件",
-      "updatedAt": "2026-07-06"
+      "updatedAt": "2026-07-13"
     },
     {
       "file": "body_mind.json",
       "categoryId": "body_mind",
       "categoryName": "からだ・こころ",
-      "updatedAt": "2026-07-06"
+      "updatedAt": "2026-07-13"
     },
     {
       "file": "money.json",
       "categoryId": "money",
       "categoryName": "お金に関すること",
-      "updatedAt": "2026-07-06"
+      "updatedAt": "2026-07-13"
     },
     {
       "file": "consultation.json",
       "categoryId": "consultation",
       "categoryName": "相談した体験",
-      "updatedAt": "2026-07-06"
+      "updatedAt": "2026-07-13"
     },
     {
       "file": "other.json",
       "categoryId": "other",
       "categoryName": "その他",
-      "updatedAt": "2026-07-06"
+      "updatedAt": "2026-07-13"
     }
   ]
 }
