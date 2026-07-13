@@ -1,12 +1,12 @@
 {
-  "version": 1,
-  "updatedAt": "2026-07-08",
+  "version": 2,
+  "updatedAt": "2026-07-14",
   "categories": [
     {
       "file": "monthly_points.json",
       "categoryId": "monthly_points",
       "categoryName": "今月のポイント",
-      "updatedAt": "2026-07-08"
+      "updatedAt": "2026-07-14"
     },
     {
       "file": "app_info.json",
