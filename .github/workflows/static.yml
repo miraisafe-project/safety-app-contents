@@ -38,7 +38,11 @@ jobs:
           mkdir -p _site
           cp index.html _site/
           cp -R data _site/data
+          cp -R terms _site/terms
+          cp -R privacy _site/privacy
           test -f _site/data/stories/index.json
+          test -f _site/terms/index.html
+          test -f _site/privacy/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
