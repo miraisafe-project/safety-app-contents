@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "consultations": [
+    {
+      "id": "sample_school_phone",
+      "name": "テスト青空 学校相談室",
+      "categoryIds": ["school", "bullying", "relationships", "unsure"],
+      "description": "学校生活、友達との関係、いじめなどについて相談できるテスト用の窓口です。",
+      "targetUsers": "小学生から高校生までと、その家族",
+      "anonymousSupport": "available",
+      "fee": "無料（通話料がかかる場合があります）",
+      "message": "話す内容がまとまっていなくても大丈夫です。",
+      "keywords": ["学校", "先生", "友達", "いじめ", "不登校"],
+      "active": true,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-08-20",
+      "verifiedAt": "2026-09-01",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "closed",
+          "hours": [{"weekdays": [1, 2, 3, 4, 5], "periods": [{"start": "09:00", "end": "12:00"}, {"start": "13:00", "end": "18:00"}]}],
+          "responseEstimate": "受付時間内に対応",
+          "phoneNumber": "000-0000-0001",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "sample_family_chat",
+      "name": "テスト木もれび 家族サポート",
+      "categoryIds": ["family", "feelings", "violence", "unsure"],
+      "description": "家族や家での困りごとを、電話または有人チャットで相談できるテスト用窓口です。",
+      "targetUsers": "家族や家庭のことで悩んでいる方",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "相談内容によって確認事項を尋ねる場合があります。",
+      "fee": "相談無料",
+      "message": "安全な場所から相談してください。",
+      "keywords": ["家族", "親", "家", "暴力", "チャット"],
+      "active": true,
+      "emergencySuitable": true,
+      "emergencyOrder": 2,
+      "informationProvidedAt": "2026-08-10",
+      "verifiedAt": "2026-09-05",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "open",
+          "hours": [{"weekdays": [1, 2, 3, 4, 5, 6, 7], "periods": [{"start": "18:00", "end": "02:00"}]}],
+          "phoneNumber": "000-0000-0002",
+          "temporaryClosures": [{"startDate": "2026-12-29", "endDate": "2027-01-03", "label": "年末年始休止"}]
+        },
+        {
+          "type": "chat",
+          "displayName": "有人Webチャット",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [{"weekdays": [2, 4, 6], "periods": [{"start": "16:00", "end": "21:00"}]}],
+          "responseEstimate": "混雑状況による",
+          "url": "https://example.invalid/test-family-chat",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "sample_mind_form",
+      "name": "テストやすらぎ こころ相談",
+      "categoryIds": ["feelings", "health", "relationships", "unsure"],
+      "description": "こころや気持ち、体調についてフォームやメールで相談できるテスト用窓口です。",
+      "targetUsers": "年齢を問わず利用できます",
+      "anonymousSupport": "available",
+      "fee": "無料",
+      "message": "返信まで時間がかかることがあります。急ぎの場合は別の窓口も確認してください。",
+      "keywords": ["こころ", "気持ち", "不安", "健康", "メール"],
+      "active": true,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-07-01",
+      "verifiedAt": "2026-08-25",
+      "contactMethods": [
+        {
+          "type": "form",
+          "displayName": "Web送信フォーム",
+          "isRealtime": false,
+          "holidayHandling": "individual",
+          "hours": [],
+          "responseEstimate": "1〜3日程度",
+          "url": "https://example.invalid/test-mind-form",
+          "temporaryClosures": []
+        },
+        {
+          "type": "email",
+          "displayName": "メール",
+          "isRealtime": false,
+          "holidayHandling": "individual",
+          "hours": [],
+          "responseEstimate": "1週間程度",
+          "emailAddress": "mind@example.invalid",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "sample_body_sex",
+      "name": "テスト虹色 からだ相談",
+      "categoryIds": ["health", "sexuality", "feelings"],
+      "description": "からだ、性、妊娠などの悩みについて相談できるテスト用窓口です。",
+      "targetUsers": "からだや性について相談したい方",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "医療機関の案内に必要な範囲で地域を尋ねる場合があります。",
+      "fee": "無料",
+      "message": "相談者の気持ちを尊重して一緒に考えます。",
+      "keywords": ["からだ", "性", "妊娠", "LGBTQ", "病院"],
+      "active": true,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-08-01",
+      "verifiedAt": "2026-09-10",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "closed",
+          "hours": [{"weekdays": [1, 3, 5], "periods": [{"start": "10:00", "end": "17:00"}]}],
+          "phoneNumber": "000-0000-0004",
+          "temporaryClosures": [{"startDate": "2026-11-03", "endDate": "2026-11-03", "label": "臨時休止"}]
+        },
+        {
+          "type": "form",
+          "displayName": "案内ページ",
+          "isRealtime": false,
+          "holidayHandling": "open",
+          "hours": [],
+          "url": "https://example.invalid/test-body",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "sample_net_money",
+      "name": "テストみらい ネット・契約相談",
+      "categoryIds": ["internet", "money", "crime", "unsure"],
+      "description": "インターネット、SNS、お金、契約、詐欺について相談できるテスト用窓口です。",
+      "targetUsers": "ネットや契約のトラブルで困っている方",
+      "anonymousSupport": "unavailable",
+      "fee": "相談無料",
+      "message": "契約画面やメッセージを消さずに相談すると役立つ場合があります。",
+      "keywords": ["インターネット", "SNS", "ＳＮＳ", "契約", "詐欺", "課金"],
+      "active": true,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-08-15",
+      "verifiedAt": "2026-09-12",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "closed",
+          "hours": [{"weekdays": [1, 2, 3, 4, 5], "periods": [{"start": "10:00", "end": "16:00"}]}],
+          "phoneNumber": "000-0000-0005",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "sample_emergency",
+      "name": "テスト緊急 安全サポート",
+      "categoryIds": ["violence", "crime", "bullying"],
+      "description": "今いる場所の安全に不安があるときのためのテスト用窓口です。",
+      "targetUsers": "今すぐ安全について相談したい方",
+      "anonymousSupport": "available",
+      "fee": "無料",
+      "message": "身の危険が迫っている場合は、安全な場所へ移動してください。",
+      "keywords": ["緊急", "暴力", "犯罪", "危険", "助け"],
+      "active": true,
+      "emergencySuitable": true,
+      "emergencyOrder": 1,
+      "informationProvidedAt": "2026-09-01",
+      "verifiedAt": "2026-09-15",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "緊急電話相談",
+          "isRealtime": true,
+          "holidayHandling": "open",
+          "hours": [{"weekdays": [1, 2, 3, 4, 5, 6, 7], "periods": [{"start": "00:00", "end": "00:00"}]}],
+          "phoneNumber": "000-0000-0006",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "sample_general_line_web",
+      "name": "テスト若葉 相談案内",
+      "categoryIds": ["school", "family", "relationships", "feelings", "unsure"],
+      "description": "幅広い悩みについて、公式Webページから相談方法を確認できるテスト用窓口です。",
+      "targetUsers": "相談先を決められずにいる方",
+      "anonymousSupport": "available",
+      "fee": "無料",
+      "message": "どこに相談するか迷っていることから話せます。",
+      "keywords": ["LINE", "ライン", "相談先", "分からない"],
+      "active": true,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-08-18",
+      "verifiedAt": "2026-09-14",
+      "contactMethods": [
+        {
+          "type": "line_web",
+          "displayName": "LINE相談の案内ページ",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [{"weekdays": [1, 2, 3, 4, 5], "periods": [{"start": "17:00", "end": "22:00"}]}],
+          "responseEstimate": "受付時間内に順次対応",
+          "url": "https://example.invalid/test-line-guide",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "sample_inactive",
+      "name": "テスト掲載終了相談室",
+      "categoryIds": ["school", "unsure"],
+      "description": "掲載停止表示を確認するためのテスト用データです。",
+      "keywords": ["掲載停止"],
+      "active": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2025-01-01",
+      "verifiedAt": "2025-02-01",
+      "contactMethods": []
+    }
+  ]
+}
