@@ -1,235 +1,693 @@
 {
-  "version": 1,
+  "version": 2,
+  "updatedAt": "2026-10-04",
+  "categories": [
+    {
+      "id": "school",
+      "name": "学校のこと"
+    },
+    {
+      "id": "family",
+      "name": "家族・家のこと"
+    },
+    {
+      "id": "relationships",
+      "name": "友達・人間関係"
+    },
+    {
+      "id": "bullying",
+      "name": "いじめ・嫌がらせ"
+    },
+    {
+      "id": "feelings",
+      "name": "こころ・気持ちのこと"
+    },
+    {
+      "id": "health",
+      "name": "からだ・健康のこと"
+    },
+    {
+      "id": "sexuality",
+      "name": "性・妊娠などのこと"
+    },
+    {
+      "id": "internet",
+      "name": "インターネット・SNS"
+    },
+    {
+      "id": "money",
+      "name": "お金・契約・詐欺"
+    },
+    {
+      "id": "violence",
+      "name": "暴力・犯罪・危険なこと"
+    },
+    {
+      "id": "unsure",
+      "name": "どれを選べばいいか分からない"
+    }
+  ],
   "consultations": [
     {
-      "id": "sample_school_phone",
-      "name": "テスト青空 学校相談室",
-      "categoryIds": ["school", "bullying", "relationships", "unsure"],
-      "description": "学校生活、友達との関係、いじめなどについて相談できるテスト用の窓口です。",
-      "targetUsers": "小学生から高校生までと、その家族",
-      "anonymousSupport": "available",
-      "fee": "無料（通話料がかかる場合があります）",
-      "message": "話す内容がまとまっていなくても大丈夫です。",
-      "keywords": ["学校", "先生", "友達", "いじめ", "不登校"],
-      "active": true,
-      "emergencySuitable": false,
-      "informationProvidedAt": "2026-08-20",
-      "verifiedAt": "2026-09-01",
-      "contactMethods": [
-        {
-          "type": "phone",
-          "displayName": "電話相談",
-          "isRealtime": true,
-          "holidayHandling": "closed",
-          "hours": [{"weekdays": [1, 2, 3, 4, 5], "periods": [{"start": "09:00", "end": "12:00"}, {"start": "13:00", "end": "18:00"}]}],
-          "responseEstimate": "受付時間内に対応",
-          "phoneNumber": "000-0000-0001",
-          "temporaryClosures": []
-        }
-      ]
-    },
-    {
-      "id": "sample_family_chat",
-      "name": "テスト木もれび 家族サポート",
-      "categoryIds": ["family", "feelings", "violence", "unsure"],
-      "description": "家族や家での困りごとを、電話または有人チャットで相談できるテスト用窓口です。",
-      "targetUsers": "家族や家庭のことで悩んでいる方",
+      "id": "public_child_sos_24h",
+      "name": "24時間子供SOSダイヤル",
+      "phoneNumber": "0120-0-78310",
+      "categoryIds": [
+        "school",
+        "family",
+        "relationships",
+        "bullying",
+        "feelings",
+        "health",
+        "sexuality",
+        "internet",
+        "money",
+        "violence",
+        "unsure"
+      ],
+      "categoryPriority": {
+        "school": 1,
+        "family": 2,
+        "relationships": 1,
+        "bullying": 1,
+        "feelings": 1,
+        "health": 2,
+        "sexuality": 3,
+        "internet": 1,
+        "money": 3,
+        "violence": 5,
+        "unsure": 1
+      },
+      "targetUsers": "悩みを抱えている小学生・中学生・高校生などの本人や、その保護者など",
+      "description": "いじめだけでなく、学校生活、友人関係、家庭のこと、心や体の悩みなど、子どものSOS全般について相談できる全国共通の電話相談です。\n原則として、電話をかけた地域の教育委員会などの相談機関につながります。",
       "anonymousSupport": "conditional",
-      "anonymousSupportNote": "相談内容によって確認事項を尋ねる場合があります。",
-      "fee": "相談無料",
-      "message": "安全な場所から相談してください。",
-      "keywords": ["家族", "親", "家", "暴力", "チャット"],
+      "anonymousSupportNote": "匿名で相談できるかなどの取扱いは、接続先の相談機関によって異なる場合があります。",
+      "hoursText": "24時間・365日",
+      "fee": "相談料：無料\n通話料：無料",
+      "notes": [],
+      "keywords": [
+        "学校",
+        "いじめ",
+        "友達",
+        "家族",
+        "先生",
+        "不登校",
+        "つらい",
+        "悩み",
+        "相談",
+        "子ども",
+        "保護者"
+      ],
+      "officialUrl": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1306988.htm",
+      "relatedConsultations": [],
       "active": true,
-      "emergencySuitable": true,
-      "emergencyOrder": 2,
-      "informationProvidedAt": "2026-08-10",
-      "verifiedAt": "2026-09-05",
-      "contactMethods": [
-        {
-          "type": "phone",
-          "displayName": "電話相談",
-          "isRealtime": true,
-          "holidayHandling": "open",
-          "hours": [{"weekdays": [1, 2, 3, 4, 5, 6, 7], "periods": [{"start": "18:00", "end": "02:00"}]}],
-          "phoneNumber": "000-0000-0002",
-          "temporaryClosures": [{"startDate": "2026-12-29", "endDate": "2027-01-03", "label": "年末年始休止"}]
-        },
-        {
-          "type": "chat",
-          "displayName": "有人Webチャット",
-          "isRealtime": true,
-          "holidayHandling": "individual",
-          "hours": [{"weekdays": [2, 4, 6], "periods": [{"start": "16:00", "end": "21:00"}]}],
-          "responseEstimate": "混雑状況による",
-          "url": "https://example.invalid/test-family-chat",
-          "temporaryClosures": []
-        }
-      ]
-    },
-    {
-      "id": "sample_mind_form",
-      "name": "テストやすらぎ こころ相談",
-      "categoryIds": ["feelings", "health", "relationships", "unsure"],
-      "description": "こころや気持ち、体調についてフォームやメールで相談できるテスト用窓口です。",
-      "targetUsers": "年齢を問わず利用できます",
-      "anonymousSupport": "available",
-      "fee": "無料",
-      "message": "返信まで時間がかかることがあります。急ぎの場合は別の窓口も確認してください。",
-      "keywords": ["こころ", "気持ち", "不安", "健康", "メール"],
-      "active": true,
-      "emergencySuitable": false,
-      "informationProvidedAt": "2026-07-01",
-      "verifiedAt": "2026-08-25",
-      "contactMethods": [
-        {
-          "type": "form",
-          "displayName": "Web送信フォーム",
-          "isRealtime": false,
-          "holidayHandling": "individual",
-          "hours": [],
-          "responseEstimate": "1〜3日程度",
-          "url": "https://example.invalid/test-mind-form",
-          "temporaryClosures": []
-        },
-        {
-          "type": "email",
-          "displayName": "メール",
-          "isRealtime": false,
-          "holidayHandling": "individual",
-          "hours": [],
-          "responseEstimate": "1週間程度",
-          "emailAddress": "mind@example.invalid",
-          "temporaryClosures": []
-        }
-      ]
-    },
-    {
-      "id": "sample_body_sex",
-      "name": "テスト虹色 からだ相談",
-      "categoryIds": ["health", "sexuality", "feelings"],
-      "description": "からだ、性、妊娠などの悩みについて相談できるテスト用窓口です。",
-      "targetUsers": "からだや性について相談したい方",
-      "anonymousSupport": "conditional",
-      "anonymousSupportNote": "医療機関の案内に必要な範囲で地域を尋ねる場合があります。",
-      "fee": "無料",
-      "message": "相談者の気持ちを尊重して一緒に考えます。",
-      "keywords": ["からだ", "性", "妊娠", "LGBTQ", "病院"],
-      "active": true,
-      "emergencySuitable": false,
-      "informationProvidedAt": "2026-08-01",
-      "verifiedAt": "2026-09-10",
-      "contactMethods": [
-        {
-          "type": "phone",
-          "displayName": "電話相談",
-          "isRealtime": true,
-          "holidayHandling": "closed",
-          "hours": [{"weekdays": [1, 3, 5], "periods": [{"start": "10:00", "end": "17:00"}]}],
-          "phoneNumber": "000-0000-0004",
-          "temporaryClosures": [{"startDate": "2026-11-03", "endDate": "2026-11-03", "label": "臨時休止"}]
-        },
-        {
-          "type": "form",
-          "displayName": "案内ページ",
-          "isRealtime": false,
-          "holidayHandling": "open",
-          "hours": [],
-          "url": "https://example.invalid/test-body",
-          "temporaryClosures": []
-        }
-      ]
-    },
-    {
-      "id": "sample_net_money",
-      "name": "テストみらい ネット・契約相談",
-      "categoryIds": ["internet", "money", "crime", "unsure"],
-      "description": "インターネット、SNS、お金、契約、詐欺について相談できるテスト用窓口です。",
-      "targetUsers": "ネットや契約のトラブルで困っている方",
-      "anonymousSupport": "unavailable",
-      "fee": "相談無料",
-      "message": "契約画面やメッセージを消さずに相談すると役立つ場合があります。",
-      "keywords": ["インターネット", "SNS", "ＳＮＳ", "契約", "詐欺", "課金"],
-      "active": true,
-      "emergencySuitable": false,
-      "informationProvidedAt": "2026-08-15",
-      "verifiedAt": "2026-09-12",
-      "contactMethods": [
-        {
-          "type": "phone",
-          "displayName": "電話相談",
-          "isRealtime": true,
-          "holidayHandling": "closed",
-          "hours": [{"weekdays": [1, 2, 3, 4, 5], "periods": [{"start": "10:00", "end": "16:00"}]}],
-          "phoneNumber": "000-0000-0005",
-          "temporaryClosures": []
-        }
-      ]
-    },
-    {
-      "id": "sample_emergency",
-      "name": "テスト緊急 安全サポート",
-      "categoryIds": ["violence", "crime", "bullying"],
-      "description": "今いる場所の安全に不安があるときのためのテスト用窓口です。",
-      "targetUsers": "今すぐ安全について相談したい方",
-      "anonymousSupport": "available",
-      "fee": "無料",
-      "message": "身の危険が迫っている場合は、安全な場所へ移動してください。",
-      "keywords": ["緊急", "暴力", "犯罪", "危険", "助け"],
-      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": true,
       "emergencySuitable": true,
       "emergencyOrder": 1,
-      "informationProvidedAt": "2026-09-01",
-      "verifiedAt": "2026-09-15",
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
       "contactMethods": [
         {
           "type": "phone",
-          "displayName": "緊急電話相談",
+          "displayName": "電話相談",
           "isRealtime": true,
           "holidayHandling": "open",
-          "hours": [{"weekdays": [1, 2, 3, 4, 5, 6, 7], "periods": [{"start": "00:00", "end": "00:00"}]}],
-          "phoneNumber": "000-0000-0006",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5, 6, 7],
+              "periods": [
+                {
+                  "start": "00:00",
+                  "end": "00:00"
+                }
+              ]
+            }
+          ],
+          "phoneNumber": "0120-0-78310",
+          "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1306988.htm",
           "temporaryClosures": []
         }
       ]
     },
     {
-      "id": "sample_general_line_web",
-      "name": "テスト若葉 相談案内",
-      "categoryIds": ["school", "family", "relationships", "feelings", "unsure"],
-      "description": "幅広い悩みについて、公式Webページから相談方法を確認できるテスト用窓口です。",
-      "targetUsers": "相談先を決められずにいる方",
+      "id": "public_child_abuse_189",
+      "name": "児童相談所虐待対応ダイヤル",
+      "phoneNumber": "189",
+      "categoryIds": [
+        "family",
+        "violence"
+      ],
+      "categoryPriority": {
+        "family": 1,
+        "violence": 2
+      },
+      "targetUsers": "虐待を受けている、またはその可能性がある子ども本人や、「虐待かもしれない」と気づいた人など",
+      "description": "児童虐待について、近くの児童相談所へ通告・相談するための全国共通番号です。\n「虐待かもしれない」という段階でも利用できます。\n子ども本人から相談することもできます。",
       "anonymousSupport": "available",
-      "fee": "無料",
-      "message": "どこに相談するか迷っていることから話せます。",
-      "keywords": ["LINE", "ライン", "相談先", "分からない"],
+      "anonymousSupportNote": "匿名で通告・相談できます。相談・通告した人や相談内容についての秘密は守られます。",
+      "hoursText": "24時間",
+      "fee": "相談料：無料\n通話料：無料",
+      "notes": [
+        "一部のIP電話からはつながりません。"
+      ],
+      "keywords": [
+        "虐待",
+        "親",
+        "家族",
+        "暴力",
+        "家にいたくない",
+        "児童相談所",
+        "通告",
+        "子ども"
+      ],
+      "officialUrl": "https://www.cfa.go.jp/policies/jidougyakutai/gyakutai-taiou-dial/",
+      "relatedConsultations": [],
       "active": true,
-      "emergencySuitable": false,
-      "informationProvidedAt": "2026-08-18",
-      "verifiedAt": "2026-09-14",
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": true,
+      "emergencySuitable": true,
+      "emergencyOrder": 2,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
       "contactMethods": [
         {
-          "type": "line_web",
-          "displayName": "LINE相談の案内ページ",
+          "type": "phone",
+          "displayName": "電話相談・通告",
           "isRealtime": true,
-          "holidayHandling": "individual",
-          "hours": [{"weekdays": [1, 2, 3, 4, 5], "periods": [{"start": "17:00", "end": "22:00"}]}],
-          "responseEstimate": "受付時間内に順次対応",
-          "url": "https://example.invalid/test-line-guide",
+          "holidayHandling": "open",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5, 6, 7],
+              "periods": [
+                {
+                  "start": "00:00",
+                  "end": "00:00"
+                }
+              ]
+            }
+          ],
+          "phoneNumber": "189",
+          "url": "https://www.cfa.go.jp/policies/jidougyakutai/gyakutai-taiou-dial/",
           "temporaryClosures": []
         }
       ]
     },
     {
-      "id": "sample_inactive",
-      "name": "テスト掲載終了相談室",
-      "categoryIds": ["school", "unsure"],
-      "description": "掲載停止表示を確認するためのテスト用データです。",
-      "keywords": ["掲載停止"],
-      "active": false,
+      "id": "public_sexual_crime_8103",
+      "name": "性犯罪被害相談電話",
+      "phoneNumber": "#8103",
+      "categoryIds": [
+        "sexuality",
+        "violence"
+      ],
+      "categoryPriority": {
+        "sexuality": 1,
+        "violence": 3
+      },
+      "targetUsers": "性犯罪・性暴力の被害について相談したい人",
+      "description": "性犯罪・性暴力の被害について警察に相談できる全国共通番号です。\n性別や年齢に関係なく相談できます。\n電話をかけた地域を管轄する都道府県警察の性犯罪被害相談窓口につながります。",
+      "anonymousSupport": "available",
+      "anonymousSupportNote": "匿名でも相談できます。相談内容の秘密は守られます。",
+      "hoursText": "24時間",
+      "fee": "相談料：無料\n通話料：無料",
+      "notes": [
+        "一部のIP電話などでは、つながらない場合や通話料が発生する場合があります。"
+      ],
+      "keywords": [
+        "性被害",
+        "性暴力",
+        "性犯罪",
+        "不同意",
+        "警察",
+        "支援",
+        "被害",
+        "ハートさん"
+      ],
+      "officialUrl": "https://www.npa.go.jp/higaisya/seihanzai/seihanzai.html",
+      "relatedConsultations": [
+        {
+          "consultationId": "public_sexual_violence_8891",
+          "guidance": "警察に相談するかはまだ決めていない、まずは相談や支援を受けたい、医療・心理・法律面などの支援について知りたい場合は、#8891を利用する方法もあります。"
+        }
+      ],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": true,
+      "emergencySuitable": true,
+      "emergencyOrder": 3,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "open",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5, 6, 7],
+              "periods": [
+                {
+                  "start": "00:00",
+                  "end": "00:00"
+                }
+              ]
+            }
+          ],
+          "phoneNumber": "#8103",
+          "url": "https://www.npa.go.jp/higaisya/seihanzai/seihanzai.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_sexual_violence_8891",
+      "name": "性犯罪・性暴力被害者のためのワンストップ支援センター",
+      "phoneNumber": "#8891",
+      "alternativePhoneNumbers": [
+        {
+          "phoneNumber": "0120-8891-77",
+          "appliesTo": "NTTひかり電話（宮城県・埼玉県・高知県を除く）"
+        },
+        {
+          "phoneNumber": "0120-556-460",
+          "appliesTo": "宮城県内のNTTひかり電話"
+        },
+        {
+          "phoneNumber": "0120-31-8341",
+          "appliesTo": "埼玉県内のNTTひかり電話"
+        },
+        {
+          "phoneNumber": "0120-835-350",
+          "appliesTo": "高知県内のNTTひかり電話"
+        }
+      ],
+      "categoryIds": [
+        "sexuality",
+        "violence"
+      ],
+      "categoryPriority": {
+        "sexuality": 2,
+        "violence": 4
+      },
+      "targetUsers": "性犯罪・性暴力の被害について相談したい人",
+      "description": "性犯罪・性暴力の被害について相談できる全国共通番号です。\n電話をかけると、最寄りの性犯罪・性暴力被害者のためのワンストップ支援センターにつながります。\n\n警察に相談するか決めていない段階でも利用できます。\n相談だけでなく、必要に応じて医療、心理、法律などの支援につながるためのサポートを受けられます。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "相談者のプライバシーに配慮して対応されます。匿名相談への対応などは接続先によって異なる場合があります。",
+      "hoursText": "接続先のワンストップ支援センターによって異なります。",
+      "fee": "相談料：無料\n全国共通番号の通話料：無料",
+      "notes": [
+        "NTTひかり電話では、地域に応じたフリーダイヤルを利用する必要があります。",
+        "一部のIP電話などからは#8891につながりません。各センターへ直接電話する場合は、一部自治体を除き通話料がかかります。"
+      ],
+      "keywords": [
+        "性被害",
+        "性暴力",
+        "性犯罪",
+        "不同意",
+        "支援",
+        "病院",
+        "医療",
+        "心理",
+        "法律",
+        "ワンストップ"
+      ],
+      "officialUrl": "https://www.gender.go.jp/policy/no_violence/seibouryoku/consult.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
       "emergencySuitable": false,
-      "informationProvidedAt": "2025-01-01",
-      "verifiedAt": "2025-02-01",
-      "contactMethods": []
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "全国共通電話",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "phoneNumber": "#8891",
+          "url": "https://www.gender.go.jp/policy/no_violence/seibouryoku/consult.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_police_consultation_9110",
+      "name": "警察相談専用電話",
+      "phoneNumber": "#9110",
+      "categoryIds": [
+        "family",
+        "relationships",
+        "bullying",
+        "money",
+        "violence"
+      ],
+      "categoryPriority": {
+        "family": 3,
+        "relationships": 2,
+        "bullying": 2,
+        "money": 2,
+        "violence": 1
+      },
+      "targetUsers": "緊急ではないものの、犯罪や事故、身の回りの安全などについて警察に相談したい人",
+      "description": "今すぐ警察官に来てもらう必要はないものの、警察に相談したいことがある場合に利用できる全国共通番号です。\n\n犯罪に当たるか分からない不安、ストーカー、DV、悪質商法など、さまざまな相談を受け付けています。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "匿名相談専用の番号ではありません。相談内容に応じて、対応に必要な情報を確認されることがあります。",
+      "hoursText": "原則として平日8:30〜17:15ですが、都道府県警察によって異なります。時間外は当直や音声案内による対応となる場合があります。",
+      "fee": "相談料：無料\n通話料：利用者負担",
+      "notes": [
+        "ダイヤル回線や一部のIP電話では#9110を利用できない場合があります。"
+      ],
+      "keywords": [
+        "警察",
+        "ストーカー",
+        "DV",
+        "犯罪",
+        "トラブル",
+        "悪質商法",
+        "不安",
+        "相談"
+      ],
+      "officialUrl": "https://www.npa.go.jp/bureau/soumu/soudan/soudanmadoguti.pdf",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "phoneNumber": "#9110",
+          "url": "https://www.npa.go.jp/bureau/soumu/soudan/soudanmadoguti.pdf",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_emergency_medical_7119",
+      "name": "救急安心センター",
+      "phoneNumber": "#7119",
+      "categoryIds": [
+        "health"
+      ],
+      "categoryPriority": {
+        "health": 1
+      },
+      "targetUsers": "急な病気やけがについて、救急車を呼ぶべきか、すぐに医療機関を受診すべきかなど判断に迷っている人",
+      "description": "急な病気やけがについて、医師・看護師・救急救命士などから電話で助言を受けられる救急電話相談です。\n\n症状を確認したうえで、救急車を呼ぶべきか、すぐに病院を受診すべきか、受診できる医療機関などについて案内を受けられます。\n\n実施していない地域もあり、対象年齢や受付時間も地域によって異なります。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "匿名相談専用の番号ではありません。相談に必要な情報を確認されることがあります。",
+      "hoursText": "地域によって異なります。",
+      "fee": "相談料：無料\n通話料：利用者負担（地域・回線によって異なる場合があります）",
+      "notes": [
+        "#7119は利用できない地域があります。公式ページで実施地域、対象年齢、受付時間を確認してください。"
+      ],
+      "keywords": [
+        "救急",
+        "病気",
+        "けが",
+        "救急車",
+        "病院",
+        "具合が悪い",
+        "受診",
+        "発熱"
+      ],
+      "officialUrl": "https://www.fdma.go.jp/mission/enrichment/appropriate/appropriate007.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "phoneNumber": "#7119",
+          "url": "https://www.fdma.go.jp/mission/enrichment/appropriate/appropriate007.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_consumer_hotline_188",
+      "name": "消費者ホットライン",
+      "phoneNumber": "188",
+      "categoryIds": [
+        "money"
+      ],
+      "categoryPriority": {
+        "money": 1
+      },
+      "targetUsers": "商品やサービス、契約、買い物、悪質商法などの消費者トラブルについて相談したい人",
+      "description": "商品やサービスの契約、通販、定期購入、悪質商法など、消費生活に関するトラブルについて相談できる全国共通番号です。\n\n電話すると、最寄りの消費生活センターや消費生活相談窓口などにつながります。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "匿名相談専用の番号ではありません。相談内容に応じて、対応に必要な情報を確認されることがあります。",
+      "hoursText": "接続先の相談窓口によって異なります。",
+      "fee": "相談料：無料\n通話料：利用者負担",
+      "notes": [
+        "一部のIP電話、プリペイド式携帯電話、電話リレーサービスからは188を利用できない場合があります。"
+      ],
+      "keywords": [
+        "契約",
+        "通販",
+        "定期購入",
+        "詐欺",
+        "悪質商法",
+        "消費者",
+        "買い物",
+        "解約",
+        "返金",
+        "課金"
+      ],
+      "officialUrl": "https://www.caa.go.jp/policies/policy/local_cooperation/local_consumer_administration/hotline/",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "phoneNumber": "188",
+          "url": "https://www.caa.go.jp/policies/policy/local_cooperation/local_consumer_administration/hotline/",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "emergency_police_110",
+      "name": "警察への緊急通報",
+      "phoneNumber": "110",
+      "categoryIds": [],
+      "categoryPriority": {},
+      "targetUsers": "事件や事故などで、警察官にすぐ来てもらう必要がある人や、そのような状況を目撃した人",
+      "description": "事件・事故など、緊急に警察の対応が必要なときに利用する番号です。\n何が起きたか、場所、現在の状況などを順番に確認されます。",
+      "anonymousSupport": "unavailable",
+      "anonymousSupportNote": "匿名相談のための番号ではありません。対応に必要な情報を確認されることがあります。",
+      "hoursText": "24時間",
+      "fee": "通話料：無料",
+      "notes": [],
+      "keywords": [
+        "警察",
+        "緊急",
+        "事件",
+        "事故",
+        "犯罪",
+        "危険",
+        "通報"
+      ],
+      "officialUrl": "https://www.npa.go.jp/goiken_notes.html",
+      "relatedConsultations": [
+        {
+          "consultationId": "public_police_consultation_9110",
+          "guidance": "今すぐ警察官に来てもらう必要はないものの、警察に相談したい場合は#9110を利用できます。"
+        }
+      ],
+      "active": true,
+      "generalListingSuitable": false,
+      "isPublicPriority": false,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": true,
+      "emergencyOrder": 4,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "緊急通報",
+          "isRealtime": true,
+          "holidayHandling": "open",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5, 6, 7],
+              "periods": [
+                {
+                  "start": "00:00",
+                  "end": "00:00"
+                }
+              ]
+            }
+          ],
+          "phoneNumber": "110",
+          "url": "https://www.npa.go.jp/goiken_notes.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "emergency_fire_ambulance_119",
+      "name": "消防・救急への緊急通報",
+      "phoneNumber": "119",
+      "categoryIds": [],
+      "categoryPriority": {},
+      "targetUsers": "火災、救助が必要な事故、急な病気やけがなどで、消防車や救急車が必要な人や、そのような状況を目撃した人",
+      "description": "火事、救助、救急など、消防・救急の緊急対応が必要なときに利用する番号です。\n「火事か救急か」「場所」「何が起きているか」「傷病者の状態」などを順番に確認されます。",
+      "anonymousSupport": "unavailable",
+      "anonymousSupportNote": "匿名相談のための番号ではありません。対応に必要な情報を確認されることがあります。",
+      "hoursText": "24時間",
+      "fee": "通話料：無料",
+      "notes": [],
+      "keywords": [
+        "消防",
+        "救急",
+        "緊急",
+        "火事",
+        "火災",
+        "救急車",
+        "けが",
+        "病気",
+        "通報"
+      ],
+      "officialUrl": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html",
+      "relatedConsultations": [
+        {
+          "consultationId": "public_emergency_medical_7119",
+          "guidance": "救急車を呼ぶべきか、すぐに病院へ行くべきか迷う場合は、#7119で相談できる地域があります。"
+        }
+      ],
+      "active": true,
+      "generalListingSuitable": false,
+      "isPublicPriority": false,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": true,
+      "emergencyOrder": 5,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "緊急通報",
+          "isRealtime": true,
+          "holidayHandling": "open",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5, 6, 7],
+              "periods": [
+                {
+                  "start": "00:00",
+                  "end": "00:00"
+                }
+              ]
+            }
+          ],
+          "phoneNumber": "119",
+          "url": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "emergency_maritime_118",
+      "name": "海上での事件・事故の緊急通報",
+      "phoneNumber": "118",
+      "categoryIds": [],
+      "categoryPriority": {},
+      "targetUsers": "海で事件・事故に遭った人や、それを目撃した人など",
+      "description": "海上での事件・事故について海上保安庁へ緊急通報する番号です。\n海難や海での人身事故など、海上で緊急の対応が必要な場合に利用します。",
+      "anonymousSupport": "unavailable",
+      "anonymousSupportNote": "匿名相談のための番号ではありません。対応に必要な情報を確認されることがあります。",
+      "hoursText": "24時間",
+      "fee": "通話料：無料",
+      "notes": [],
+      "keywords": [
+        "海上保安庁",
+        "海",
+        "海難",
+        "水難",
+        "事故",
+        "緊急",
+        "救助",
+        "通報"
+      ],
+      "officialUrl": "https://www.kaiho.mlit.go.jp/doc/tel118.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": false,
+      "isPublicPriority": false,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": true,
+      "emergencyOrder": 6,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "緊急通報",
+          "isRealtime": true,
+          "holidayHandling": "open",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5, 6, 7],
+              "periods": [
+                {
+                  "start": "00:00",
+                  "end": "00:00"
+                }
+              ]
+            }
+          ],
+          "phoneNumber": "118",
+          "url": "https://www.kaiho.mlit.go.jp/doc/tel118.html",
+          "temporaryClosures": []
+        }
+      ]
     }
   ]
 }
