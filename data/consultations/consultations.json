@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "updatedAt": "2026-10-04",
   "categories": [
     {
@@ -71,11 +71,10 @@
         "relationships": 1,
         "bullying": 1,
         "feelings": 1,
-        "health": 2,
-        "sexuality": 3,
-        "internet": 1,
-        "money": 3,
-        "violence": 5,
+        "health": 3,
+        "sexuality": 5,
+        "internet": 2,
+        "money": 4,
         "unsure": 1
       },
       "targetUsers": "悩みを抱えている小学生・中学生・高校生などの本人や、その保護者など",
@@ -354,9 +353,6 @@
         "violence"
       ],
       "categoryPriority": {
-        "family": 3,
-        "relationships": 2,
-        "bullying": 2,
         "money": 2,
         "violence": 1
       },
@@ -504,6 +500,653 @@
           "hours": [],
           "phoneNumber": "188",
           "url": "https://www.caa.go.jp/policies/policy/local_cooperation/local_consumer_administration/hotline/",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_child_human_rights_110",
+      "name": "こどもの人権110番",
+      "phoneNumber": "0120-007-110",
+      "categoryIds": [
+        "school",
+        "family",
+        "relationships",
+        "bullying",
+        "violence",
+        "unsure"
+      ],
+      "categoryPriority": {
+        "school": 2,
+        "family": 5,
+        "relationships": 2,
+        "bullying": 2,
+        "unsure": 3
+      },
+      "targetUsers": "いじめ、虐待、体罰など、学校や家庭などでの人権問題に悩んでいる子ども本人や、その周囲の人など",
+      "description": "いじめや虐待など、子どもの人権に関する悩みを相談できる法務省の専用相談電話です。\n最寄りの法務局につながり、法務局職員や人権擁護委員が相談に対応します。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "相談は無料で、秘密は厳守されます。匿名相談が可能かどうかは公式情報で全国一律には案内されていません。",
+      "hoursText": "平日 8:30～17:15",
+      "fee": "相談料：無料\n通話料：無料",
+      "notes": [
+        "一部のIP電話からは接続できません。その場合は各法務局の電話番号を利用する必要があり、通話料がかかります。"
+      ],
+      "keywords": [
+        "いじめ",
+        "虐待",
+        "体罰",
+        "先生",
+        "学校",
+        "親",
+        "家族",
+        "人権",
+        "差別",
+        "暴言"
+      ],
+      "officialUrl": "https://www.moj.go.jp/JINKEN/jinken112.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "closed",
+          "hours": [],
+          "phoneNumber": "0120-007-110",
+          "url": "https://www.moj.go.jp/JINKEN/jinken112.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_human_rights_110",
+      "name": "みんなの人権110番",
+      "phoneNumber": "0570-003-110",
+      "categoryIds": [
+        "family",
+        "relationships",
+        "bullying",
+        "internet",
+        "violence",
+        "unsure"
+      ],
+      "categoryPriority": {
+        "relationships": 3,
+        "bullying": 4,
+        "internet": 3
+      },
+      "targetUsers": "差別、虐待、ハラスメント、DV、ストーカーなど、さまざまな人権問題について相談したい人",
+      "description": "人権に関する幅広い相談を受け付ける全国共通の電話相談です。\n最寄りの法務局につながり、法務局職員や人権擁護委員が対応します。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "相談内容の秘密は厳守されます。匿名相談が可能かどうかは公式情報で全国一律には案内されていません。",
+      "hoursText": "平日 8:30～17:15",
+      "fee": "相談料：無料\n通話料：利用者負担",
+      "notes": [
+        "一部のIP電話などからは利用できない場合があります。その場合は各法務局の電話番号を利用してください。"
+      ],
+      "keywords": [
+        "人権",
+        "差別",
+        "虐待",
+        "ハラスメント",
+        "DV",
+        "ストーカー",
+        "いじめ",
+        "嫌がらせ",
+        "法務局"
+      ],
+      "officialUrl": "https://www.moj.go.jp/JINKEN/jinken20.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "closed",
+          "hours": [],
+          "phoneNumber": "0570-003-110",
+          "url": "https://www.moj.go.jp/JINKEN/jinken20.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_internet_human_rights",
+      "name": "インターネット人権相談",
+      "categoryIds": [
+        "school",
+        "relationships",
+        "bullying",
+        "internet",
+        "violence"
+      ],
+      "categoryPriority": {
+        "bullying": 3,
+        "internet": 1
+      },
+      "targetUsers": "いじめ、差別、インターネット上の誹謗中傷など、さまざまな人権問題について相談したい人",
+      "description": "法務省の相談フォームから、人権に関する相談を送信できる窓口です。\n電話では話しにくい場合にも利用できます。相談内容を送信すると、最寄りの法務局から後日、メール、電話または面談で回答があります。",
+      "anonymousSupport": "unavailable",
+      "anonymousSupportNote": "相談の秘密は厳守されますが、申し込みには氏名やメールアドレスなどの入力が必要です。",
+      "hoursText": "相談フォームは24時間送信できます。回答には数日を要します。",
+      "fee": "相談料：無料\n通信料：利用者負担",
+      "notes": [
+        "24時間いつでも送信できますが、リアルタイムで対応する窓口ではありません。急ぐ場合は電話相談を利用してください。"
+      ],
+      "keywords": [
+        "誹謗中傷",
+        "SNS",
+        "ネット",
+        "書き込み",
+        "晒し",
+        "差別",
+        "いじめ",
+        "人権",
+        "削除"
+      ],
+      "officialUrl": "https://www.jinken.go.jp/",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "web",
+          "displayName": "相談フォームを開く",
+          "isRealtime": false,
+          "holidayHandling": "individual",
+          "hours": [],
+          "responseEstimate": "回答には数日を要します。",
+          "url": "https://www.jinken.go.jp/",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_women_support_8778",
+      "name": "女性相談支援センター全国共通短縮ダイヤル",
+      "phoneNumber": "#8778",
+      "categoryIds": [
+        "family",
+        "relationships",
+        "feelings",
+        "sexuality",
+        "money",
+        "violence",
+        "unsure"
+      ],
+      "categoryPriority": {
+        "family": 3,
+        "feelings": 3,
+        "sexuality": 4
+      },
+      "targetUsers": "さまざまな困難や悩みを抱えている女性",
+      "description": "都道府県が設置する女性相談支援センターにつながる全国共通短縮ダイヤルです。\n女性が抱えるさまざまな問題について相談でき、必要に応じて支援につながります。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "相談の秘密に配慮して対応されます。匿名相談の扱いは接続先によって異なる場合があります。",
+      "hoursText": "接続先の女性相談支援センターによって異なります。",
+      "fee": "相談料：無料\n通話料：利用者負担",
+      "notes": [
+        "電話回線の種類や地域によっては#8778を利用できません。その場合は各都道府県の女性相談支援センターへ直接電話してください。",
+        "一部のIP電話からは利用できません。"
+      ],
+      "keywords": [
+        "女性",
+        "家族",
+        "DV",
+        "暴力",
+        "生活",
+        "困りごと",
+        "性被害",
+        "交際",
+        "お金",
+        "支援"
+      ],
+      "officialUrl": "https://www.mhlw.go.jp/stf/newpage_40477.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "phoneNumber": "#8778",
+          "url": "https://www.mhlw.go.jp/stf/newpage_40477.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_mental_health_dial",
+      "name": "こころの健康相談統一ダイヤル",
+      "phoneNumber": "0570-064-556",
+      "categoryIds": [
+        "feelings",
+        "health",
+        "unsure"
+      ],
+      "categoryPriority": {
+        "feelings": 2
+      },
+      "targetUsers": "心の健康について悩みや不安があり、公的な相談窓口へ相談したい人",
+      "description": "電話をかけた地域の都道府県・政令指定都市などが実施する、公的な心の健康相談窓口につながる全国共通番号です。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "匿名相談の扱いは接続先によって異なる場合があります。",
+      "hoursText": "地域によって異なります。",
+      "fee": "相談料：無料\n通話料：利用者負担",
+      "notes": [
+        "050で始まるIP電話やLINE Outからは接続できません。各都道府県・政令指定都市のIP電話対応番号を利用してください。",
+        "相談対応の曜日・時間は接続先によって異なります。"
+      ],
+      "keywords": [
+        "こころ",
+        "気持ち",
+        "不安",
+        "悩み",
+        "精神",
+        "ストレス",
+        "つらい",
+        "心の健康"
+      ],
+      "officialUrl": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/kokoro_dial.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "phoneNumber": "0570-064-556",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/kokoro_dial.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_child_medical_8000",
+      "name": "子ども医療電話相談",
+      "phoneNumber": "#8000",
+      "categoryIds": [
+        "health"
+      ],
+      "categoryPriority": {
+        "health": 2
+      },
+      "targetUsers": "子どもの急な病気やけがについて判断に迷っている保護者など",
+      "description": "休日や夜間などに、子どもの症状について、病院を受診したほうがよいか、どのように対応すればよいかなどを、小児科医師や看護師等へ相談できる全国共通番号です。\n電話をかけた都道府県の相談窓口につながります。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "匿名相談専用ではありません。相談に必要な情報を確認される場合があります。",
+      "hoursText": "都道府県によって異なります。",
+      "fee": "相談料：無料\n通話料：利用者負担",
+      "notes": [
+        "受付時間や、#8000以外の一般ダイヤル番号は都道府県によって異なります。公式ページで地域の情報を確認してください。"
+      ],
+      "keywords": [
+        "病気",
+        "けが",
+        "発熱",
+        "体調",
+        "病院",
+        "救急",
+        "子ども",
+        "小児科",
+        "夜間",
+        "休日"
+      ],
+      "officialUrl": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/newpage_55223.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "phoneNumber": "#8000",
+          "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/newpage_55223.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_dv_navi_8008",
+      "name": "DV相談ナビ",
+      "phoneNumber": "#8008",
+      "categoryIds": [
+        "family",
+        "relationships",
+        "sexuality",
+        "violence"
+      ],
+      "categoryPriority": {
+        "family": 4,
+        "relationships": 4,
+        "sexuality": 3
+      },
+      "targetUsers": "配偶者や交際相手からの暴力について相談したい人",
+      "description": "全国共通番号から、最寄りの都道府県の配偶者暴力相談支援センターにつながります。\n配偶者だけでなく、交際相手からの暴力について相談できる窓口もあります。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "プライバシーに配慮して対応されます。匿名相談の扱いは接続先によって異なる場合があります。",
+      "hoursText": "接続先の相談機関によって異なります。",
+      "fee": "相談料：無料\n通話料：利用者負担",
+      "notes": [
+        "相談は接続先の相談機関の受付時間内に限られます。",
+        "一部のIP電話などからは利用できない場合があります。"
+      ],
+      "keywords": [
+        "DV",
+        "恋人",
+        "交際相手",
+        "配偶者",
+        "暴力",
+        "束縛",
+        "怖い",
+        "家庭",
+        "相談"
+      ],
+      "officialUrl": "https://www.gender.go.jp/policy/no_violence/dv_navi/index.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "phoneNumber": "#8008",
+          "url": "https://www.gender.go.jp/policy/no_violence/dv_navi/index.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_houterasu_support",
+      "name": "法テラス・サポートダイヤル",
+      "phoneNumber": "0570-078374",
+      "alternativePhoneNumbers": [
+        {
+          "phoneNumber": "03-6745-5600",
+          "appliesTo": "IP電話、プリペイド携帯、海外から利用する場合"
+        }
+      ],
+      "categoryIds": [
+        "family",
+        "relationships",
+        "internet",
+        "money",
+        "violence",
+        "unsure"
+      ],
+      "categoryPriority": {
+        "money": 3,
+        "unsure": 2
+      },
+      "targetUsers": "法律や法的トラブルについて、どこに相談すればよいか分からない人",
+      "description": "法的トラブルについて、利用できる法制度や適切な相談窓口を案内してもらえます。\nオペレーターが個別の法律相談や法的判断を行う窓口ではありません。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "相談の秘密は厳守されます。匿名での利用が可能かどうかは公式情報で一律には案内されていません。",
+      "hoursText": "平日 9:00～21:00\n土曜日 9:00～17:00\n祝日・年末年始を除く",
+      "fee": "利用料：無料\n通話料：利用者負担",
+      "notes": [
+        "0570番号はIP電話、プリペイド携帯、海外から利用できません。その場合は03-6745-5600を利用してください。",
+        "通話内容は応対品質向上のため録音されます。"
+      ],
+      "keywords": [
+        "法律",
+        "弁護士",
+        "法的トラブル",
+        "契約",
+        "借金",
+        "相談先",
+        "法制度",
+        "法テラス"
+      ],
+      "officialUrl": "https://www.houterasu.or.jp/site/soudanmadoguchi-houseido/support-dial.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話案内",
+          "isRealtime": true,
+          "holidayHandling": "closed",
+          "hours": [],
+          "phoneNumber": "0570-078374",
+          "url": "https://www.houterasu.or.jp/site/soudanmadoguchi-houseido/support-dial.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_houterasu_crime_victim",
+      "name": "法テラス 犯罪被害者支援ダイヤル",
+      "phoneNumber": "0120-079714",
+      "alternativePhoneNumbers": [
+        {
+          "phoneNumber": "03-6745-5601",
+          "appliesTo": "IP電話から利用する場合（通話料がかかります）"
+        }
+      ],
+      "categoryIds": [
+        "family",
+        "relationships",
+        "bullying",
+        "sexuality",
+        "internet",
+        "money",
+        "violence"
+      ],
+      "categoryPriority": {
+        "violence": 5
+      },
+      "targetUsers": "犯罪の被害にあった人や、その家族など",
+      "description": "犯罪被害後に利用できる支援制度や相談窓口について案内を受けられます。\nDV、ストーカー、性被害、児童虐待、いじめ、暴力事件など、幅広い犯罪被害について利用できます。必要に応じて、犯罪被害者支援の経験や理解のある弁護士の紹介も受けられます。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "相談の秘密は守られます。匿名での利用が可能かどうかは公式情報で一律には案内されていません。",
+      "hoursText": "平日 9:00～21:00\n土曜日 9:00～17:00\n日曜・祝日・年末年始を除く",
+      "fee": "相談・問い合わせ：無料\n0120番号の通話料：無料",
+      "notes": [
+        "IP電話からは03-6745-5601を利用してください。通話料がかかります。"
+      ],
+      "keywords": [
+        "法律",
+        "弁護士",
+        "犯罪被害",
+        "DV",
+        "ストーカー",
+        "性被害",
+        "児童虐待",
+        "いじめ",
+        "暴力",
+        "支援"
+      ],
+      "officialUrl": "https://www.houterasu.or.jp/site/higaishashien/hanzaihigai-seido-list.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話案内",
+          "isRealtime": true,
+          "holidayHandling": "closed",
+          "hours": [],
+          "phoneNumber": "0120-079714",
+          "url": "https://www.houterasu.or.jp/site/higaishashien/hanzaihigai-seido-list.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_labor_consultation_corner",
+      "name": "総合労働相談コーナー",
+      "categoryIds": [
+        "relationships",
+        "money",
+        "violence"
+      ],
+      "categoryPriority": {},
+      "targetUsers": "アルバイトや仕事、就職活動などでトラブルや悩みを抱えている人",
+      "description": "解雇、雇止め、賃金、募集・採用、職場でのいじめ・嫌がらせ、パワーハラスメントなど、幅広い労働問題について相談できます。\n労働者や事業主だけでなく、学生・就活生からの相談にも対応しています。全国の労働局や労働基準監督署内などに設置されています。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "相談者のプライバシーに配慮して対応されます。匿名相談が可能かどうかは窓口へ確認してください。",
+      "hoursText": "窓口によって異なります。土曜・日曜・祝日・年末年始は閉庁しています。",
+      "fee": "相談料：無料",
+      "notes": [
+        "全国共通の電話番号はありません。公式ページで近くの窓口と受付時間を確認してください。",
+        "予約不要ですが、専門の相談員が不在の場合もあるため、来庁前の連絡が推奨されています。"
+      ],
+      "keywords": [
+        "アルバイト",
+        "バイト",
+        "給料",
+        "賃金",
+        "職場",
+        "ハラスメント",
+        "解雇",
+        "雇止め",
+        "労働",
+        "就活"
+      ],
+      "officialUrl": "https://www.mhlw.go.jp/general/seido/chihou/kaiketu/soudan.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": false,
+      "skipEligible": true,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "web",
+          "displayName": "近くの相談窓口を確認する",
+          "isRealtime": false,
+          "holidayHandling": "closed",
+          "hours": [],
+          "url": "https://www.mhlw.go.jp/general/seido/chihou/kaiketu/soudan.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_youth_support_station",
+      "name": "地域若者サポートステーション",
+      "categoryIds": [
+        "feelings",
+        "money",
+        "unsure"
+      ],
+      "categoryPriority": {},
+      "targetUsers": "働くことに悩みを抱えている15歳～49歳で、仕事をしておらず就学中でない人や、その家族など",
+      "description": "厚生労働省委託の就労支援機関です。\n働くことについての相談から、就職準備、就職活動、就職後の職場定着まで支援します。全国の都道府県に設置されています。",
+      "anonymousSupport": "conditional",
+      "anonymousSupportNote": "匿名相談の扱いは各サポステによって異なります。",
+      "hoursText": "各サポステによって異なります。",
+      "fee": "相談・就労支援：無料",
+      "notes": [
+        "一般的な対象は、仕事をしておらず就学中でない15歳～49歳の人です。学校と連携した中退者等への支援など、利用できる条件は地域や状況によって異なる場合があります。",
+        "全国共通の電話番号はありません。公式ページで近くのサポステを確認してください。"
+      ],
+      "keywords": [
+        "仕事",
+        "働く",
+        "就職",
+        "就活",
+        "無職",
+        "進路",
+        "職場",
+        "サポステ",
+        "家族"
+      ],
+      "officialUrl": "https://saposute-net.mhlw.go.jp/",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": false,
+      "skipEligible": true,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-04",
+      "verifiedAt": "2026-10-04",
+      "contactMethods": [
+        {
+          "type": "web",
+          "displayName": "近くのサポステを探す",
+          "isRealtime": false,
+          "holidayHandling": "individual",
+          "hours": [],
+          "url": "https://saposute-net.mhlw.go.jp/",
           "temporaryClosures": []
         }
       ]
