@@ -1,0 +1,222 @@
+:root {
+  --ink: #23383c;
+  --ink-soft: #52676b;
+  --teal: #187b83;
+  --teal-dark: #105f66;
+  --sky: #dff2f7;
+  --mint: #dff4ef;
+  --aqua: #ccebea;
+  --pale: #f4f9f9;
+  --line: #c9dddd;
+  --white: #fff;
+  --shadow: 0 18px 50px rgb(27 89 94 / 9%);
+  --header-height: 76px;
+  --radius: 22px;
+  --wrap: 1180px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+  -webkit-font-smoothing: antialiased;
+}
+body.menu-open { overflow: hidden; }
+a { color: inherit; text-underline-offset: .2em; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button, input, textarea, select { font: inherit; }
+img { max-width: 100%; height: auto; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid #ed9f43; outline-offset: 4px; }
+
+.wrap { width: min(calc(100% - 48px), var(--wrap)); margin-inline: auto; }
+.narrow { max-width: 980px; }
+.skip-link { position: fixed; top: 12px; left: 12px; z-index: 200; padding: 10px 16px; border-radius: 8px; background: var(--ink); color: var(--white); transform: translateY(-160%); }
+.skip-link:focus { transform: none; }
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  display: flex;
+  min-height: var(--header-height);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(20px, 4vw, 64px);
+  border-bottom: 1px solid transparent;
+  transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.site-header.is-scrolled, .subpage .site-header, .legal-page .site-header { background: rgb(255 255 255 / 94%); border-color: rgb(151 190 191 / 45%); box-shadow: 0 6px 24px rgb(33 88 91 / 6%); backdrop-filter: blur(12px); }
+.brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; text-decoration: none; }
+.brand-mark { display: grid; width: 38px; height: 38px; place-items: center; border: 2px solid var(--teal); border-radius: 12px; background: var(--mint); color: var(--teal-dark); font-size: 18px; }
+.brand-name { letter-spacing: .04em; }
+.menu-button { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; padding: 8px 0 8px 16px; border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: .16em; }
+.menu-lines, .menu-lines::before, .menu-lines::after { display: block; width: 25px; height: 2px; background: currentColor; content: ""; }
+.menu-lines { position: relative; }
+.menu-lines::before { position: absolute; top: -7px; }
+.menu-lines::after { position: absolute; top: 7px; }
+
+.site-menu { position: fixed; inset: 0; z-index: 150; background: rgb(18 54 58 / 42%); opacity: 0; transition: opacity .18s ease; backdrop-filter: blur(5px); }
+.site-menu.is-open { opacity: 1; }
+.menu-panel { position: absolute; top: 0; right: 0; width: min(100%, 520px); height: 100%; padding: clamp(88px, 12vh, 130px) clamp(32px, 7vw, 76px) 48px; background: #f5fbfa; transform: translateX(28px); transition: transform .18s ease; overflow-y: auto; }
+.site-menu.is-open .menu-panel { transform: none; }
+.menu-close { position: absolute; top: 22px; right: 28px; display: grid; width: 46px; height: 46px; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: var(--white); color: var(--ink); cursor: pointer; font-size: 30px; line-height: 1; }
+.menu-label, .eyebrow { margin: 0 0 18px; color: var(--teal); font-size: 12px; font-weight: 700; letter-spacing: .18em; }
+.site-menu ul { margin: 0; padding: 0; list-style: none; }
+.site-menu li { border-top: 1px solid var(--line); }
+.site-menu li:last-child { border-bottom: 1px solid var(--line); }
+.site-menu a { display: block; padding: 18px 4px; font-family: "Zen Maru Gothic", sans-serif; font-size: clamp(17px, 2vw, 21px); font-weight: 700; text-decoration: none; }
+
+h1, h2, h3 { color: var(--ink); font-family: "Zen Maru Gothic", sans-serif; line-height: 1.45; }
+h1 { font-size: clamp(42px, 7vw, 78px); letter-spacing: .02em; }
+h2 { margin: 0 0 32px; font-size: clamp(30px, 4.2vw, 48px); }
+h3 { font-size: clamp(20px, 2.5vw, 26px); }
+p { margin: 0 0 1.25em; }
+
+.hero { position: relative; min-height: min(900px, 100svh); padding: calc(var(--header-height) + 60px) 0 72px; background: linear-gradient(145deg, #f8fcfc 0%, #e6f6f4 55%, #dceff5 100%); overflow: hidden; }
+.hero::before { position: absolute; top: 12%; right: -12vw; width: 52vw; min-width: 520px; aspect-ratio: 1; border: 1px solid rgb(24 123 131 / 16%); border-radius: 50%; content: ""; }
+.hero::after { position: absolute; right: 14%; bottom: -110px; width: 220px; height: 220px; border: 42px solid rgb(255 255 255 / 62%); border-radius: 50%; content: ""; }
+.hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(270px, .55fr); gap: clamp(48px, 8vw, 120px); align-items: center; min-height: 650px; }
+.hero h1 { margin: 0 0 30px; }
+.hero-lead { max-width: 720px; color: #334d52; font-size: clamp(17px, 1.8vw, 20px); line-height: 2; }
+.actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+.button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; padding: 12px 24px; border: 1px solid var(--teal); border-radius: 999px; font-weight: 700; text-align: center; text-decoration: none; transition: transform .16s ease, background-color .16s ease, color .16s ease; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { background: var(--teal); color: var(--white); }
+.button-primary:hover { background: var(--teal-dark); }
+.button-secondary { background: var(--white); color: var(--teal-dark); }
+.button-secondary:hover { background: var(--mint); }
+.hero-concept { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.concept-step { display: grid; width: clamp(120px, 13vw, 158px); aspect-ratio: 1; place-content: center; border: 1px solid rgb(24 123 131 / 23%); border-radius: 50%; background: rgb(255 255 255 / 68%); text-align: center; backdrop-filter: blur(8px); }
+.concept-step b { font-family: "Zen Maru Gothic", sans-serif; font-size: clamp(20px, 2.4vw, 28px); }
+.concept-step small { color: var(--ink-soft); font-size: 12px; letter-spacing: .08em; }
+.concept-step-2 { margin-left: 72px; background: rgb(223 244 239 / 82%); }
+.concept-step-3 { margin-left: 12px; background: rgb(223 242 247 / 84%); }
+.concept-line { width: 1px; height: 34px; background: var(--teal); opacity: .38; transform: rotate(-20deg); }
+
+.tiles { padding: 100px 0 112px; }
+.section-heading { margin-bottom: 38px; }
+.section-heading h2 { margin-bottom: 0; }
+.tile-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.tile { position: relative; display: flex; min-height: 310px; flex-direction: column; justify-content: space-between; padding: clamp(28px, 4vw, 52px); border: 1px solid rgb(255 255 255 / 70%); text-decoration: none; overflow: hidden; transition: filter .18s ease; }
+.tile::before { position: absolute; inset: 0; background-image: linear-gradient(rgb(255 255 255 / 25%), rgb(255 255 255 / 25%)), var(--tile-image, none); background-position: center; background-size: cover; content: ""; opacity: .2; transition: opacity .2s ease, transform .25s ease; }
+.tile:hover::before { opacity: .38; transform: scale(1.02); }
+.tile-wide { grid-column: span 2; }
+.tile-number, .tile-copy { position: relative; z-index: 1; }
+.tile-number { color: var(--teal-dark); font-size: 12px; font-weight: 700; letter-spacing: .16em; }
+.tile-copy { display: block; max-width: 520px; }
+.tile-copy strong { display: block; margin-bottom: 15px; font-family: "Zen Maru Gothic", sans-serif; font-size: clamp(22px, 2.3vw, 31px); line-height: 1.5; }
+.tile-copy > span { display: block; color: #385257; line-height: 1.8; }
+.tone-sky { background: #dceff6; }
+.tone-mint { background: #dff4ef; }
+.tone-aqua { background: #cde9e7; }
+.tone-blue { background: #cfe6ed; }
+.tone-pale { background: #eef7f6; }
+.tone-deep { background: #bcdedc; }
+
+.content-section { padding: clamp(88px, 11vw, 150px) 0; }
+.content-section h2::after, .page-hero h1::after, .legal-main > h1::after { display: block; width: 64px; height: 3px; margin-top: 22px; background: var(--teal); content: ""; }
+.purpose-section { background: var(--pale); }
+.prose { color: #344e53; font-size: 17px; line-height: 2.05; }
+.columns { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(32px, 6vw, 80px); }
+.text-link { display: inline-flex; align-items: center; gap: 12px; margin-top: 22px; color: var(--teal-dark); font-weight: 700; }
+.text-link span { font-size: 26px; }
+
+.demo-section { padding: 80px 0; background: #dceff1; }
+.demo-card { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(36px, 8vw, 100px); align-items: start; padding: clamp(36px, 6vw, 72px); border: 1px solid rgb(24 123 131 / 18%); border-radius: var(--radius); background: rgb(255 255 255 / 68%); box-shadow: var(--shadow); }
+.demo-card h2 { margin-bottom: 0; }
+.demo-copy { color: #344e53; font-size: 17px; }
+.note { padding-left: 1em; border-left: 3px solid #82bebe; color: var(--ink-soft); font-size: 14px; }
+.contact-section { padding: clamp(88px, 10vw, 140px) 0; }
+.contact-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(36px, 8vw, 100px); }
+.contact-copy { max-width: 660px; font-size: 17px; }
+.contact-label { margin: 28px 0 6px; color: var(--ink-soft); font-size: 14px; }
+.email-link { display: inline-block; margin-bottom: 26px; color: var(--teal-dark); font-size: clamp(18px, 2.5vw, 25px); font-weight: 700; }
+
+.site-footer { padding: 70px 0 30px; background: #173f44; color: #eef9f8; }
+.footer-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 48px; padding-bottom: 50px; }
+.footer-brand { margin-bottom: 2px; font-family: "Zen Maru Gothic", sans-serif; font-size: 22px; font-weight: 700; }
+.footer-grid ul { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: flex-end; margin: 0; padding: 0; list-style: none; }
+.footer-grid a, .footer-bottom a { color: inherit; }
+.footer-bottom { display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; padding-top: 24px; border-top: 1px solid rgb(255 255 255 / 16%); color: #bed4d5; font-size: 12px; }
+.footer-bottom p { margin: 0; }
+
+.page-hero { padding: calc(var(--header-height) + 84px) 0 86px; background: linear-gradient(135deg, #f6fbfb, #dff3f0); }
+.page-hero .eyebrow { margin-bottom: 14px; }
+.page-hero h1 { max-width: 920px; margin: 0; font-size: clamp(36px, 6vw, 66px); }
+.page-intro { max-width: 840px; margin-top: 34px; color: #385257; font-size: clamp(17px, 2vw, 20px); }
+.page-section { padding: clamp(72px, 9vw, 120px) 0; }
+.page-section.alt { background: var(--pale); }
+.value-grid, .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 48px; }
+.value-card, .feature-card, .info-card { padding: clamp(26px, 4vw, 42px); border: 1px solid var(--line); border-radius: 18px; background: var(--white); box-shadow: 0 10px 32px rgb(27 89 94 / 6%); }
+.card-number { display: block; margin-bottom: 28px; color: var(--teal); font-size: 12px; font-weight: 700; letter-spacing: .15em; }
+.value-card h3, .feature-card h3 { margin: 0 0 16px; }
+.value-card p, .feature-card p, .info-card p { margin-bottom: 0; color: #415a5f; }
+.feature-grid { grid-template-columns: repeat(2, 1fr); }
+.info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.info-card h2 { margin-bottom: 20px; font-size: clamp(25px, 3vw, 34px); }
+
+.legal-page { background: #eef6f6; }
+.legal-page .legal-main { width: min(calc(100% - 48px), 900px); margin: calc(var(--header-height) + 54px) auto 70px; padding: clamp(32px, 6vw, 72px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+.legal-main > h1 { margin: 0 0 42px; padding: 0; border: 0; font-size: clamp(30px, 4vw, 46px); }
+.legal-main h2 { margin: 48px 0 18px; padding: 0 0 10px; border-bottom: 1px solid var(--line); color: var(--ink); font-size: clamp(20px, 2.5vw, 24px); }
+.legal-main h3 { margin-top: 30px; color: var(--ink); }
+.legal-main p, .legal-main li { color: #344b50; }
+.legal-main .document-meta { margin-top: 48px; padding: 24px; border: 0; border-radius: 14px; background: var(--pale); }
+
+.error-page { display: grid; min-height: 100svh; place-items: center; padding: 40px 24px; background: linear-gradient(145deg, #f8fcfc, #dff4ef); text-align: center; }
+.error-card { width: min(100%, 640px); padding: clamp(36px, 7vw, 72px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
+.error-code { margin: 0; color: var(--teal); font: 700 clamp(52px, 10vw, 90px)/1 "Zen Maru Gothic", sans-serif; }
+
+@media (max-width: 900px) {
+  .hero-content { grid-template-columns: 1fr; padding-top: 40px; }
+  .hero-concept { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; }
+  .concept-step { width: min(22vw, 138px); }
+  .concept-step-2, .concept-step-3 { margin-left: 0; }
+  .concept-line { width: 28px; height: 1px; transform: none; }
+  .tile-grid { grid-template-columns: repeat(2, 1fr); }
+  .tile-wide { grid-column: span 1; }
+  .demo-card, .contact-grid { grid-template-columns: 1fr; }
+  .value-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  :root { --header-height: 66px; }
+  .wrap { width: min(calc(100% - 32px), var(--wrap)); }
+  .brand-name { max-width: 190px; font-size: 14px; line-height: 1.35; }
+  .brand-mark { width: 34px; height: 34px; border-radius: 10px; }
+  .site-header { padding-inline: 16px; }
+  .menu-button { gap: 9px; font-size: 11px; }
+  .hero { min-height: auto; padding-top: calc(var(--header-height) + 70px); }
+  .hero-content { min-height: 0; }
+  .hero h1 { font-size: clamp(39px, 13vw, 56px); }
+  .hero-lead br { display: none; }
+  .actions { flex-direction: column; }
+  .button { width: 100%; }
+  .hero-concept { margin-top: 4px; }
+  .concept-step { width: 26vw; min-width: 88px; }
+  .concept-step b { font-size: 18px; }
+  .concept-step small { font-size: 10px; }
+  .concept-line { width: 14px; }
+  .tiles { padding: 72px 0 80px; }
+  .tile-grid { grid-template-columns: 1fr; }
+  .tile { min-height: 260px; }
+  .columns, .feature-grid, .info-grid, .footer-grid { grid-template-columns: 1fr; }
+  .prose { font-size: 16px; }
+  .demo-card { width: calc(100% - 32px); }
+  .footer-grid ul { justify-content: flex-start; }
+  .footer-bottom { flex-direction: column; }
+  .page-hero { padding-top: calc(var(--header-height) + 62px); }
+  .legal-page .legal-main { width: 100%; margin: var(--header-height) 0 0; padding: 34px 20px 54px; border: 0; border-radius: 0; box-shadow: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}

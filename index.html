@@ -2,10 +2,127 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Mirai Safe Project Contents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ミライセーフプロジェクト</title>
+  <meta name="description" content="若い世代が、自身や周囲の人について知り、困ったときに次の一歩を見つけるための情報を届ける、ミライセーフプロジェクトの公式サイトです。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="ミライセーフプロジェクト">
+  <meta property="og:title" content="ミライセーフプロジェクト">
+  <meta property="og:description" content="知ること、考えること、困ったときの次の一歩。そのきっかけを届ける活動です。">
+  <meta property="og:url" content="https://miraisafe-project.com/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://miraisafe-project.com/">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/site-config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <h1>Mirai Safe Project Contents</h1>
-  <p>This page hosts public article data for the Mirai Safe Project app.</p>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header" data-header>
+    <a class="brand" href="./" aria-label="ミライセーフプロジェクト トップページ">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-name">ミライセーフプロジェクト</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-open>
+      <span>MENU</span><span class="menu-lines" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <nav class="site-menu" id="site-menu" aria-label="メインメニュー" hidden data-menu>
+    <div class="menu-panel">
+      <button class="menu-close" type="button" aria-label="メニューを閉じる" data-menu-close><span aria-hidden="true">×</span></button>
+      <p class="menu-label">MENU</p>
+      <ul>
+        <li><a href="about/">ミライセーフプロジェクトについて</a></li>
+        <li><a href="app/">ミライセーフアプリ</a></li>
+        <li><a href="https://miraisafe-project.github.io/miraisafe-demo/" data-config-link="webDemo" data-external>Webデモ</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+        <li><a href="terms/">利用規約</a></li>
+        <li><a href="privacy/">プライバシーポリシー</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-content wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">MIRAI SAFE PROJECT</p>
+          <h1>ミライセーフ<br>プロジェクト</h1>
+          <p class="hero-lead">若い世代が、自身や周囲の人について知り、困ったときに次の一歩を見つけられるように。<br>より安心して生きていくために必要な知識や情報と出会うきっかけを届けることを目指す活動です。</p>
+          <div class="actions">
+            <a class="button button-primary" href="app/">ミライセーフアプリについて</a>
+            <a class="button button-secondary" href="https://miraisafe-project.github.io/miraisafe-demo/" data-config-link="webDemo" data-external>Webデモを見る</a>
+          </div>
+        </div>
+        <div class="hero-concept" aria-label="活動の3つのステップ">
+          <span class="concept-step concept-step-1"><b>知る</b><small>きっかけ</small></span>
+          <span class="concept-line" aria-hidden="true"></span>
+          <span class="concept-step concept-step-2"><b>考える</b><small>きっかけ</small></span>
+          <span class="concept-line" aria-hidden="true"></span>
+          <span class="concept-step concept-step-3"><b>つながる</b><small>次の一歩</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tiles" aria-labelledby="explore-title">
+      <div class="section-heading wrap">
+        <p class="eyebrow">EXPLORE</p>
+        <h2 id="explore-title">知りたいことから見る</h2>
+      </div>
+      <div class="tile-grid">
+        <a class="tile tile-wide tone-sky" href="about/"><span class="tile-number">01</span><span class="tile-copy"><strong>ミライセーフプロジェクトについて</strong><span>活動の目的や、ミライセーフプロジェクトが大切にしていることについて紹介します。</span></span></a>
+        <a class="tile tone-mint" href="app/"><span class="tile-number">02</span><span class="tile-copy"><strong>ミライセーフアプリ</strong><span>主に若い世代に向けて、知ることや考えること、困ったときの次の一歩につながる情報を届けるアプリです。</span></span></a>
+        <a class="tile tone-aqua" href="app/#features"><span class="tile-number">03</span><span class="tile-copy"><strong>アプリでできること</strong><span>身近なテーマについて学んだり、実際に起きた出来事や体験談を読んだり、自分に合う相談先を探したりできます。</span></span></a>
+        <a class="tile tile-wide tone-blue" href="https://miraisafe-project.github.io/miraisafe-demo/" data-config-link="webDemo" data-external><span class="tile-number">04</span><span class="tile-copy"><strong>Webデモ</strong><span>開発中のミライセーフアプリを、ブラウザから実際に体験できます。</span></span></a>
+        <a class="tile tone-pale" href="#contact"><span class="tile-number">05</span><span class="tile-copy"><strong>お問い合わせ</strong><span>アプリの不具合や掲載内容、活動に関するお問い合わせを受け付けています。</span></span></a>
+        <a class="tile tone-deep" href="terms/"><span class="tile-number">06</span><span class="tile-copy"><strong>利用規約・プライバシー</strong><span>利用規約とプライバシーポリシーをご確認いただけます。</span></span></a>
+      </div>
+    </section>
+
+    <section class="content-section" id="about-app">
+      <div class="wrap narrow">
+        <p class="eyebrow">ABOUT THE APP</p>
+        <h2>ミライセーフアプリとは</h2>
+        <div class="prose columns">
+          <div><p>ミライセーフアプリは、主に若い世代に向けて、自身や周囲の人について知るきっかけや、困ったときに次の一歩を見つけるための情報を届けるアプリです。</p><p>SNSやAIに潜む危険性、詐欺や闇バイト、学校や家庭での悩み、からだやこころのことなど、身近でありながら知る機会の少ないさまざまなテーマを扱います。</p></div>
+          <div><p>知識を得るだけでなく、自分の悩みや置かれている状況について整理したり、必要に応じて相談先を探したりするための入り口となることも目指しています。</p><p>悩みを抱えているときにも、そうでないときにも、知ることが自身や周囲の人への理解につながり、これからを少し変えるきっかけになるかもしれません。</p><p>掲載内容が役に立つと感じる方であれば、世代に関わらず、どなたでも利用できます。</p></div>
+        </div>
+        <a class="text-link" href="app/">アプリについて詳しく見る<span aria-hidden="true">›</span></a>
+      </div>
+    </section>
+
+    <section class="content-section purpose-section">
+      <div class="wrap narrow">
+        <p class="eyebrow">OUR PURPOSE</p>
+        <h2>活動の目的</h2>
+        <div class="prose"><p>知っていれば避けられることや、知ることで気持ちが少し軽くなること、誰かへの見方が変わることがあります。</p><p>一方で、困ったときに何をすればいいのか、どこに相談すればいいのか分からず、一人で抱えてしまうこともあります。</p><p>ミライセーフプロジェクトでは、さまざまなテーマについて知るきっかけを届けるとともに、悩んでいる人が自分の状況を理解し、必要な情報や相談先へつながるための入り口をつくることを目指しています。</p><p>このアプリだけですべての知識や答えを提供することを目指しているわけではありません。<br>知ること、考えること、そして必要なときに次の一歩を見つけること。そのきっかけの一つになれればと考えています。</p></div>
+      </div>
+    </section>
+
+    <section class="demo-section">
+      <div class="wrap demo-card">
+        <div><p class="eyebrow">WEB DEMO</p><h2>ミライセーフアプリを<br>ブラウザで体験</h2></div>
+        <div class="demo-copy"><p>現在開発中のミライセーフアプリを、パソコンやスマートフォンのブラウザから実際に体験できます。</p><p class="note">※開発中のため、未完成の部分が含まれているほか、実際の完成版とは内容や仕様が異なる場合があります。</p><a class="button button-primary" href="https://miraisafe-project.github.io/miraisafe-demo/" data-config-link="webDemo" data-external>Webデモを開く</a></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="wrap contact-grid">
+        <div><p class="eyebrow">CONTACT</p><h2>お問い合わせ</h2></div>
+        <div class="contact-copy"><p>ミライセーフアプリの不具合や掲載内容についてのご連絡、活動に関するお問い合わせなどを受け付けています。</p><p class="contact-label">メールでお問い合わせいただく場合はこちら</p><a class="email-link" href="mailto:contact@miraisafe-project.com">contact@miraisafe-project.com</a><p>または、以下のフォームからお問い合わせください。</p><a class="button button-secondary" href="https://forms.gle/EsE2K6iw1suVJkdx7" data-config-link="contactForm" data-external>お問い合わせフォームを開く</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid"><div><p class="footer-brand">ミライセーフプロジェクト</p><p>Mirai Safe Project</p></div><nav aria-label="フッターメニュー"><ul><li><a href="app/">ミライセーフアプリ</a></li><li><a href="https://miraisafe-project.github.io/miraisafe-demo/" data-config-link="webDemo" data-external>Webデモ</a></li><li><a href="terms/">利用規約</a></li><li><a href="privacy/">プライバシーポリシー</a></li><li><a href="#contact">お問い合わせ</a></li></ul></nav></div>
+    <div class="wrap footer-bottom"><p>© 2026 Mirai Safe Project</p><p>Design adapted from <a href="https://html5up.net/forty" target="_blank" rel="noopener noreferrer">Forty by HTML5 UP</a> under <a href="https://html5up.net/license" target="_blank" rel="noopener noreferrer">CCA 3.0</a>.</p></div>
+  </footer>
 </body>
 </html>
