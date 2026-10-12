@@ -54,7 +54,8 @@ img { max-width: 100%; height: auto; }
 }
 .site-header.is-scrolled, .subpage .site-header, .legal-page .site-header { background: rgb(255 255 255 / 94%); border-color: rgb(151 190 191 / 45%); box-shadow: 0 6px 24px rgb(33 88 91 / 6%); backdrop-filter: blur(12px); }
 .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; text-decoration: none; }
-.brand-mark { display: grid; width: 38px; height: 38px; place-items: center; border: 2px solid var(--teal); border-radius: 12px; background: var(--mint); color: var(--teal-dark); font-size: 18px; }
+.brand-mark { display: grid; width: 42px; height: 42px; flex: 0 0 auto; place-items: center; }
+.brand-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .brand-name { letter-spacing: .04em; }
 .menu-button { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; padding: 8px 0 8px 16px; border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: 13px; font-weight: 700; letter-spacing: .16em; }
 .menu-lines, .menu-lines::before, .menu-lines::after { display: block; width: 25px; height: 2px; background: currentColor; content: ""; }
@@ -201,7 +202,7 @@ p { margin: 0 0 1.25em; }
   :root { --header-height: 66px; }
   .wrap { width: min(calc(100% - 32px), var(--wrap)); }
   .brand-name { max-width: 190px; font-size: 14px; line-height: 1.35; }
-  .brand-mark { width: 34px; height: 34px; border-radius: 10px; }
+  .brand-mark { width: 38px; height: 38px; }
   .site-header { padding-inline: 16px; }
   .menu-button { gap: 9px; font-size: 11px; }
   .hero { min-height: auto; padding-top: calc(var(--header-height) + 70px); }
