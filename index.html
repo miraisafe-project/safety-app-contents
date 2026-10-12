@@ -85,12 +85,22 @@
         <h2 id="explore-title">知りたいことから見る</h2>
       </div>
       <div class="tile-grid">
-        <a class="tile tile-wide tone-sky" href="about/"><span class="tile-number">01</span><span class="tile-copy"><strong>ミライセーフプロジェクトについて</strong><span>活動の目的や、ミライセーフプロジェクトが大切にしていることについて紹介します。</span></span></a>
-        <a class="tile tone-mint" href="app/"><span class="tile-number">02</span><span class="tile-copy"><strong>ミライセーフアプリ</strong><span>主に若い世代に向けて、知ることや考えること、困ったときの次の一歩につながる情報を届けるアプリです。</span></span></a>
-        <a class="tile tone-aqua" href="app/#features"><span class="tile-number">03</span><span class="tile-copy"><strong>アプリでできること</strong><span>身近なテーマについて学んだり、実際に起きた出来事や体験談を読んだり、自分に合う相談先を探したりできます。</span></span></a>
-        <a class="tile tile-wide tone-blue" href="https://miraisafe-project.github.io/miraisafe-demo/" data-config-link="webDemo" data-external><span class="tile-number">04</span><span class="tile-copy"><strong>Webデモ</strong><span>開発中のミライセーフアプリを、ブラウザから実際に体験できます。</span></span></a>
-        <a class="tile tone-pale" href="#contact"><span class="tile-number">05</span><span class="tile-copy"><strong>お問い合わせ</strong><span>アプリの不具合や掲載内容、活動に関するお問い合わせを受け付けています。</span></span></a>
-        <a class="tile tone-deep" href="terms/"><span class="tile-number">06</span><span class="tile-copy"><strong>利用規約・プライバシー</strong><span>利用規約とプライバシーポリシーをご確認いただけます。</span></span></a>
+        <a class="tile tile-project" href="about/">
+          <svg class="tile-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 29 32 9l24 20M14 25v30h36V25M26 55V37h12v18"/><path d="M25 26h14"/></svg>
+          <span class="tile-copy"><strong>ミライセーフプロジェクトについて</strong><span>活動の目的や、ミライセーフプロジェクトが大切にしていることについて紹介します。</span></span>
+        </a>
+        <a class="tile tile-app" href="app/">
+          <svg class="tile-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="14" y="7" width="30" height="50" rx="5"/><path d="M24 13h10M27 50h4"/><circle cx="46" cy="38" r="12" fill="var(--tile-color)"/><path d="M46 36v8"/><circle cx="46" cy="31" r="1" fill="currentColor" stroke="none"/></svg>
+          <span class="tile-copy"><strong>ミライセーフアプリについて</strong><span>アプリの特徴や主な機能をご紹介します。</span></span>
+        </a>
+        <a class="tile tile-demo" href="https://miraisafe-project.github.io/miraisafe-demo/" data-config-link="webDemo" data-external>
+          <svg class="tile-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="10" y="7" width="30" height="50" rx="5"/><path d="M20 13h10M23 50h4"/><path d="M38 55 29 42c-3-4 1-7 4-4l4 4V29a3 3 0 0 1 6 0v8l3-1 9 4c2 1 3 3 2 6l-3 11H40" fill="var(--tile-color)"/><path d="M30 27h-4M45 24l3-3M38 21v-4"/></svg>
+          <span class="tile-copy"><strong>アプリを体験する</strong><span>ブラウザでアプリをお試しいただけます。</span></span>
+        </a>
+        <a class="tile tile-contact" href="#contact">
+          <svg class="tile-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="7" y="14" width="50" height="36" rx="4"/><path d="m9 18 23 18 23-18M9 47l15-14M55 47 40 33"/></svg>
+          <span class="tile-copy"><strong>お問い合わせ</strong><span>アプリの不具合や掲載内容、活動に関するお問い合わせを受け付けています。</span></span>
+        </a>
       </div>
     </section>
 
@@ -98,11 +108,14 @@
       <div class="wrap narrow">
         <p class="eyebrow">ABOUT THE APP</p>
         <h2>ミライセーフアプリとは</h2>
-        <div class="prose columns">
-          <div><p>ミライセーフアプリは、主に若い世代に向けて、自身や周囲の人について知るきっかけや、困ったときに次の一歩を見つけるための情報を届けるアプリです。</p><p>SNSやAIに潜む危険性、詐欺や闇バイト、学校や家庭での悩み、からだやこころのことなど、身近でありながら知る機会の少ないさまざまなテーマを扱います。</p></div>
-          <div><p>知識を得るだけでなく、自分の悩みや置かれている状況について整理したり、必要に応じて相談先を探したりするための入り口となることも目指しています。</p><p>悩みを抱えているときにも、そうでないときにも、知ることが自身や周囲の人への理解につながり、これからを少し変えるきっかけになるかもしれません。</p><p>掲載内容が役に立つと感じる方であれば、世代に関わらず、どなたでも利用できます。</p></div>
+        <div class="prose">
+          <p>ミライセーフアプリは、主に若い世代に向けて、自身や周囲の人について知るきっかけや、困ったときに次の一歩を見つけるための情報を届けるアプリです。</p>
+          <p>SNSやAIに潜む危険性、詐欺や闇バイト、学校や家庭での悩み、からだやこころのことなど、身近でありながら知る機会の少ないさまざまなテーマを扱います。</p>
+          <p>知識を得るだけでなく、自分の悩みや置かれている状況について整理したり、必要に応じて相談先を探したりするための入り口となることも目指しています。</p>
+          <p>悩みを抱えているときにも、そうでないときにも、知ることが自身や周囲の人への理解につながり、これからを少し変えるきっかけになるかもしれません。</p>
+          <p>掲載内容が役に立つと感じる方であれば、世代に関わらず、どなたでも利用できます。</p>
         </div>
-        <a class="text-link" href="app/">アプリについて詳しく見る<span aria-hidden="true">›</span></a>
+        <a class="text-link" href="app/">アプリについて詳しく見る ›</a>
       </div>
     </section>
 
@@ -117,7 +130,7 @@
     <section class="demo-section">
       <div class="wrap demo-card">
         <div><p class="eyebrow">WEB DEMO</p><h2>ミライセーフアプリを<br>ブラウザで体験</h2></div>
-        <div class="demo-copy"><p>現在開発中のミライセーフアプリを、パソコンやスマートフォンのブラウザから実際に体験できます。</p><p class="note">※開発中のため、未完成の部分が含まれているほか、実際の完成版とは内容や仕様が異なる場合があります。</p><a class="button button-primary" href="https://miraisafe-project.github.io/miraisafe-demo/" data-config-link="webDemo" data-external>Webデモを開く</a></div>
+        <div class="demo-copy"><p>現在開発中のミライセーフアプリを、パソコンやスマートフォンのブラウザから実際に体験できます。</p><aside class="demo-notice"><h3>体験版について</h3><p>この体験版は開発途中のものです。実際に公開するアプリとは、一部の機能や表示が異なる場合があります。</p></aside><a class="button button-primary" href="https://miraisafe-project.github.io/miraisafe-demo/" data-config-link="webDemo" data-external>体験版を開く</a></div>
       </div>
     </section>
 
