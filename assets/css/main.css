@@ -82,7 +82,7 @@ p { margin: 0 0 1.25em; }
 .hero { position: relative; min-height: min(900px, 100svh); padding: calc(var(--header-height) + 60px) 0 72px; background: linear-gradient(145deg, #f8fcfc 0%, #e6f6f4 55%, #dceff5 100%); overflow: hidden; }
 .hero::before { position: absolute; top: 12%; right: -12vw; width: 52vw; min-width: 520px; aspect-ratio: 1; border: 1px solid rgb(24 123 131 / 16%); border-radius: 50%; content: ""; }
 .hero::after { position: absolute; right: 14%; bottom: -110px; width: 220px; height: 220px; border: 42px solid rgb(255 255 255 / 62%); border-radius: 50%; content: ""; }
-.hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(270px, .55fr); gap: clamp(48px, 8vw, 120px); align-items: center; min-height: 650px; }
+.hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(400px, .85fr); gap: clamp(40px, 6vw, 88px); align-items: center; min-height: 650px; }
 .hero h1 { margin: 0 0 30px; }
 .hero-lead { max-width: 720px; color: #334d52; font-size: clamp(17px, 1.8vw, 20px); line-height: 2; }
 .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
@@ -92,6 +92,10 @@ p { margin: 0 0 1.25em; }
 .button-primary:hover { background: var(--teal-dark); }
 .button-secondary { background: var(--white); color: var(--teal-dark); }
 .button-secondary:hover { background: var(--mint); }
+.hero-visual { display: grid; grid-template-columns: minmax(210px, 280px) minmax(120px, 158px); gap: clamp(20px, 3vw, 38px); align-items: center; justify-content: center; }
+.hero-app-preview { position: relative; width: 100%; margin: 0; padding: 7px; border: 1px solid rgb(24 123 131 / 25%); border-radius: clamp(24px, 3vw, 36px); background: rgb(255 255 255 / 82%); box-shadow: 0 24px 60px rgb(27 89 94 / 18%); }
+.hero-app-preview::after { position: absolute; inset: 13px; border: 1px solid rgb(255 255 255 / 54%); border-radius: calc(clamp(24px, 3vw, 36px) - 9px); content: ""; pointer-events: none; }
+.hero-app-preview img { display: block; width: 100%; border-radius: calc(clamp(24px, 3vw, 36px) - 10px); }
 .hero-concept { display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .concept-step { display: grid; width: clamp(120px, 13vw, 158px); aspect-ratio: 1; place-content: center; border: 1px solid rgb(24 123 131 / 23%); border-radius: 50%; background: rgb(255 255 255 / 68%); text-align: center; backdrop-filter: blur(8px); }
 .concept-step b { font-family: "Zen Maru Gothic", sans-serif; font-size: clamp(20px, 2.4vw, 28px); }
@@ -159,6 +163,11 @@ p { margin: 0 0 1.25em; }
 .value-card h3, .feature-card h3 { margin: 0 0 16px; }
 .value-card p, .feature-card p, .info-card p { margin-bottom: 0; color: #415a5f; }
 .feature-grid { grid-template-columns: repeat(2, 1fr); }
+.feature-card { display: flex; min-width: 0; flex-direction: column; }
+.feature-card .card-number { margin-bottom: 18px; }
+.feature-media { display: flex; width: 100%; height: clamp(230px, 25vw, 310px); align-items: center; justify-content: center; margin: 0 0 26px; padding: clamp(12px, 2vw, 18px); border: 1px solid rgb(24 123 131 / 14%); border-radius: 15px; background: linear-gradient(145deg, #eff8f7, #e2f2f5); overflow: hidden; }
+.feature-screenshot { display: block; width: auto; max-width: 100%; height: 100%; object-fit: contain; border: 1px solid rgb(35 56 60 / 12%); border-radius: 10px; box-shadow: 0 12px 28px rgb(27 89 94 / 12%); }
+.feature-screenshot-landscape { width: 100%; height: auto; max-height: 100%; }
 .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
 .info-card h2 { margin-bottom: 20px; font-size: clamp(25px, 3vw, 34px); }
 
@@ -176,6 +185,7 @@ p { margin: 0 0 1.25em; }
 
 @media (max-width: 900px) {
   .hero-content { grid-template-columns: 1fr; padding-top: 40px; }
+  .hero-visual { grid-template-columns: minmax(190px, 270px) 1fr; }
   .hero-concept { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; }
   .concept-step { width: min(22vw, 138px); }
   .concept-step-2, .concept-step-3 { margin-left: 0; }
@@ -199,6 +209,8 @@ p { margin: 0 0 1.25em; }
   .hero-lead br { display: none; }
   .actions { flex-direction: column; }
   .button { width: 100%; }
+  .hero-visual { grid-template-columns: 1fr; gap: 34px; }
+  .hero-app-preview { width: min(68vw, 260px); margin-inline: auto; }
   .hero-concept { margin-top: 4px; }
   .concept-step { width: 26vw; min-width: 88px; }
   .concept-step b { font-size: 18px; }
@@ -208,6 +220,7 @@ p { margin: 0 0 1.25em; }
   .tile-grid { grid-template-columns: 1fr; }
   .tile { min-height: 260px; }
   .columns, .feature-grid, .info-grid, .footer-grid { grid-template-columns: 1fr; }
+  .feature-media { height: clamp(230px, 76vw, 330px); }
   .prose { font-size: 16px; }
   .demo-card { width: calc(100% - 32px); }
   .footer-grid ul { justify-content: flex-start; }
