@@ -184,8 +184,8 @@ p { margin: 0 0 1.25em; }
 .error-card { width: min(100%, 640px); padding: clamp(36px, 7vw, 72px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
 .error-code { margin: 0; color: var(--teal); font: 700 clamp(52px, 10vw, 90px)/1 "Zen Maru Gothic", sans-serif; }
 
-.scroll-hint { position: fixed; right: max(12px, env(safe-area-inset-right)); bottom: calc(18svh + env(safe-area-inset-bottom)); z-index: 90; display: flex; width: 44px; height: 44px; align-items: center; justify-content: center; padding: 0; border: 0; background: transparent; color: var(--teal); opacity: .65; cursor: pointer; transition: none; }
-.scroll-hint svg { display: block; width: 24px; height: 28px; pointer-events: none; animation: scroll-hint-drift 2.8s ease-in-out infinite; }
+.scroll-hint { position: fixed; right: max(12px, env(safe-area-inset-right)); bottom: calc(18svh + env(safe-area-inset-bottom)); z-index: 90; display: flex; width: 72px; height: 82px; align-items: center; justify-content: center; padding: 0; border: 0; background: transparent; color: var(--teal); opacity: .65; cursor: pointer; transition: none; }
+.scroll-hint svg { display: block; width: 60px; height: 70px; flex: none; pointer-events: none; animation: scroll-hint-drift 2.8s ease-in-out infinite; }
 .scroll-hint:focus-visible { opacity: 1; border-radius: 8px; }
 @keyframes scroll-hint-drift { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(3px); } }
 
@@ -229,8 +229,8 @@ p { margin: 0 0 1.25em; }
   .footer-grid ul { justify-content: flex-start; }
   .footer-bottom { flex-direction: column; }
   .page-hero { padding-top: calc(var(--header-height) + 62px); }
-  .scroll-hint { right: max(0px, env(safe-area-inset-right)); width: 32px; }
-  .scroll-hint svg { width: 20px; }
+  .scroll-hint { right: max(0px, env(safe-area-inset-right)); width: 62px; }
+  .scroll-hint svg { width: 50px; }
   .legal-page .legal-main { width: 100%; margin: var(--header-height) 0 0; padding: 34px 20px 54px; border: 0; border-radius: 0; box-shadow: none; }
 }
 
