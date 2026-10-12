@@ -77,14 +77,18 @@
   let previousFocus = null;
   const focusableSelector = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
-  const closeMenu = () => {
+  const closeMenu = (afterClose) => {
     menu.classList.remove('is-open');
     openButton.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('menu-open');
     scheduleScrollHint();
     window.setTimeout(() => {
       menu.hidden = true;
-      previousFocus?.focus();
+      if (typeof afterClose === 'function') {
+        afterClose();
+      } else {
+        previousFocus?.focus();
+      }
     }, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 180);
   };
 
@@ -103,7 +107,17 @@
   openButton.addEventListener('click', openMenu);
   closeButton.addEventListener('click', closeMenu);
   menu.addEventListener('click', (event) => {
-    if (event.target === menu || event.target.closest('a')) closeMenu();
+    const link = event.target.closest('a');
+    if (link?.matches('[data-demo-section-link]')
+        && !event.defaultPrevented && event.button === 0
+        && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
+      event.preventDefault();
+      // Navigate only after the menu has closed; do not restore focus and
+      // inadvertently scroll back to the menu opener after anchor navigation.
+      closeMenu(() => window.location.assign(link.href));
+    } else if (event.target === menu || link) {
+      closeMenu();
+    }
   });
 
   document.addEventListener('keydown', (event) => {
