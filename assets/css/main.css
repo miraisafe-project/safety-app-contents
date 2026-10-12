@@ -13,6 +13,11 @@
   --header-height: 76px;
   --radius: 22px;
   --wrap: 1180px;
+  --title-home: clamp(36px, 5.4vw, 60px);
+  --title-page: clamp(28px, 4.6vw, 50px);
+  --title-section: clamp(25px, 3.2vw, 36px);
+  --title-card: clamp(19px, 2vw, 23px);
+  --title-tile: clamp(20px, 1.8vw, 24px);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -74,17 +79,17 @@ img { max-width: 100%; height: auto; }
 .site-menu li:last-child { border-bottom: 1px solid var(--line); }
 .site-menu a { display: block; padding: 18px 4px; font-family: "Zen Maru Gothic", sans-serif; font-size: clamp(17px, 2vw, 21px); font-weight: 700; text-decoration: none; }
 
-h1, h2, h3 { color: var(--ink); font-family: "Zen Maru Gothic", sans-serif; line-height: 1.45; }
-h1 { font-size: clamp(42px, 7vw, 78px); letter-spacing: .02em; }
-h2 { margin: 0 0 32px; font-size: clamp(30px, 4.2vw, 48px); }
-h3 { font-size: clamp(20px, 2.5vw, 26px); }
+h1, h2, h3 { color: var(--ink); font-family: "Zen Maru Gothic", sans-serif; line-height: 1.45; text-wrap: balance; }
+h1 { font-size: var(--title-page); letter-spacing: .02em; }
+h2 { margin: 0 0 28px; font-size: var(--title-section); }
+h3 { font-size: var(--title-card); }
 p { margin: 0 0 1.25em; }
 
 .hero { position: relative; min-height: min(900px, 100svh); padding: calc(var(--header-height) + 60px) 0 72px; background: linear-gradient(145deg, #f8fcfc 0%, #e6f6f4 55%, #dceff5 100%); overflow: hidden; }
 .hero::before { position: absolute; top: 12%; right: -12vw; width: 52vw; min-width: 520px; aspect-ratio: 1; border: 1px solid rgb(24 123 131 / 16%); border-radius: 50%; content: ""; }
 .hero::after { position: absolute; right: 14%; bottom: -110px; width: 220px; height: 220px; border: 42px solid rgb(255 255 255 / 62%); border-radius: 50%; content: ""; }
 .hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(400px, .85fr); gap: clamp(40px, 6vw, 88px); align-items: center; min-height: 650px; }
-.hero h1 { margin: 0 0 30px; }
+.hero h1 { margin: 0 0 26px; font-size: var(--title-home); }
 .hero-lead { max-width: 720px; color: #334d52; font-size: clamp(17px, 1.8vw, 20px); line-height: 2; }
 .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
 .button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; padding: 12px 24px; border: 1px solid var(--teal); border-radius: 999px; font-weight: 700; text-align: center; text-decoration: none; transition: transform .16s ease, background-color .16s ease, color .16s ease; }
@@ -116,7 +121,7 @@ p { margin: 0 0 1.25em; }
 .tile-contact { --tile-color: #e7b34e; }
 .tile-icon { display: block; width: 72px; height: 72px; flex: 0 0 auto; }
 .tile-copy { display: block; width: 100%; max-width: 520px; text-shadow: 0 1px 2px rgb(20 44 52 / 55%); }
-.tile-copy strong { display: block; margin-bottom: 12px; font-family: "Zen Maru Gothic", sans-serif; font-size: clamp(22px, 2.1vw, 27px); line-height: 1.5; }
+.tile-copy strong { display: block; margin-bottom: 12px; font-family: "Zen Maru Gothic", sans-serif; font-size: var(--title-tile); line-height: 1.5; text-wrap: balance; word-break: keep-all; }
 .tile-copy > span { display: block; font-size: 16px; font-weight: 500; line-height: 1.8; }
 
 .content-section { padding: clamp(88px, 11vw, 150px) 0; }
@@ -148,7 +153,7 @@ p { margin: 0 0 1.25em; }
 
 .page-hero { padding: calc(var(--header-height) + 84px) 0 86px; background: linear-gradient(135deg, #f6fbfb, #dff3f0); }
 .page-hero .eyebrow { margin-bottom: 14px; }
-.page-hero h1 { max-width: 920px; margin: 0; font-size: clamp(36px, 6vw, 66px); }
+.page-hero h1 { max-width: 920px; margin: 0; font-size: var(--title-page); word-break: keep-all; }
 .page-intro { max-width: 840px; margin-top: 34px; color: #385257; font-size: clamp(17px, 2vw, 20px); }
 .page-section { padding: clamp(72px, 9vw, 120px) 0; }
 .page-section.alt { background: var(--pale); }
@@ -165,19 +170,24 @@ p { margin: 0 0 1.25em; }
 .feature-media-pair { gap: clamp(8px, 1.5vw, 16px); }
 .feature-media-pair .feature-screenshot { width: auto; max-width: calc((100% - clamp(8px, 1.5vw, 16px)) / 2); height: auto; max-height: 100%; flex: none; }
 .info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
-.info-card h2 { margin-bottom: 20px; font-size: clamp(25px, 3vw, 34px); }
+.info-card h2 { margin-bottom: 20px; font-size: clamp(22px, 2.6vw, 28px); }
 
 .legal-page { background: #eef6f6; }
 .legal-page .legal-main { width: min(calc(100% - 48px), 900px); margin: calc(var(--header-height) + 54px) auto 70px; padding: clamp(32px, 6vw, 72px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
-.legal-main > h1 { margin: 0 0 42px; padding: 0; border: 0; font-size: clamp(30px, 4vw, 46px); }
-.legal-main h2 { margin: 48px 0 18px; padding: 0 0 10px; border-bottom: 1px solid var(--line); color: var(--ink); font-size: clamp(20px, 2.5vw, 24px); }
-.legal-main h3 { margin-top: 30px; color: var(--ink); }
+.legal-main > h1 { margin: 0 0 36px; padding: 0; border: 0; font-size: clamp(27px, 3.4vw, 38px); }
+.legal-main h2 { margin: 48px 0 18px; padding: 0 0 10px; border-bottom: 1px solid var(--line); color: var(--ink); font-size: clamp(20px, 2.2vw, 22px); }
+.legal-main h3 { margin-top: 30px; color: var(--ink); font-size: 18px; }
 .legal-main p, .legal-main li { color: #344b50; }
 .legal-main .document-meta { margin-top: 48px; padding: 24px; border: 0; border-radius: 14px; background: var(--pale); }
 
 .error-page { display: grid; min-height: 100svh; place-items: center; padding: 40px 24px; background: linear-gradient(145deg, #f8fcfc, #dff4ef); text-align: center; }
 .error-card { width: min(100%, 640px); padding: clamp(36px, 7vw, 72px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
 .error-code { margin: 0; color: var(--teal); font: 700 clamp(52px, 10vw, 90px)/1 "Zen Maru Gothic", sans-serif; }
+
+.scroll-hint { position: fixed; right: max(12px, env(safe-area-inset-right)); bottom: calc(18svh + env(safe-area-inset-bottom)); z-index: 90; display: flex; width: 44px; height: 44px; align-items: center; justify-content: center; padding: 0; border: 0; background: transparent; color: var(--teal); opacity: .65; cursor: pointer; transition: none; }
+.scroll-hint svg { display: block; width: 24px; height: 28px; pointer-events: none; animation: scroll-hint-drift 2.8s ease-in-out infinite; }
+.scroll-hint:focus-visible { opacity: 1; border-radius: 8px; }
+@keyframes scroll-hint-drift { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(3px); } }
 
 @media (max-width: 900px) {
   .hero-content { grid-template-columns: 1fr; padding-top: 40px; }
@@ -191,7 +201,7 @@ p { margin: 0 0 1.25em; }
 }
 
 @media (max-width: 640px) {
-  :root { --header-height: 66px; }
+  :root { --header-height: 66px; --title-home: clamp(32px, 10vw, 42px); }
   .wrap { width: min(calc(100% - 32px), var(--wrap)); }
   .brand-name { max-width: 190px; font-size: 14px; line-height: 1.35; }
   .brand-mark { width: 38px; height: 38px; }
@@ -199,7 +209,6 @@ p { margin: 0 0 1.25em; }
   .menu-button { gap: 9px; font-size: 11px; }
   .hero { min-height: auto; padding-top: calc(var(--header-height) + 70px); }
   .hero-content { min-height: 0; }
-  .hero h1 { font-size: clamp(39px, 13vw, 56px); }
   .hero-lead br { display: none; }
   .actions { flex-direction: column; }
   .button { width: 100%; }
@@ -220,10 +229,13 @@ p { margin: 0 0 1.25em; }
   .footer-grid ul { justify-content: flex-start; }
   .footer-bottom { flex-direction: column; }
   .page-hero { padding-top: calc(var(--header-height) + 62px); }
+  .scroll-hint { right: max(0px, env(safe-area-inset-right)); width: 32px; }
+  .scroll-hint svg { width: 20px; }
   .legal-page .legal-main { width: 100%; margin: var(--header-height) 0 0; padding: 34px 20px 54px; border: 0; border-radius: 0; box-shadow: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .scroll-hint svg { animation: none; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }

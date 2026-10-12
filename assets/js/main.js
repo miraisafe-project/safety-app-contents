@@ -14,6 +14,61 @@
     link.setAttribute('aria-label', `${label}（新しいタブで開きます）`);
   });
 
+  // Only the document's scroll range is used; nested scrollers are not targets.
+  const scrollRoot = document.scrollingElement;
+  const scrollHint = document.createElement('button');
+  scrollHint.type = 'button';
+  scrollHint.className = 'scroll-hint';
+  scrollHint.hidden = true;
+  scrollHint.setAttribute('aria-label', '下へスクロール');
+  scrollHint.innerHTML = '<svg viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 7 7 7 7-7M5 15l7 7 7-7"/></svg>';
+  document.body.append(scrollHint);
+
+  let scrollUpdatePending = false;
+  const updateScrollHint = () => {
+    scrollUpdatePending = false;
+    const remaining = scrollRoot.scrollHeight - scrollRoot.clientHeight - scrollRoot.scrollTop;
+    scrollHint.hidden = remaining <= 8 || document.body.classList.contains('menu-open');
+    if (scrollHint.hidden) return;
+    // Keep the small overlay away from nearby controls where space permits.
+    scrollHint.style.transform = '';
+    const bounds = scrollHint.getBoundingClientRect();
+    const controls = [...document.querySelectorAll('a[href], button:not(.scroll-hint), input, textarea, select')]
+      .map(element => element.getBoundingClientRect())
+      .filter(rect => rect.width && rect.height && rect.bottom > 0 && rect.top < innerHeight);
+    const offset = [0, -56, 56, -112, 112, -168, 168].find(shift => {
+      const top = bounds.top + shift;
+      const bottom = bounds.bottom + shift;
+      return top >= innerHeight * .5 && bottom <= innerHeight - 16
+        && controls.every(rect => bounds.right <= rect.left || bounds.left >= rect.right || bottom <= rect.top || top >= rect.bottom);
+    });
+    if (offset) scrollHint.style.transform = `translateY(${offset}px)`;
+  };
+  const scheduleScrollHint = () => {
+    if (scrollUpdatePending) return;
+    scrollUpdatePending = true;
+    requestAnimationFrame(updateScrollHint);
+  };
+  scrollHint.addEventListener('click', () => {
+    const maximum = Math.max(0, scrollRoot.scrollHeight - scrollRoot.clientHeight);
+    const distance = Math.max(160, scrollRoot.clientHeight * .65);
+    window.scrollTo({
+      top: Math.min(maximum, scrollRoot.scrollTop + distance),
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+    });
+  });
+  window.addEventListener('scroll', scheduleScrollHint, { passive: true });
+  window.addEventListener('resize', scheduleScrollHint, { passive: true });
+  window.addEventListener('pageshow', scheduleScrollHint);
+  window.addEventListener('load', scheduleScrollHint);
+  window.visualViewport?.addEventListener('resize', scheduleScrollHint, { passive: true });
+  const scrollSizeObserver = new ResizeObserver(scheduleScrollHint);
+  scrollSizeObserver.observe(document.body);
+  scrollSizeObserver.observe(document.documentElement);
+  document.fonts?.ready.then(scheduleScrollHint);
+  document.fonts?.addEventListener('loadingdone', scheduleScrollHint);
+  scheduleScrollHint();
+
   const menu = document.querySelector('[data-menu]');
   const openButton = document.querySelector('[data-menu-open]');
   const closeButton = document.querySelector('[data-menu-close]');
@@ -26,6 +81,7 @@
     menu.classList.remove('is-open');
     openButton.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('menu-open');
+    scheduleScrollHint();
     window.setTimeout(() => {
       menu.hidden = true;
       previousFocus?.focus();
@@ -36,6 +92,7 @@
     previousFocus = document.activeElement;
     menu.hidden = false;
     document.body.classList.add('menu-open');
+    scheduleScrollHint();
     openButton.setAttribute('aria-expanded', 'true');
     requestAnimationFrame(() => {
       menu.classList.add('is-open');
