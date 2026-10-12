@@ -114,11 +114,11 @@ p { margin: 0 0 1.25em; }
 .section-heading { margin-bottom: 38px; }
 .section-heading h2 { margin-bottom: 0; }
 .tile-grid { display: grid; width: min(calc(100% - 48px), var(--wrap)); grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 24px; margin-inline: auto; }
-.tile { display: flex; min-width: 0; min-height: 320px; flex-direction: column; align-items: center; justify-content: flex-start; gap: 24px; padding: clamp(28px, 4vw, 42px); border-radius: var(--radius); background: linear-gradient(180deg, transparent, rgb(20 44 52 / 20%) 48%), var(--tile-color); color: var(--white); text-align: center; text-decoration: none; }
-.tile-project { --tile-color: #6a99c7; }
-.tile-app { --tile-color: #67bdc4; }
-.tile-demo { --tile-color: #8fc063; }
-.tile-contact { --tile-color: #e7b34e; }
+.tile { display: flex; min-width: 0; min-height: 320px; flex-direction: column; align-items: center; justify-content: flex-start; gap: 24px; padding: clamp(28px, 4vw, 42px); border-radius: var(--radius); background: var(--tile-color); color: var(--white); text-align: center; text-decoration: none; }
+.tile-project { --tile-color: #6F9FD1; }
+.tile-app { --tile-color: #69C2C9; }
+.tile-demo { --tile-color: #97C75D; }
+.tile-contact { --tile-color: #E7B44A; }
 .tile-icon { display: block; width: 72px; height: 72px; flex: 0 0 auto; }
 .tile-copy { display: block; width: 100%; max-width: 520px; text-shadow: 0 1px 2px rgb(20 44 52 / 55%); }
 .tile-copy strong { display: block; margin-bottom: 12px; font-family: "Zen Maru Gothic", sans-serif; font-size: var(--title-tile); line-height: 1.5; text-wrap: balance; word-break: keep-all; }
