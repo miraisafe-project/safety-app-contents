@@ -146,6 +146,7 @@ p { margin: 0 0 1.25em; }
 .site-footer { padding: 70px 0 30px; background: #173f44; color: #eef9f8; }
 .footer-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 48px; padding-bottom: 50px; }
 .footer-brand { margin-bottom: 2px; font-family: "Zen Maru Gothic", sans-serif; font-size: 22px; font-weight: 700; }
+.footer-address { margin: 12px 0 0; font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
 .footer-grid ul { display: flex; flex-wrap: wrap; gap: 12px 28px; justify-content: flex-end; margin: 0; padding: 0; list-style: none; }
 .footer-grid a, .footer-bottom a { color: inherit; }
 .footer-bottom { display: flex; flex-wrap: wrap; gap: 8px 28px; justify-content: space-between; padding-top: 24px; border-top: 1px solid rgb(255 255 255 / 16%); color: #bed4d5; font-size: 12px; }
