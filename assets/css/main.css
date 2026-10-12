@@ -132,7 +132,7 @@ p { margin: 0 0 1.25em; }
 
 .demo-section { padding: 80px 0; background: #dceff1; }
 .demo-card { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(36px, 8vw, 100px); align-items: start; padding: clamp(36px, 6vw, 72px); border: 1px solid rgb(24 123 131 / 18%); border-radius: var(--radius); background: rgb(255 255 255 / 68%); box-shadow: var(--shadow); }
-.demo-card h2 { margin-bottom: 0; }
+.demo-card h2 { margin-bottom: 0; word-break: keep-all; }
 .demo-copy { color: #344e53; font-size: 17px; }
 .demo-notice { margin: 24px 0 28px; padding: 17px 20px; border-left: 3px solid #82bebe; border-radius: 0 12px 12px 0; background: rgb(223 244 239 / 62%); }
 .demo-notice h3 { margin: 0 0 6px; font-size: 16px; }
@@ -174,7 +174,7 @@ p { margin: 0 0 1.25em; }
 
 .legal-page { background: #eef6f6; }
 .legal-page .legal-main { width: min(calc(100% - 48px), 900px); margin: calc(var(--header-height) + 54px) auto 70px; padding: clamp(32px, 6vw, 72px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
-.legal-main > h1 { margin: 0 0 36px; padding: 0; border: 0; font-size: clamp(27px, 3.4vw, 38px); }
+.legal-main > h1 { margin: 0 0 36px; padding: 0; border: 0; font-size: clamp(27px, 3.4vw, 38px); word-break: keep-all; }
 .legal-main h2 { margin: 48px 0 18px; padding: 0 0 10px; border-bottom: 1px solid var(--line); color: var(--ink); font-size: clamp(20px, 2.2vw, 22px); }
 .legal-main h3 { margin-top: 30px; color: var(--ink); font-size: 18px; }
 .legal-main p, .legal-main li { color: #344b50; }
