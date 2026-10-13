@@ -1,6 +1,26 @@
 (() => {
   'use strict';
 
+  // Move the existing controls, rather than visually reordering or duplicating
+  // them, so the mobile reading and keyboard order follows the page layout.
+  const heroContent = document.querySelector('.hero-content');
+  const heroCopy = heroContent?.querySelector('.hero-copy');
+  const heroActions = heroCopy?.querySelector('.actions');
+  if (heroContent && heroCopy && heroActions) {
+    const mobileHero = window.matchMedia('(max-width: 640px)');
+    const placeHeroActions = () => {
+      const parent = mobileHero.matches ? heroContent : heroCopy;
+      if (heroActions.parentElement === parent) return;
+      const focusedControl = heroActions.contains(document.activeElement)
+        ? document.activeElement
+        : null;
+      parent.append(heroActions);
+      focusedControl?.focus({ preventScroll: true });
+    };
+    placeHeroActions();
+    mobileHero.addEventListener('change', placeHeroActions);
+  }
+
   const config = window.MIRAI_SAFE_CONFIG || {};
   document.querySelectorAll('[data-config-link]').forEach((link) => {
     const destination = config[link.dataset.configLink];
