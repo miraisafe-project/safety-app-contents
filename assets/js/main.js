@@ -39,30 +39,76 @@
   const scrollHint = document.createElement('button');
   scrollHint.type = 'button';
   scrollHint.className = 'scroll-hint';
-  scrollHint.hidden = true;
+  scrollHint.disabled = true;
+  scrollHint.inert = true;
+  scrollHint.tabIndex = -1;
+  scrollHint.setAttribute('aria-hidden', 'true');
   scrollHint.setAttribute('aria-label', '下へスクロール');
   scrollHint.innerHTML = '<svg viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 7 7 7 7-7M5 15l7 7 7-7"/></svg>';
   document.body.append(scrollHint);
 
+  const hintHero = document.querySelector('.home-page .hero');
+  let heroHintDismissed = false;
+  let heroHintOffset = null;
+  let hintOffset = 0;
+  const showScrollHint = (visible) => {
+    scrollHint.classList.toggle('is-visible', visible);
+    scrollHint.disabled = !visible;
+    scrollHint.inert = !visible;
+    scrollHint.tabIndex = visible ? 0 : -1;
+    scrollHint.setAttribute('aria-hidden', String(!visible));
+    if (!visible && document.activeElement === scrollHint) scrollHint.blur();
+  };
   let scrollUpdatePending = false;
   const updateScrollHint = () => {
     scrollUpdatePending = false;
     const remaining = scrollRoot.scrollHeight - scrollRoot.clientHeight - scrollRoot.scrollTop;
-    scrollHint.hidden = remaining <= 8 || document.body.classList.contains('menu-open');
-    if (scrollHint.hidden) return;
-    // Keep the small overlay away from nearby controls where space permits.
-    scrollHint.style.transform = '';
+    const heroBounds = hintHero?.getBoundingClientRect();
+    if (heroBounds) {
+      // Even a fast scroll must not paint a fading plate over the next section.
+      const plate = scrollHint.getBoundingClientRect();
+      const clipBottom = Math.min(plate.height, Math.max(0, plate.bottom - heroBounds.bottom));
+      scrollHint.style.clipPath = clipBottom ? `inset(0 0 ${clipBottom}px 0)` : '';
+    }
+    if (hintHero && window.scrollY <= 8) {
+      heroHintDismissed = false;
+      heroHintOffset = null;
+    }
+    // Hide once the next section enters view. A small dead band plus a latch
+    // avoids flicker at the boundary and reappearance further down the page.
+    if (heroBounds && window.scrollY > 8 && heroBounds.bottom < innerHeight + 16) {
+      heroHintDismissed = true;
+    }
+    const menuVisible = document.querySelector('[data-menu]')?.hidden === false;
+    if (remaining <= 8 || menuVisible || document.body.classList.contains('menu-open') || heroHintDismissed) {
+      showScrollHint(false);
+      return;
+    }
+    // Test the complete plate, not only the SVG; never keep an unsafe fallback.
     const bounds = scrollHint.getBoundingClientRect();
-    const controls = [...document.querySelectorAll('a[href], button:not(.scroll-hint), input, textarea, select')]
+    const obstacles = [...document.querySelectorAll('a[href], button:not(.scroll-hint), input, textarea, select, .hero-copy, .hero-app-preview, .hero-concept')]
       .map(element => element.getBoundingClientRect())
       .filter(rect => rect.width && rect.height && rect.bottom > 0 && rect.top < innerHeight);
-    const offset = [0, -56, 56, -112, 112, -168, 168].find(shift => {
-      const top = bounds.top + shift;
-      const bottom = bounds.bottom + shift;
-      return top >= innerHeight * .5 && bottom <= innerHeight - 16
-        && controls.every(rect => bounds.right <= rect.left || bounds.left >= rect.right || bottom <= rect.top || top >= rect.bottom);
+    const headerBottom = document.querySelector('[data-header]')?.getBoundingClientRect().bottom || 0;
+    const offsets = heroHintOffset === null ? [0, -104, 104, -208, 208] : [heroHintOffset];
+    const offset = offsets.find(shift => {
+      const top = bounds.top - hintOffset + shift;
+      const bottom = bounds.bottom - hintOffset + shift;
+      return bounds.left >= 8 && bounds.right <= innerWidth - 8
+        && top >= Math.max(innerHeight * .5, headerBottom + 16) && bottom <= innerHeight - 16
+        && (!heroBounds || (top >= heroBounds.top + 16 && bottom <= heroBounds.bottom - 24))
+        && obstacles.every(rect => bounds.right + 8 <= rect.left || bounds.left - 8 >= rect.right || bottom + 8 <= rect.top || top - 8 >= rect.bottom);
     });
-    if (offset) scrollHint.style.transform = `translateY(${offset}px)`;
+    if (offset === undefined) {
+      if (hintHero) heroHintDismissed = true;
+      showScrollHint(false);
+      return;
+    }
+    if (hintHero) heroHintOffset = offset;
+    hintOffset = offset;
+    scrollHint.style.transform = `translateY(${offset}px)`;
+    scrollHint.style.clipPath = '';
+    showScrollHint(true);
   };
   const scheduleScrollHint = () => {
     if (scrollUpdatePending) return;
@@ -78,7 +124,11 @@
     });
   });
   window.addEventListener('scroll', scheduleScrollHint, { passive: true });
-  window.addEventListener('resize', scheduleScrollHint, { passive: true });
+  window.addEventListener('resize', () => {
+    heroHintDismissed = false;
+    heroHintOffset = null;
+    scheduleScrollHint();
+  }, { passive: true });
   window.addEventListener('pageshow', scheduleScrollHint);
   window.addEventListener('load', scheduleScrollHint);
   window.visualViewport?.addEventListener('resize', scheduleScrollHint, { passive: true });
@@ -104,6 +154,7 @@
     scheduleScrollHint();
     window.setTimeout(() => {
       menu.hidden = true;
+      scheduleScrollHint();
       if (typeof afterClose === 'function') {
         afterClose();
       } else {
