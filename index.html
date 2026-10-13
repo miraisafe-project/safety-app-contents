@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=20261012-hero-refinement">
+  <link rel="stylesheet" href="assets/css/main.css?v=20261013-brand-hero">
   <script src="assets/js/site-config.js" defer></script>
   <script src="assets/js/main.js?v=20261012-demo-navigation" defer></script>
 </head>
@@ -54,11 +54,14 @@
 
   <main id="main">
     <section class="hero">
+      <picture class="hero-background" aria-hidden="true">
+        <source media="(max-width: 900px)" srcset="assets/website/hero-bg-mobile.webp">
+        <img src="assets/website/hero-bg-desktop.webp" width="2560" height="1440" alt="" fetchpriority="high">
+      </picture>
       <div class="hero-content wrap">
         <div class="hero-copy">
           <p class="eyebrow">MIRAI SAFE PROJECT</p>
           <h1>ミライセーフ<wbr>プロジェクト</h1>
-          <p class="hero-lead">若い世代が、自身や周囲の人について知り、困ったときに次の一歩を見つけられるように。より安心して生きていくために必要な知識や情報と出会うきっかけを届けることを目指す活動です。</p>
           <div class="actions">
             <a class="button button-primary" href="app/">ミライセーフアプリについて</a>
             <a class="button button-secondary" href="#demo" data-demo-section-link>アプリを体験する</a>
@@ -68,14 +71,24 @@
           <figure class="hero-app-preview">
             <img src="assets/images/website/screenshot_title.jpg" width="1080" height="2280" alt="ミライセーフアプリのタイトル画面" fetchpriority="high">
           </figure>
-          <div class="hero-concept" aria-label="活動の3つのステップ">
-            <span class="concept-step concept-step-1"><b>知る</b><small>きっかけ</small></span>
-            <span class="concept-line" aria-hidden="true"></span>
-            <span class="concept-step concept-step-2"><b>考える</b><small>きっかけ</small></span>
-            <span class="concept-line" aria-hidden="true"></span>
-            <span class="concept-step concept-step-3"><b>つながる</b><small>次の一歩</small></span>
-          </div>
         </div>
+        <ol class="hero-concept" aria-label="活動の3つのステップ">
+          <li class="concept-step concept-step-1">
+            <span class="concept-number" aria-hidden="true">01</span>
+            <svg class="concept-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 8C12 5 7 4 3 6v20c4-2 9-1 13 2 4-3 9-4 13-2V6c-4-2-9-1-13 2Zm0 0v20M7 10l5 1M7 14l5 1M7 18l5 1M20 11l5-1M20 15l5-1M20 19l5-1"/></svg>
+            <span class="concept-label"><b>知る</b><small>きっかけ</small></span>
+          </li>
+          <li class="concept-step concept-step-2">
+            <span class="concept-number" aria-hidden="true">02</span>
+            <svg class="concept-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 22c0-3-4-4-4-9a9 9 0 0 1 18 0c0 5-4 6-4 9M11 23h10M12 27h8M14 30h4M16 1v-1M4 5l-2-2M28 5l2-2M3 14H1M29 14h2M13 14l3 3 3-3M16 17v6"/></svg>
+            <span class="concept-label"><b>考える</b><small>きっかけ</small></span>
+          </li>
+          <li class="concept-step concept-step-3">
+            <span class="concept-number" aria-hidden="true">03</span>
+            <svg class="concept-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="16" cy="9" r="4"/><circle cx="5" cy="11" r="3"/><circle cx="27" cy="11" r="3"/><path d="M9 27v-5a7 7 0 0 1 14 0v5ZM7 18a5 5 0 0 0-6 5v4h5M25 18a5 5 0 0 1 6 5v4h-5"/></svg>
+            <span class="concept-label"><b>つながる</b><small>次の一歩</small></span>
+          </li>
+        </ol>
       </div>
     </section>
 

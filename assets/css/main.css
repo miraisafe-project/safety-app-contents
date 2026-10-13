@@ -70,7 +70,8 @@ img { max-width: 100%; height: auto; }
 .menu-lines::after { position: absolute; top: 7px; }
 
 /* Keep the refined masthead local to the home page. */
-.home-page .site-header { padding-inline: clamp(20px, 4vw, 64px); }
+.home-page .site-header { padding-inline: clamp(20px, 4vw, 64px); background: linear-gradient(180deg, rgb(255 255 255 / 86%), rgb(255 255 255 / 36%)); }
+.home-page .site-header.is-scrolled { background: rgb(255 255 255 / 94%); }
 .home-page .brand { gap: 10px; font-family: "Noto Sans JP", sans-serif; }
 .home-page .brand-mark { width: 40px; height: 40px; }
 .home-page .brand-name { font-size: 15px; letter-spacing: .01em; }
@@ -93,15 +94,21 @@ h2 { margin: 0 0 28px; font-size: var(--title-section); }
 h3 { font-size: var(--title-card); }
 p { margin: 0 0 1.25em; }
 
-.hero { position: relative; min-height: min(860px, 100svh); padding: calc(var(--header-height) + 40px) 0 56px; background: #f8fbfc; overflow: hidden; }
-.hero::before { position: absolute; inset: 0; background: radial-gradient(ellipse at 83% 42%, rgb(190 227 233 / 65%), transparent 48%), radial-gradient(ellipse at 65% 90%, rgb(213 238 228 / 60%), transparent 54%); content: ""; pointer-events: none; }
-.hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 320px); gap: clamp(32px, 5vw, 72px); align-items: center; min-height: min(640px, calc(100svh - var(--header-height) - 96px)); }
+.hero { position: relative; isolation: isolate; min-height: min(940px, 100svh); padding: calc(var(--header-height) + 40px) 0 44px; background: #edf6f9; overflow: hidden; }
+.hero-background { position: absolute; inset: 0; z-index: -3; }
+.hero-background img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 58%; }
+/* Local veils protect the copy and steps without muting the sky and architecture. */
+.hero::before { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, rgb(255 255 255 / 78%), rgb(255 255 255 / 48%) 42%, transparent 70%); content: ""; pointer-events: none; }
+.hero::after { position: absolute; inset: auto 0 0; z-index: -1; height: 240px; background: linear-gradient(0deg, rgb(255 255 255 / 94%), rgb(255 255 255 / 64%) 55%, transparent); content: ""; pointer-events: none; }
+.hero-content { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 320px); grid-template-rows: 1fr auto; column-gap: clamp(32px, 5vw, 72px); row-gap: 32px; align-items: center; min-height: calc(min(940px, 100svh) - var(--header-height) - 84px); }
 .hero-copy { min-width: 0; }
-.hero-copy .eyebrow { margin-bottom: 20px; font-size: 11px; letter-spacing: .16em; }
-.hero h1 { margin: 0 0 28px; font-family: "Noto Sans JP", sans-serif; font-size: var(--title-home); font-weight: 700; line-height: 1.4; letter-spacing: .01em; word-break: keep-all; overflow-wrap: normal; text-wrap: initial; }
-.hero-lead { max-width: 35em; margin-bottom: 0; color: #435c62; font-size: clamp(16px, 1.25vw, 18px); font-weight: 400; line-height: 2; line-break: strict; }
-.hero .actions { gap: 12px; margin-top: 32px; }
-.hero .button { min-height: 50px; padding: 12px 20px; border-radius: 12px; font-size: 14px; font-weight: 600; }
+.hero-copy .eyebrow { margin-bottom: 20px; color: #105f66; font-size: 11px; letter-spacing: .16em; }
+.hero h1 { margin: 0; color: #173d49; font-size: var(--title-home); font-weight: 700; line-height: 1.45; letter-spacing: .01em; word-break: keep-all; overflow-wrap: normal; text-wrap: initial; text-shadow: 0 1px 12px rgb(255 255 255 / 65%); }
+.hero h1::after { display: block; width: 64px; height: 2px; margin-top: 24px; background: #187b83; content: ""; }
+.hero .actions { gap: 14px; margin-top: 30px; }
+.hero .button { gap: 16px; min-height: 52px; padding: 13px 20px; border-radius: 16px; font-size: 14px; font-weight: 600; box-shadow: 0 4px 14px rgb(24 91 102 / 7%); }
+.hero .button::after { content: "→"; font-size: 17px; line-height: 1; }
+.hero .button-secondary { background: rgb(255 255 255 / 94%); }
 .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
 .button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; padding: 12px 24px; border: 1px solid var(--teal); border-radius: 999px; font-weight: 700; text-align: center; text-decoration: none; transition: transform .16s ease, background-color .16s ease, color .16s ease; }
 .button:hover { transform: translateY(-2px); }
@@ -109,16 +116,21 @@ p { margin: 0 0 1.25em; }
 .button-primary:hover { background: var(--teal-dark); }
 .button-secondary { background: var(--white); color: var(--teal-dark); }
 .button-secondary:hover { background: var(--mint); }
-.hero-visual { display: grid; justify-items: center; gap: 26px; }
-/* On shorter desktop windows, reserve space for the header and step labels. */
-.hero-app-preview { width: min(100%, 310px, calc((100svh - var(--header-height) - 180px) * .473684 + 16px)); margin: 0; padding: 7px; border: 1px solid #c2d7da; border-radius: 30px; background: #fff; box-shadow: 0 18px 42px rgb(36 73 82 / 13%), 0 2px 6px rgb(36 73 82 / 5%); }
+.hero-visual { display: grid; justify-items: center; }
+/* Reserve room for the lower step row; short windows can still scroll naturally. */
+.hero-app-preview { width: min(100%, clamp(220px, calc((100svh - var(--header-height) - 256px) * .473684 + 16px), 310px)); margin: 0; padding: 7px; border: 1px solid #bdd4d9; border-radius: 30px; background: #fff; box-shadow: 0 22px 46px rgb(28 65 78 / 19%), 0 3px 8px rgb(28 65 78 / 8%); }
 .hero-app-preview img { display: block; width: 100%; height: auto; border-radius: 22px; }
-.hero-concept { display: flex; align-items: center; justify-content: center; gap: 12px; width: 100%; }
-.concept-step { display: grid; gap: 3px; text-align: center; white-space: nowrap; }
-.concept-step b { color: #345860; font-family: "Noto Sans JP", sans-serif; font-size: 16px; font-weight: 600; line-height: 1.5; }
-.concept-step small { color: var(--ink-soft); font-size: 10px; line-height: 1.5; letter-spacing: .02em; }
-.concept-line { position: relative; width: 24px; height: 1px; flex: 0 0 auto; background: #9abfc2; }
-.concept-line::after { position: absolute; top: -2px; right: 0; width: 5px; height: 5px; border-top: 1px solid #9abfc2; border-right: 1px solid #9abfc2; transform: rotate(45deg); content: ""; }
+.hero-concept { --step-size: 128px; --step-gap: clamp(64px, 10vw, 160px); display: flex; grid-column: 1 / -1; align-items: center; justify-content: center; gap: var(--step-gap); width: fit-content; max-width: 100%; margin: 0 auto; padding: 0; list-style: none; }
+.concept-step { position: relative; display: grid; width: var(--step-size); height: var(--step-size); flex: 0 0 var(--step-size); align-content: center; justify-items: center; gap: 4px; padding: 10px; border: 1px solid rgb(139 194 204 / 22%); border-radius: 50%; background: rgb(223 243 252 / 92%); color: #234e5b; text-align: center; }
+.concept-step-2 { background: rgb(222 244 243 / 92%); }
+.concept-step-3 { background: rgb(230 245 232 / 92%); }
+.concept-step:not(:last-child)::after { position: absolute; left: 100%; top: 50%; width: var(--step-gap); height: 1px; background: #8ebec8; content: ""; }
+.concept-step:not(:last-child)::before { position: absolute; right: -3px; top: calc(50% - 3px); z-index: 1; width: 6px; height: 6px; border-radius: 50%; background: #8ebec8; content: ""; }
+.concept-number { font-size: 11px; font-weight: 600; line-height: 1.3; letter-spacing: .05em; }
+.concept-icon { display: block; width: 30px; height: 30px; }
+.concept-label { display: grid; gap: 1px; white-space: nowrap; }
+.concept-label b { font-family: "Zen Maru Gothic", sans-serif; font-size: 17px; font-weight: 700; line-height: 1.4; }
+.concept-label small { font-size: 12px; line-height: 1.4; }
 
 .tiles { padding: 100px 0 112px; }
 .section-heading { margin-bottom: 38px; }
@@ -201,11 +213,13 @@ p { margin: 0 0 1.25em; }
 @keyframes scroll-hint-drift { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(3px); } }
 
 @media (max-width: 900px) {
-  .hero { min-height: auto; }
-  .hero-content { grid-template-columns: 1fr; min-height: 0; gap: 40px; }
+  .hero { min-height: auto; padding-bottom: 40px; }
+  .hero-background img { object-position: center 65%; }
+  .hero::before { background: linear-gradient(180deg, rgb(255 255 255 / 74%), rgb(255 255 255 / 48%) 25%, transparent 58%); }
+  .hero-content { grid-template-columns: 1fr; grid-template-rows: auto; min-height: 0; gap: 36px; }
   .hero-copy { max-width: 720px; }
-  .hero-visual { gap: 22px; }
-  .hero-app-preview { width: min(44vw, 300px); }
+  .hero-app-preview { width: min(48vw, 280px); }
+  .hero-concept { --step-gap: clamp(40px, 8vw, 72px); }
   .demo-card, .contact-grid { grid-template-columns: 1fr; }
   .value-grid { grid-template-columns: 1fr; }
 }
@@ -223,17 +237,21 @@ p { margin: 0 0 1.25em; }
   .home-page .brand-name { max-width: 180px; font-size: 12px; }
   .home-page .menu-button { gap: 9px; padding-left: 10px; font-size: 10px; }
   .home-page .menu-lines, .home-page .menu-lines::before, .home-page .menu-lines::after { width: 22px; }
-  .hero { padding: calc(var(--header-height) + 40px) 0 48px; }
-  .hero-content { gap: 34px; }
+  .hero { padding: calc(var(--header-height) + 36px) 0 36px; }
+  .hero-content { gap: 30px; }
   .hero-copy .eyebrow { margin-bottom: 14px; font-size: 10px; }
-  .hero h1 { margin-bottom: 22px; }
-  .hero-lead { font-size: 16px; line-height: 1.95; }
-  .hero .actions { margin-top: 26px; gap: 10px; }
+  .hero h1::after { width: 48px; margin-top: 20px; }
+  .hero .actions { margin-top: 24px; gap: 10px; }
+  .hero .button { padding-inline: 16px; }
   .actions { flex-direction: column; }
   .button { width: 100%; }
-  .hero-app-preview { width: min(70vw, 280px); }
-  .hero-concept { gap: 10px; }
-  .concept-line { width: 20px; }
+  .hero-app-preview { width: min(62vw, 250px); }
+  .hero-concept { --step-size: clamp(88px, 25vw, 118px); --step-gap: clamp(8px, 3vw, 20px); }
+  .concept-step { gap: 2px; padding: 6px; }
+  .concept-number { font-size: 10px; }
+  .concept-icon { width: 24px; height: 24px; }
+  .concept-label b { font-size: 14px; }
+  .concept-label small { font-size: 11px; }
   .tiles { padding: 72px 0 80px; }
   .tile-grid { width: calc(100% - 32px); grid-template-columns: 1fr; gap: 20px; }
   .tile { min-height: 290px; gap: 20px; }
