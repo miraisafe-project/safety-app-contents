@@ -120,12 +120,12 @@ p { margin: 0 0 1.25em; }
 /* Reserve room for the lower step row; short windows can still scroll naturally. */
 .hero-app-preview { width: min(100%, clamp(220px, calc((100svh - var(--header-height) - 256px) * .473684 + 16px), 310px)); margin: 0; padding: 7px; border: 1px solid #bdd4d9; border-radius: 30px; background: #fff; box-shadow: 0 22px 46px rgb(28 65 78 / 19%), 0 3px 8px rgb(28 65 78 / 8%); }
 .hero-app-preview img { display: block; width: 100%; height: auto; border-radius: 22px; }
-.hero-concept { --step-size: 128px; --step-gap: clamp(64px, 10vw, 160px); display: flex; grid-column: 1 / -1; align-items: center; justify-content: center; gap: var(--step-gap); width: fit-content; max-width: 100%; margin: 0 auto; padding: 0; list-style: none; }
+.hero-concept { --step-size: 128px; --step-gap: clamp(64px, 10vw, 160px); position: relative; isolation: isolate; display: flex; grid-column: 1 / -1; align-items: center; justify-content: center; gap: var(--step-gap); width: fit-content; max-width: 100%; margin: 0 auto; padding: 0; list-style: none; }
+/* One continuous, non-interactive curve flows behind the unchanged panels. */
+.hero-concept::before { position: absolute; z-index: -1; top: 50%; left: -48px; width: calc(100% + 96px); height: 96px; transform: translateY(-50%); background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0 14 C160 100 340 90 500 56 S800 -6 1000 86' fill='none' stroke='%2389bdcc' stroke-opacity='.85' stroke-width='1.35' vector-effect='non-scaling-stroke' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat; pointer-events: none; content: ""; }
 .concept-step { position: relative; display: grid; width: var(--step-size); height: var(--step-size); flex: 0 0 var(--step-size); align-content: center; justify-items: center; gap: 4px; padding: 10px; border: 1px solid #8CCCE8; border-radius: 50%; background: #D5F1FF; color: #234e5b; text-align: center; box-shadow: 0 6px 18px rgb(36 87 99 / 8%); }
 .concept-step-2 { background: #D3F5F1; border-color: #86D5CD; }
 .concept-step-3 { background: #E0F5D4; border-color: #A7D78E; }
-.concept-step:not(:last-child)::after { position: absolute; left: 100%; top: 50%; width: var(--step-gap); height: 1px; background: #8ebec8; content: ""; }
-.concept-step:not(:last-child)::before { position: absolute; right: -3px; top: calc(50% - 3px); z-index: 1; width: 6px; height: 6px; border-radius: 50%; background: #8ebec8; content: ""; }
 .concept-number { font-size: 11px; font-weight: 600; line-height: 1.3; letter-spacing: .05em; }
 .concept-icon { display: block; width: 30px; height: 30px; }
 .concept-label { display: grid; gap: 1px; white-space: nowrap; }
@@ -208,9 +208,9 @@ p { margin: 0 0 1.25em; }
 .error-card { width: min(100%, 640px); padding: clamp(36px, 7vw, 72px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow); }
 .error-code { margin: 0; color: var(--teal); font: 700 clamp(52px, 10vw, 90px)/1 "Zen Maru Gothic", sans-serif; }
 
-.scroll-hint { position: fixed; right: max(24px, env(safe-area-inset-right)); bottom: calc(18svh + env(safe-area-inset-bottom)); z-index: 90; display: flex; width: 72px; height: 82px; align-items: center; justify-content: center; padding: 0; border: 1px solid rgb(255 255 255 / 80%); border-radius: 20px; background: rgb(255 255 255 / 86%); color: #126b73; box-shadow: 0 4px 16px rgb(31 83 92 / 12%); opacity: 0; visibility: hidden; pointer-events: none; cursor: pointer; transition: opacity .2s ease, visibility 0s linear .2s; }
+.scroll-hint { position: fixed; right: max(24px, env(safe-area-inset-right)); bottom: calc(18svh + env(safe-area-inset-bottom)); z-index: 90; display: flex; width: 72px; height: 82px; align-items: center; justify-content: center; padding: 0; border: 1px solid rgb(255 255 255 / 60%); border-radius: 20px; background: rgb(255 255 255 / 76%); color: #438a8f; box-shadow: 0 3px 14px rgb(31 83 92 / 8%); opacity: 0; visibility: hidden; pointer-events: none; cursor: pointer; transition: opacity .2s ease, visibility 0s linear .2s; }
 .scroll-hint.is-visible { opacity: 1; visibility: visible; pointer-events: auto; transition-delay: 0s; }
-.scroll-hint svg { display: block; width: 60px; height: 70px; flex: none; pointer-events: none; animation: scroll-hint-drift 2.8s ease-in-out infinite; }
+.scroll-hint svg { display: block; width: 60px; height: 70px; flex: none; stroke-width: 2.2; pointer-events: none; animation: scroll-hint-drift 2.8s ease-in-out infinite; }
 .scroll-hint:focus-visible { outline-offset: 4px; }
 @keyframes scroll-hint-drift { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(3px); } }
 
@@ -250,6 +250,7 @@ p { margin: 0 0 1.25em; }
   .button { width: 100%; }
   .hero-app-preview { width: min(62vw, 250px); }
   .hero-concept { --step-size: clamp(88px, 25vw, 118px); --step-gap: clamp(8px, 3vw, 20px); }
+  .hero-concept::before { left: -8px; width: calc(100% + 16px); height: calc(var(--step-size) * .9); }
   .concept-step { gap: 2px; padding: 6px; }
   .concept-number { font-size: 10px; }
   .concept-icon { width: 24px; height: 24px; }
