@@ -121,8 +121,9 @@ p { margin: 0 0 1.25em; }
 .hero-app-preview { width: min(100%, clamp(220px, calc((100svh - var(--header-height) - 256px) * .473684 + 16px), 310px)); margin: 0; padding: 7px; border: 1px solid #bdd4d9; border-radius: 30px; background: #fff; box-shadow: 0 22px 46px rgb(28 65 78 / 19%), 0 3px 8px rgb(28 65 78 / 8%); }
 .hero-app-preview img { display: block; width: 100%; height: auto; border-radius: 22px; }
 .hero-concept { --step-size: 128px; --step-gap: clamp(64px, 10vw, 160px); position: relative; isolation: isolate; display: flex; grid-column: 1 / -1; align-items: center; justify-content: center; gap: var(--step-gap); width: fit-content; max-width: 100%; margin: 0 auto; padding: 0; list-style: none; }
-/* One continuous, non-interactive curve flows behind the unchanged panels. */
-.hero-concept::before { position: absolute; z-index: -1; top: 50%; left: -48px; width: calc(100% + 96px); height: 96px; transform: translateY(-50%); background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0 14 C160 100 340 90 500 56 S800 -6 1000 86' fill='none' stroke='%2389bdcc' stroke-opacity='.85' stroke-width='1.35' vector-effect='non-scaling-stroke' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat; pointer-events: none; content: ""; }
+/* A viewport-wide ribbon passes behind all three panels, fading at both ends.
+   Only its gentle vertical excursion scales with the circles; the stroke stays thin. */
+.hero-concept::before { position: absolute; z-index: -1; top: 50%; left: 50%; width: 100vw; height: calc(var(--step-size) * .75); transform: translate(-50%, -50%); background: url("../images/hero-step-flow.svg") center / 100% 100% no-repeat; pointer-events: none; content: ""; }
 .concept-step { position: relative; display: grid; width: var(--step-size); height: var(--step-size); flex: 0 0 var(--step-size); align-content: center; justify-items: center; gap: 4px; padding: 10px; border: 1px solid #8CCCE8; border-radius: 50%; background: #D5F1FF; color: #234e5b; text-align: center; box-shadow: 0 6px 18px rgb(36 87 99 / 8%); }
 .concept-step-2 { background: #D3F5F1; border-color: #86D5CD; }
 .concept-step-3 { background: #E0F5D4; border-color: #A7D78E; }
@@ -250,7 +251,6 @@ p { margin: 0 0 1.25em; }
   .button { width: 100%; }
   .hero-app-preview { width: min(62vw, 250px); }
   .hero-concept { --step-size: clamp(88px, 25vw, 118px); --step-gap: clamp(8px, 3vw, 20px); }
-  .hero-concept::before { left: -8px; width: calc(100% + 16px); height: calc(var(--step-size) * .9); }
   .concept-step { gap: 2px; padding: 6px; }
   .concept-number { font-size: 10px; }
   .concept-icon { width: 24px; height: 24px; }
