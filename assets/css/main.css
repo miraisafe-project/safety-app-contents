@@ -121,10 +121,10 @@ p { margin: 0 0 1.25em; }
 .hero-app-preview { width: min(100%, clamp(220px, calc((100svh - var(--header-height) - 256px) * .473684 + 16px), 310px)); margin: 0; padding: 7px; border: 1px solid #bdd4d9; border-radius: 30px; background: #fff; box-shadow: 0 22px 46px rgb(28 65 78 / 19%), 0 3px 8px rgb(28 65 78 / 8%); }
 .hero-app-preview img { display: block; width: 100%; height: auto; border-radius: 22px; }
 .hero-concept { --step-size: 128px; --step-gap: clamp(64px, 10vw, 160px); position: relative; isolation: isolate; display: flex; grid-column: 1 / -1; align-items: center; justify-content: center; gap: var(--step-gap); width: fit-content; max-width: 100%; margin: 0 auto; padding: 0; list-style: none; }
-/* A single broad sweep frames the step row; it does not route between individual circles. */
+/* One viewport-wide cubic defines the whole flow; panels follow it, never the reverse. */
 .hero-concept-group { position: relative; isolation: isolate; grid-column: 1 / -1; justify-self: center; width: fit-content; max-width: 100%; }
-.hero-step-flow { position: absolute; z-index: -1; top: 0; left: 50%; width: min(calc(100vw - 24px), calc(100% + clamp(64px, 14vw, 240px))); height: 100%; transform: translateX(-50%); pointer-events: none; }
-.concept-step { position: relative; display: grid; width: var(--step-size); height: var(--step-size); flex: 0 0 var(--step-size); align-content: center; justify-items: center; gap: 4px; padding: 10px; border: 1px solid #8CCCE8; border-radius: 50%; background: #D5F1FF; color: #234e5b; text-align: center; box-shadow: 0 6px 18px rgb(36 87 99 / 8%); }
+.hero-step-flow { position: absolute; z-index: -1; top: 0; left: 50%; width: 100vw; height: 100%; transform: translateX(-50%); pointer-events: none; }
+.concept-step { position: relative; display: grid; width: var(--step-size); height: var(--step-size); flex: 0 0 var(--step-size); align-content: center; justify-items: center; gap: 4px; padding: 10px; border: 1px solid #8CCCE8; border-radius: 50%; background: #D5F1FF; color: #234e5b; text-align: center; box-shadow: 0 6px 18px rgb(36 87 99 / 8%); transform: translateY(var(--flow-offset, 0px)); }
 .concept-step-2 { background: #D3F5F1; border-color: #86D5CD; }
 .concept-step-3 { background: #E0F5D4; border-color: #A7D78E; }
 .concept-number { font-size: 11px; font-weight: 600; line-height: 1.3; letter-spacing: .05em; }
