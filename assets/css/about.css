@@ -1,0 +1,25 @@
+/* Local to the project overview; shared page and button styles stay unchanged. */
+.app-guide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(24px, 4vw, 40px);
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #edf7f5;
+}
+.app-guide-copy { flex: 1; min-width: 0; }
+.app-guide h2 { margin: 0 0 12px; font-size: clamp(22px, 2.6vw, 28px); }
+.app-guide p { max-width: 46em; margin: 0; color: var(--ink-soft); text-wrap: balance; }
+.app-guide-phrase { white-space: nowrap; }
+.app-guide .button { flex: 0 0 auto; gap: 10px; padding-inline: 16px; font-size: 15px; }
+.app-guide .button span { white-space: nowrap; }
+
+@media (max-width: 900px) {
+  .app-guide { flex-direction: column; align-items: flex-start; }
+  .app-guide p { text-wrap: wrap; }
+}
+@media (max-width: 400px) {
+  .app-guide .button { font-size: 14px; }
+}
