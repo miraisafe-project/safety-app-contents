@@ -21,7 +21,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=20261014-continuous-flow">
+  <link rel="stylesheet" href="assets/css/main.css?v=20261015-connected-flow">
+  <script src="assets/js/hero-flow.js?v=20261015-connected-flow" defer></script>
   <script src="assets/js/site-config.js" defer></script>
   <script src="assets/js/main.js?v=20261014-hint-panels" defer></script>
 </head>
@@ -72,6 +73,18 @@
             <img src="assets/images/website/screenshot_title.jpg" width="1080" height="2280" alt="ミライセーフアプリのタイトル画面" fetchpriority="high">
           </figure>
         </div>
+        <div class="hero-concept-group">
+          <svg class="hero-step-flow" fill="none" aria-hidden="true" focusable="false" hidden>
+            <defs>
+              <linearGradient id="hero-flow-color" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#80baca" stop-opacity="0"/>
+                <stop offset=".12" stop-color="#80baca" stop-opacity=".85"/>
+                <stop offset=".88" stop-color="#80baca" stop-opacity=".85"/>
+                <stop offset="1" stop-color="#80baca" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path stroke="url(#hero-flow-color)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
         <ol class="hero-concept" aria-label="活動の3つのステップ">
           <li class="concept-step concept-step-1">
             <span class="concept-number" aria-hidden="true">01</span>
@@ -89,6 +102,7 @@
             <span class="concept-label"><b>つながる</b><small>次の一歩</small></span>
           </li>
         </ol>
+        </div>
       </div>
     </section>
 
