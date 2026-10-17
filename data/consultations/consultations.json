@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "updatedAt": "2026-10-04",
+  "version": 5,
+  "updatedAt": "2026-10-17",
   "categories": [
     {
       "id": "school",
@@ -37,6 +37,10 @@
     {
       "id": "money",
       "name": "お金・契約・詐欺"
+    },
+    {
+      "id": "work",
+      "name": "仕事・アルバイト"
     },
     {
       "id": "violence",
@@ -1055,9 +1059,12 @@
       "categoryIds": [
         "relationships",
         "money",
+        "work",
         "violence"
       ],
-      "categoryPriority": {},
+      "categoryPriority": {
+        "work": 1
+      },
       "targetUsers": "アルバイトや仕事、就職活動などでトラブルや悩みを抱えている人",
       "description": "解雇、雇止め、賃金、募集・採用、職場でのいじめ・嫌がらせ、パワーハラスメントなど、幅広い労働問題について相談できます。\n労働者や事業主だけでなく、学生・就活生からの相談にも対応しています。全国の労働局や労働基準監督署内などに設置されています。",
       "anonymousSupport": "conditional",
@@ -1084,8 +1091,8 @@
       "relatedConsultations": [],
       "active": true,
       "generalListingSuitable": true,
-      "isPublicPriority": false,
-      "skipEligible": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
       "openStatusEligible": false,
       "emergencySuitable": false,
       "informationProvidedAt": "2026-10-04",
@@ -1103,11 +1110,93 @@
       ]
     },
     {
+      "id": "public_labor_conditions_hotline",
+      "name": "労働条件相談ほっとライン",
+      "phoneNumber": "0120-811-610",
+      "categoryIds": [
+        "work"
+      ],
+      "categoryPriority": {
+        "work": 2
+      },
+      "targetUsers": "賃金、労働時間、残業、労働条件などについて相談したい労働者や使用者など",
+      "description": "違法な時間外労働、過重労働による健康障害、賃金不払残業など、労働基準関係法令に関する問題を電話で相談できます。\n厚生労働省の委託事業で、全国から無料・匿名で利用できます。専門知識を持つ相談員が、法令や裁判例を踏まえた案内や関係機関の紹介を行います。",
+      "listDescription": "賃金や労働時間などの労働条件を、無料・匿名で相談できる電話窓口です。",
+      "anonymousSupport": "available",
+      "anonymousSupportNote": "匿名で相談できます。",
+      "hoursText": "平日（月～金）17:00～22:00\n土曜・日曜・祝日 9:00～21:00\n12月29日～1月3日は休止",
+      "fee": "相談料：無料\n通話料：無料",
+      "notes": [
+        "厚生労働省の委託事業です。令和8年度は株式会社東京リーガルマインドが受託して運営しています。",
+        "労働条件相談ほっとラインから事業場に対する指導などを行うことはできません。",
+        "相談対応の品質維持のため、通話内容が録音されます。"
+      ],
+      "keywords": [
+        "仕事",
+        "アルバイト",
+        "バイト",
+        "給料",
+        "賃金",
+        "未払い",
+        "残業",
+        "残業代",
+        "労働時間",
+        "労働条件",
+        "労働契約",
+        "辞められない",
+        "退職",
+        "職場",
+        "ハラスメント"
+      ],
+      "officialUrl": "https://www.check-roudou.mhlw.go.jp/lp/hotline/index.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": true,
+      "skipEligible": false,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-17",
+      "verifiedAt": "2026-10-17",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "open",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5],
+              "periods": [
+                {
+                  "start": "17:00",
+                  "end": "22:00"
+                }
+              ]
+            },
+            {
+              "weekdays": [6, 7],
+              "periods": [
+                {
+                  "start": "09:00",
+                  "end": "21:00"
+                }
+              ]
+            }
+          ],
+          "phoneNumber": "0120-811-610",
+          "url": "https://www.check-roudou.mhlw.go.jp/lp/hotline/index.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
       "id": "public_youth_support_station",
       "name": "地域若者サポートステーション",
       "categoryIds": [
         "feelings",
         "money",
+        "work",
         "unsure"
       ],
       "categoryPriority": {},
