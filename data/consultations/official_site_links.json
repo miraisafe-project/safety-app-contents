@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-18",
+  "officialSiteLinks": [
+    {
+      "id": "mhlw_mental_health_phone",
+      "name": "電話相談窓口",
+      "url": "https://www.mhlw.go.jp/mamorouyokokoro/soudan/tel/",
+      "provider": "厚生労働省",
+      "description": "こころの悩みなどについて、電話で相談できる窓口を探せます。",
+      "categoryIds": [
+        "feelings"
+      ],
+      "categoryNames": [
+        "こころ・気持ちのこと",
+        "生きるのがつらい・消えたいとき"
+      ],
+      "keywords": [
+        "こころ",
+        "心の悩み",
+        "つらい",
+        "消えたい",
+        "死にたい",
+        "自殺",
+        "電話相談",
+        "悩み相談"
+      ],
+      "displayOrder": 1,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "mhlw_mental_health_sns",
+      "name": "SNS相談",
+      "url": "https://www.mhlw.go.jp/mamorouyokokoro/soudan/sns/",
+      "provider": "厚生労働省",
+      "description": "こころの悩みなどについて、チャットやSNSで相談できる窓口を探せます。",
+      "categoryIds": [
+        "feelings"
+      ],
+      "categoryNames": [
+        "こころ・気持ちのこと",
+        "生きるのがつらい・消えたいとき"
+      ],
+      "keywords": [
+        "こころ",
+        "心の悩み",
+        "つらい",
+        "消えたい",
+        "死にたい",
+        "自殺",
+        "LINE",
+        "ライン",
+        "SNS相談",
+        "チャット相談"
+      ],
+      "displayOrder": 2,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "mhlw_mental_health_other",
+      "name": "その他の相談先",
+      "url": "https://www.mhlw.go.jp/mamorouyokokoro/soudan/sonota/",
+      "provider": "厚生労働省",
+      "description": "生活やお金、法律、インターネット上の誹謗中傷など、さまざまな悩みに対応する相談先を探せます。",
+      "categoryIds": [
+        "money",
+        "internet",
+        "bullying",
+        "unsure"
+      ],
+      "categoryNames": [
+        "お金・契約・詐欺",
+        "インターネット・SNS",
+        "いじめ・嫌がらせ",
+        "どれを選べばいいか分からない"
+      ],
+      "keywords": [
+        "生活困窮",
+        "法律相談",
+        "借金",
+        "多重債務",
+        "誹謗中傷",
+        "ネット被害",
+        "生活の悩み"
+      ],
+      "displayOrder": 3,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "mhlw_employment_labor_consultations",
+      "name": "雇用・労働相談窓口等一覧",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/soudanmadogutitou/itiran/index.html",
+      "provider": "厚生労働省",
+      "description": "給料や労働条件、職場でのトラブルなどについて相談できる窓口を探せます。",
+      "categoryIds": [
+        "work",
+        "money"
+      ],
+      "categoryNames": [
+        "仕事・アルバイトのこと",
+        "お金・契約・詐欺"
+      ],
+      "keywords": [
+        "アルバイト",
+        "バイト",
+        "給料",
+        "賃金",
+        "未払い",
+        "労働条件",
+        "残業",
+        "退職",
+        "職場のトラブル",
+        "労働相談"
+      ],
+      "displayOrder": 4,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "mhlw_hiv_testing_map",
+      "name": "HIV検査・相談マップ",
+      "url": "https://www.mhlw.go.jp/hivkensa/",
+      "provider": "厚生労働省",
+      "description": "HIVに関する検査施設や相談窓口を探せます。",
+      "categoryIds": [
+        "health",
+        "sexuality"
+      ],
+      "categoryNames": [
+        "からだ・健康のこと",
+        "性・妊娠などのこと"
+      ],
+      "keywords": [
+        "HIV",
+        "エイズ",
+        "感染不安",
+        "HIV検査",
+        "検査施設",
+        "保健所",
+        "性の健康"
+      ],
+      "displayOrder": 5,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "mhlw_sti_testing_map",
+      "name": "性感染症検査・相談マップ",
+      "url": "https://www.mhlw.go.jp/stikensa/",
+      "provider": "厚生労働省",
+      "description": "性感染症について、検査や相談ができる施設を探せます。",
+      "categoryIds": [
+        "health",
+        "sexuality"
+      ],
+      "categoryNames": [
+        "からだ・健康のこと",
+        "性・妊娠などのこと"
+      ],
+      "keywords": [
+        "性感染症",
+        "性病",
+        "梅毒",
+        "クラミジア",
+        "検査",
+        "感染不安",
+        "保健所"
+      ],
+      "displayOrder": 6,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "gov_online_parenting_education",
+      "name": "子育て・教育",
+      "url": "https://www.gov-online.go.jp/kurashinosodan/list/ct_kosodate_kyouiku.html",
+      "provider": "政府広報オンライン",
+      "description": "子どもや家庭、教育などに関する相談窓口を探せます。",
+      "categoryIds": [
+        "school",
+        "family",
+        "bullying"
+      ],
+      "categoryNames": [
+        "学校のこと",
+        "家族・家のこと",
+        "いじめ・嫌がらせ"
+      ],
+      "keywords": [
+        "学校",
+        "教育",
+        "家庭",
+        "子ども",
+        "こども",
+        "少年相談",
+        "いじめ",
+        "子育て",
+        "保護者"
+      ],
+      "displayOrder": 7,
+      "termsUrl": "https://www.gov-online.go.jp/tos/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "gov_online_money_consumer_troubles",
+      "name": "お金・消費のトラブル",
+      "url": "https://www.gov-online.go.jp/kurashinosodan/list/ct_trouble_1.html",
+      "provider": "政府広報オンライン",
+      "description": "消費者トラブルやお金に関する問題について、相談窓口を探せます。",
+      "categoryIds": [
+        "money"
+      ],
+      "categoryNames": [
+        "お金・契約・詐欺"
+      ],
+      "keywords": [
+        "お金",
+        "契約",
+        "消費者",
+        "通販",
+        "借金",
+        "返済",
+        "金融",
+        "消費者トラブル"
+      ],
+      "displayOrder": 8,
+      "termsUrl": "https://www.gov-online.go.jp/tos/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "gov_online_it_digital_troubles",
+      "name": "IT・デジタルのトラブル",
+      "url": "https://www.gov-online.go.jp/kurashinosodan/list/ct_trouble.html",
+      "provider": "政府広報オンライン",
+      "description": "通信サービスやデジタル関連のトラブルについて、相談窓口を探せます。",
+      "categoryIds": [
+        "internet"
+      ],
+      "categoryNames": [
+        "インターネット・SNS"
+      ],
+      "keywords": [
+        "電気通信サービス",
+        "通信契約",
+        "スマホ契約",
+        "通信料金",
+        "デジタル",
+        "電波"
+      ],
+      "displayOrder": 9,
+      "termsUrl": "https://www.gov-online.go.jp/tos/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "gov_online_safety_security",
+      "name": "安心・安全",
+      "url": "https://www.gov-online.go.jp/kurashinosodan/list/ct_anshin_anzen.html",
+      "provider": "政府広報オンライン",
+      "description": "犯罪や安全に関する問題について、相談先を探せます。",
+      "categoryIds": [
+        "violence",
+        "money"
+      ],
+      "categoryNames": [
+        "暴力・犯罪・危険なこと",
+        "お金・契約・詐欺"
+      ],
+      "keywords": [
+        "犯罪",
+        "詐欺",
+        "防犯",
+        "警察相談",
+        "犯罪被害",
+        "安全",
+        "交通事故",
+        "サイバー犯罪"
+      ],
+      "displayOrder": 10,
+      "termsUrl": "https://www.gov-online.go.jp/tos/",
+      "verifiedAt": "2026-10-18"
+    },
+    {
+      "id": "gov_online_consultation_directory",
+      "name": "相談窓口",
+      "url": "https://www.gov-online.go.jp/faq/",
+      "provider": "政府広報オンライン",
+      "description": "さまざまな分野について、国の機関などが紹介している相談窓口を探せます。",
+      "categoryIds": [
+        "unsure"
+      ],
+      "categoryNames": [
+        "どれを選べばいいか分からない"
+      ],
+      "keywords": [
+        "相談先が分からない",
+        "相談窓口一覧",
+        "総合案内",
+        "相談先を探す",
+        "国の相談窓口"
+      ],
+      "displayOrder": 11,
+      "termsUrl": "https://www.gov-online.go.jp/tos/",
+      "verifiedAt": "2026-10-18"
+    }
+  ]
+}
