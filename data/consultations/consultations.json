@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "updatedAt": "2026-10-17",
+  "version": 6,
+  "updatedAt": "2026-10-21",
   "categories": [
     {
       "id": "school",
@@ -1239,6 +1239,76 @@
           "holidayHandling": "individual",
           "hours": [],
           "url": "https://saposute-net.mhlw.go.jp/",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "paps",
+      "name": "NPO法人 ぱっぷす（ポルノ被害と性暴力を考える会）",
+      "phoneNumber": "050-3177-5432",
+      "categoryIds": [
+        "feelings",
+        "health",
+        "sexuality",
+        "internet",
+        "money"
+      ],
+      "categoryPriority": {},
+      "description": "デジタル性暴力、アダルトビデオ業界や性産業にかかわって困っている方",
+      "anonymousSupport": "available",
+      "anonymousSupportNote": "匿名での相談が可能",
+      "hoursText": "24時間",
+      "fee": "無料相談",
+      "keywords": [
+        "デジタル性暴力",
+        "SNS",
+        "セクストーション",
+        "性的姿態",
+        "リベンジポルノ",
+        "AV",
+        "グルーミング",
+        "ディープフェイク",
+        "画像削除",
+        "性教育",
+        "性産業"
+      ],
+      "officialUrl": "https://www.paps.jp/hotlinelist",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": false,
+      "skipEligible": true,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-21",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "responseEstimate": "現在、返信に時間がかかっております",
+          "phoneNumber": "050-3177-5432",
+          "temporaryClosures": []
+        },
+        {
+          "type": "email",
+          "displayName": "メール",
+          "isRealtime": false,
+          "holidayHandling": "individual",
+          "hours": [],
+          "responseEstimate": "現在、返信に時間がかかっております",
+          "temporaryClosures": []
+        },
+        {
+          "type": "web",
+          "displayName": "Webフォーム",
+          "isRealtime": false,
+          "holidayHandling": "individual",
+          "hours": [],
+          "responseEstimate": "現在、返信に時間がかかっております",
           "temporaryClosures": []
         }
       ]
