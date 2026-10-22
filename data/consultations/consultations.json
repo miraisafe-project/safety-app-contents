@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "updatedAt": "2026-10-22",
   "categories": [
     {
@@ -1258,15 +1258,8 @@
       "description": "デジタル性暴力、アダルトビデオ業界や性産業にかかわって困っている方",
       "anonymousSupport": "available",
       "anonymousSupportNote": "匿名での相談が可能",
-      "hoursText": "団体回答：24時間（どの相談方法の受付時間かは未確認です。電話の24時間有人対応は確認できていません。）",
+      "hoursText": "24時間",
       "fee": "無料相談",
-      "notes": [
-        "非通知の電話は受け付けられません。",
-        "原則として折り返し電話は行われません。",
-        "電話回線が1本のため、つながらない場合があります。",
-        "相談用メールフォームから送信する場合、返信まで時間がかかることがあります。",
-        "メール・Webフォームの返信目安（団体回答）：現在、返信に時間がかかっております"
-      ],
       "keywords": [
         "デジタル性暴力",
         "SNS",
@@ -1289,7 +1282,6 @@
       "openStatusEligible": false,
       "emergencySuitable": false,
       "informationProvidedAt": "2026-10-21",
-      "verifiedAt": "2026-10-22",
       "contactMethods": [
         {
           "type": "phone",
@@ -1297,6 +1289,7 @@
           "isRealtime": true,
           "holidayHandling": "individual",
           "hours": [],
+          "responseEstimate": "現在、返信に時間がかかっております",
           "phoneNumber": "050-3177-5432",
           "temporaryClosures": []
         },
@@ -1316,7 +1309,6 @@
           "holidayHandling": "individual",
           "hours": [],
           "responseEstimate": "現在、返信に時間がかかっております",
-          "url": "https://www.paps.jp/hotlinelist",
           "temporaryClosures": []
         }
       ]
