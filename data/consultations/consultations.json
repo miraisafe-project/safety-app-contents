@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "updatedAt": "2026-10-21",
+  "version": 7,
+  "updatedAt": "2026-10-22",
   "categories": [
     {
       "id": "school",
@@ -1258,8 +1258,15 @@
       "description": "デジタル性暴力、アダルトビデオ業界や性産業にかかわって困っている方",
       "anonymousSupport": "available",
       "anonymousSupportNote": "匿名での相談が可能",
-      "hoursText": "24時間",
+      "hoursText": "団体回答：24時間（どの相談方法の受付時間かは未確認です。電話の24時間有人対応は確認できていません。）",
       "fee": "無料相談",
+      "notes": [
+        "非通知の電話は受け付けられません。",
+        "原則として折り返し電話は行われません。",
+        "電話回線が1本のため、つながらない場合があります。",
+        "相談用メールフォームから送信する場合、返信まで時間がかかることがあります。",
+        "メール・Webフォームの返信目安（団体回答）：現在、返信に時間がかかっております"
+      ],
       "keywords": [
         "デジタル性暴力",
         "SNS",
@@ -1282,6 +1289,7 @@
       "openStatusEligible": false,
       "emergencySuitable": false,
       "informationProvidedAt": "2026-10-21",
+      "verifiedAt": "2026-10-22",
       "contactMethods": [
         {
           "type": "phone",
@@ -1289,7 +1297,6 @@
           "isRealtime": true,
           "holidayHandling": "individual",
           "hours": [],
-          "responseEstimate": "現在、返信に時間がかかっております",
           "phoneNumber": "050-3177-5432",
           "temporaryClosures": []
         },
@@ -1309,6 +1316,262 @@
           "holidayHandling": "individual",
           "hours": [],
           "responseEstimate": "現在、返信に時間がかかっております",
+          "url": "https://www.paps.jp/hotlinelist",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_child_consultation_189783",
+      "name": "児童相談所相談専用ダイヤル",
+      "phoneNumber": "0120-189-783",
+      "categoryIds": ["family", "school", "feelings", "unsure"],
+      "categoryPriority": {},
+      "targetUsers": "子どもや家庭のことで悩んでいる本人、保護者など",
+      "description": "子育てや家庭の悩み、ヤングケアラーなど、子どもの福祉に関するさまざまな相談を受け付ける全国共通の電話窓口です。地域を担当する児童相談所につながります。",
+      "listDescription": "子どもや家庭の悩みについて、地域の児童相談所に相談できる電話窓口です。",
+      "hoursText": "24時間",
+      "fee": "相談料：無料\n通話料：無料",
+      "notes": [
+        "各地域の児童相談所が対応します。こども家庭庁が制度を案内しています。",
+        "児童虐待に関する通告・相談を受け付ける「189」とは別の番号です。",
+        "匿名相談についての全国一律の条件は未確認です。"
+      ],
+      "keywords": ["児童相談所", "子ども", "家庭", "親", "保護者", "子育て", "ヤングケアラー", "育児", "家族", "悩み", "189"],
+      "officialUrl": "https://www.cfa.go.jp/policies/jidougyakutai/gyakutai-taiou-dial/",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": false,
+      "skipEligible": true,
+      "openStatusEligible": true,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-22",
+      "verifiedAt": "2026-10-22",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "open",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5, 6, 7],
+              "periods": [{"start": "00:00", "end": "00:00"}]
+            }
+          ],
+          "phoneNumber": "0120-189-783",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_parent_child_line",
+      "name": "親子のための相談LINE",
+      "categoryIds": ["family", "relationships", "feelings", "unsure"],
+      "categoryPriority": {},
+      "targetUsers": "18歳未満の子ども、その保護者など",
+      "description": "子育てや親子関係などの悩みについてLINEを使って相談できます。相談時は住んでいる自治体を登録し、案内された相談画面で相談員とやり取りします。",
+      "listDescription": "子育てや親子関係の悩みをLINEで相談できる窓口です。",
+      "anonymousSupport": "available",
+      "anonymousSupportNote": "LINEのアイコンとニックネームを使って匿名で相談できます。",
+      "hoursText": "住んでいる自治体によって異なります。",
+      "fee": "相談料：無料\n通信料：利用者負担",
+      "notes": [
+        "こども家庭庁が案内する自治体の相談事業です。",
+        "相談する前に、公式案内ページで居住自治体の受付曜日・時間や休日の取扱いを確認してください。",
+        "公式案内ページからLINEの友だち追加と相談方法を確認できます。"
+      ],
+      "keywords": ["親", "子育て", "家族", "家庭", "子ども", "保護者", "LINE", "育児", "親子関係", "相談"],
+      "officialUrl": "https://www.cfa.go.jp/policies/jidougyakutai/oyako-line",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": false,
+      "skipEligible": true,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-22",
+      "verifiedAt": "2026-10-22",
+      "contactMethods": [
+        {
+          "type": "line_web",
+          "displayName": "LINE相談の公式案内を開く",
+          "isRealtime": true,
+          "holidayHandling": "individual",
+          "hours": [],
+          "url": "https://www.cfa.go.jp/policies/jidougyakutai/oyako-line",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_human_rights_line",
+      "name": "法務局LINEじんけん相談",
+      "categoryIds": ["school", "family", "bullying", "relationships", "internet", "violence"],
+      "categoryPriority": {},
+      "targetUsers": "いじめ、家庭内の問題、差別、SNS上の嫌がらせなど、人権に関する悩みがある人",
+      "description": "学校や家庭、インターネットなどでの人権問題について、法務局の職員や人権擁護委員にLINEで相談できます。",
+      "listDescription": "人権に関する悩みを法務局などの相談員にLINEで相談できる窓口です。",
+      "hoursText": "平日8:30～17:15\n土曜・日曜・祝日・年末年始は休み",
+      "fee": "相談料：無料\n通信料：利用者負担",
+      "notes": [
+        "法務省が案内する相談窓口です。相談内容の秘密は守られます。匿名利用の条件は未確認です。",
+        "LINE検索ID：@linejinkensoudan",
+        "相談は原則1日1回、1回30分程度が目安です。混雑時はすぐに応答できない場合があります。",
+        "公式案内ページからLINE公式アカウントと相談方法を確認してください。"
+      ],
+      "keywords": ["人権", "LINE", "いじめ", "差別", "虐待", "学校", "先生", "家庭", "SNS", "誹謗中傷", "暴言", "嫌がらせ", "法務局"],
+      "officialUrl": "https://www.moj.go.jp/JINKEN/jinken03_00034.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": false,
+      "skipEligible": true,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-22",
+      "verifiedAt": "2026-10-22",
+      "contactMethods": [
+        {
+          "type": "line_web",
+          "displayName": "LINE相談の公式案内を開く",
+          "isRealtime": true,
+          "holidayHandling": "closed",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5],
+              "periods": [{"start": "08:30", "end": "17:15"}]
+            }
+          ],
+          "url": "https://www.moj.go.jp/JINKEN/jinken03_00034.html",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_foreign_language_human_rights_phone",
+      "name": "外国語人権相談ダイヤル",
+      "phoneNumber": "0570-090-911",
+      "categoryIds": ["school", "family", "bullying", "relationships", "internet", "violence"],
+      "categoryPriority": {},
+      "targetUsers": "日本語での相談が難しい人など",
+      "description": "外国語で差別、いじめ、虐待などの人権問題を相談できる全国共通の電話窓口です。通訳サービスを介して法務局につながります。",
+      "listDescription": "外国語で人権問題を法務局に相談できる電話窓口です。",
+      "hoursText": "平日9:00～17:00\n土曜・日曜・祝日・年末年始（12月29日～1月3日）は休み",
+      "fee": "相談料：無料\nナビダイヤルの通話料：利用者負担",
+      "notes": [
+        "法務省が案内する全国共通の相談窓口です。匿名相談の条件は未確認です。",
+        "対応言語：英語、中国語、韓国語、フィリピノ語、ポルトガル語、ベトナム語、ネパール語、スペイン語、インドネシア語、タイ語"
+      ],
+      "keywords": ["外国語", "外国人", "英語", "中国語", "人権", "差別", "いじめ", "虐待", "通訳", "法務局", "多言語", "外国語相談"],
+      "officialUrl": "https://www.moj.go.jp/JINKEN/jinken21.html",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": false,
+      "skipEligible": true,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-22",
+      "verifiedAt": "2026-10-22",
+      "contactMethods": [
+        {
+          "type": "phone",
+          "displayName": "電話相談",
+          "isRealtime": true,
+          "holidayHandling": "closed",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5],
+              "periods": [{"start": "09:00", "end": "17:00"}]
+            }
+          ],
+          "phoneNumber": "0570-090-911",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_foreign_language_human_rights_web",
+      "name": "外国語インターネット人権相談受付窓口",
+      "categoryIds": ["school", "family", "bullying", "relationships", "internet", "violence"],
+      "categoryPriority": {},
+      "targetUsers": "外国語で人権問題を相談したい人",
+      "description": "外国語で差別やいじめなどの人権問題について、Webフォームから相談できます。相談内容に対して後日回答が行われます。",
+      "listDescription": "外国語で人権問題をWebフォームから相談できる窓口です。",
+      "hoursText": "24時間送信可能（有人対応の時間ではありません）",
+      "fee": "相談料：無料\n通信料：利用者負担",
+      "notes": [
+        "法務省が案内する相談窓口です。匿名相談の条件は未確認です。",
+        "対応言語：英語、中国語、韓国語、フィリピノ語、ポルトガル語、ベトナム語、ネパール語、スペイン語、インドネシア語、タイ語",
+        "返信目安：回答には数日かかります。",
+        "公式案内ページで言語を選び、利用案内を確認して相談してください。"
+      ],
+      "keywords": ["外国語", "外国人", "英語", "中国語", "人権", "差別", "いじめ", "多言語", "Web相談", "インターネット相談", "法務局"],
+      "officialUrl": "https://www.moj.go.jp/JINKEN/jinken21.html#01",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": false,
+      "skipEligible": true,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-22",
+      "verifiedAt": "2026-10-22",
+      "contactMethods": [
+        {
+          "type": "web",
+          "displayName": "外国語の相談フォーム案内を開く",
+          "isRealtime": false,
+          "holidayHandling": "open",
+          "hours": [
+            {
+              "weekdays": [1, 2, 3, 4, 5, 6, 7],
+              "periods": [{"start": "00:00", "end": "00:00"}]
+            }
+          ],
+          "responseEstimate": "回答には数日かかります。",
+          "url": "https://www.moj.go.jp/JINKEN/jinken21.html#01",
+          "temporaryClosures": []
+        }
+      ]
+    },
+    {
+      "id": "public_illegal_harmful_information_center",
+      "name": "違法・有害情報相談センター",
+      "categoryIds": ["internet", "bullying", "unsure"],
+      "categoryPriority": {},
+      "targetUsers": "インターネット上の誹謗中傷、プライバシー侵害などに困っている人",
+      "description": "インターネット上の誹謗中傷やプライバシー侵害などについて、書き込みの削除方法や対応の進め方を相談できる窓口です。相談者自身が対応するための助言を受けられます。",
+      "listDescription": "ネット上の誹謗中傷やプライバシー侵害への対応を相談できる窓口です。",
+      "hoursText": "相談員の対応曜日・時間は未確認です。リアルタイムの相談窓口ではありません。",
+      "fee": "相談無料",
+      "notes": [
+        "総務省委託事業です。",
+        "センターが直接削除を代行するものではありません。",
+        "相談には所定の利用登録が必要です。匿名利用の条件は未確認です。",
+        "メールでは相談を受け付けていません。公式の相談案内を確認し、利用登録後に相談フォームを利用してください。"
+      ],
+      "keywords": ["誹謗中傷", "名誉毀損", "プライバシー", "個人情報", "削除依頼", "投稿削除", "SNS", "インターネット", "権利侵害", "悪口", "書き込み"],
+      "officialUrl": "https://ihaho.jp/",
+      "relatedConsultations": [],
+      "active": true,
+      "generalListingSuitable": true,
+      "isPublicPriority": false,
+      "skipEligible": true,
+      "openStatusEligible": false,
+      "emergencySuitable": false,
+      "informationProvidedAt": "2026-10-22",
+      "verifiedAt": "2026-10-22",
+      "contactMethods": [
+        {
+          "type": "web",
+          "displayName": "利用登録・相談方法を確認する",
+          "isRealtime": false,
+          "holidayHandling": "individual",
+          "hours": [],
+          "url": "https://ihaho.jp/guide/index.html",
           "temporaryClosures": []
         }
       ]
