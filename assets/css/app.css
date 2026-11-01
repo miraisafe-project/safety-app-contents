@@ -1,0 +1,16 @@
+/* Only the app introduction images; existing sections and typography are untouched. */
+.app-introduction-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 32px);
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+.app-introduction-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+@media (max-width: 700px) {
+  .app-introduction-images { grid-template-columns: minmax(0, 1fr); }
+}
