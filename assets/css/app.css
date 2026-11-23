@@ -8,3 +8,7 @@
   height: auto;
   border-radius: 18px;
 }
+@media (min-width: 641px) {
+  .app-introduction-images { max-width: 840px; margin: 0 auto 32px; }
+  #features .feature-media { height: 210px; margin-bottom: 18px; padding: 12px; }
+}
