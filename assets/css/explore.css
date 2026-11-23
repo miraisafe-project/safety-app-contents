@@ -30,6 +30,9 @@
   .explore .tile-icon { width: 36px; height: 36px; }
   .explore .tile-copy strong { font-size: 16px; }
 }
+@media (min-width: 641px) {
+  .explore { padding: 36px 0 48px; }
+}
 @media (max-width: 640px) {
   .explore { padding: 48px 0 56px; }
   .explore .section-heading { margin-bottom: 24px; }

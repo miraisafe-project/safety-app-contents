@@ -25,4 +25,5 @@
 }
 @media (min-width: 641px) {
   .app-guide { padding: 28px; }
+  .app-guide h2 { font-size: var(--title-section); }
 }
