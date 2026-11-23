@@ -20,6 +20,11 @@
 .app-page .demo-section { padding: 32px 0 40px; }
 .app-page .demo-card { grid-template-columns: .7fr 1.3fr; gap: 32px; padding: 28px; }
 .app-page .demo-notice { margin: 16px 0 20px; }
+@media (min-width: 641px) {
+  .app-page .page-intro { font-size: 16px; margin-top: 20px; }
+  .app-page .feature-card h3 { font-size: var(--title-card); margin-bottom: 10px; }
+  .app-page .info-card h2 { font-size: 20px; }
+}
 @media (min-width: 1280px) {
   .app-page .feature-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .app-page .feature-card { padding: 18px; }
