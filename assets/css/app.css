@@ -11,7 +11,8 @@
 .app-page .page-section { padding: 32px 0; }
 .app-page .feature-grid { gap: 22px; margin-top: 28px; }
 .app-page .feature-card { padding: 20px; }
-.app-page .feature-media { height: 210px; padding: 12px; margin-bottom: 18px; }
+.app-page .feature-artwork { width: 100%; margin: 0 0 18px; }
+.app-page .feature-artwork img { display: block; width: 100%; height: auto; object-fit: contain; }
 .app-page .feature-card h3 { font-size: 20px; margin-bottom: 12px; }
 .app-page .feature-card p { font-size: 16px; line-height: 1.8; }
 .app-page .info-card { padding: 20px 24px; }
@@ -28,7 +29,6 @@
 @media (min-width: 1280px) {
   .app-page .feature-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .app-page .feature-card { padding: 18px; }
-  .app-page .feature-media { height: 200px; padding: 10px; }
   .app-page .feature-card h3 { font-size: 18px; }
   .app-page .feature-card p { font-size: 15px; }
 }
@@ -40,7 +40,6 @@
 @media (max-width: 640px) {
   .app-page .page-intro { font-size: 16px; }
   .app-page .feature-card { padding: 24px; }
-  .app-page .feature-media { height: clamp(230px, 76vw, 330px); }
   .app-page .info-card { padding: 24px; }
   .app-page .demo-card { padding: 24px; }
 }
