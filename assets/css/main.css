@@ -120,6 +120,7 @@ p { margin: 0 0 1.25em; }
 /* Reserve room for the lower step row; short windows can still scroll naturally. */
 .hero-app-preview { width: min(100%, clamp(220px, calc((100svh - var(--header-height) - 256px) * .473684 + 16px), 310px)); margin: 0; padding: 7px; border: 1px solid #bdd4d9; border-radius: 30px; background: #fff; box-shadow: 0 22px 46px rgb(28 65 78 / 19%), 0 3px 8px rgb(28 65 78 / 8%); }
 .hero-app-preview img { display: block; width: 100%; height: auto; border-radius: 22px; }
+.hero-app-preview { display: block; text-decoration: none; cursor: pointer; }
 .hero-concept { --step-size: 128px; --step-gap: clamp(64px, 10vw, 160px); position: relative; isolation: isolate; display: flex; grid-column: 1 / -1; align-items: center; justify-content: center; gap: var(--step-gap); width: fit-content; max-width: 100%; margin: 0 auto; padding: 0; list-style: none; }
 /* One viewport-wide cubic defines the whole flow; panels follow it, never the reverse. */
 .hero-concept-group { position: relative; isolation: isolate; grid-column: 1 / -1; justify-self: center; width: fit-content; max-width: 100%; }
