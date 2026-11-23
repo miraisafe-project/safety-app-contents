@@ -1,14 +1,41 @@
-/* Only the app introduction images; existing sections and typography are untouched. */
-.app-introduction-images {
-  margin-bottom: clamp(32px, 5vw, 56px);
+/* App overview only; shared pages keep their existing layout. */
+.app-page .app-intro { padding: calc(var(--header-height) + 32px) 0 32px; }
+.app-intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; }
+.app-intro-copy { min-width: 0; }
+.app-page .page-intro { margin: 22px 0 16px; font-size: 17px; line-height: 1.8; }
+.app-intro-demo { margin: 0 0 18px; color: var(--ink-soft); font-size: 16px; line-height: 1.8; }
+.app-intro-visual { min-width: 0; margin: 0; }
+.app-intro-visual img { display: block; width: 100%; height: auto; border-radius: 18px; box-shadow: 0 6px 22px rgb(27 89 94 / 8%); }
+.app-intro-details { max-width: 1100px; margin: 24px auto 0; }
+.app-intro-details p:last-child { margin-bottom: 0; }
+.app-page .page-section { padding: 32px 0; }
+.app-page .feature-grid { gap: 22px; margin-top: 28px; }
+.app-page .feature-card { padding: 20px; }
+.app-page .feature-media { height: 210px; padding: 12px; margin-bottom: 18px; }
+.app-page .feature-card h3 { font-size: 20px; margin-bottom: 12px; }
+.app-page .feature-card p { font-size: 16px; line-height: 1.8; }
+.app-page .info-card { padding: 20px 24px; }
+.app-page .info-card h2 { font-size: 22px; margin-bottom: 12px; }
+.app-page .info-card p { font-size: 16px; line-height: 1.8; }
+.app-page .demo-section { padding: 32px 0 40px; }
+.app-page .demo-card { grid-template-columns: .7fr 1.3fr; gap: 32px; padding: 28px; }
+.app-page .demo-notice { margin: 16px 0 20px; }
+@media (min-width: 1280px) {
+  .app-page .feature-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .app-page .feature-card { padding: 18px; }
+  .app-page .feature-media { height: 200px; padding: 10px; }
+  .app-page .feature-card h3 { font-size: 18px; }
+  .app-page .feature-card p { font-size: 15px; }
 }
-.app-introduction-images img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 18px;
+@media (max-width: 900px) {
+  .app-intro-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .app-intro-visual { width: min(100%, 720px); justify-self: center; }
+  .app-page .demo-card { grid-template-columns: minmax(0, 1fr); gap: 20px; }
 }
-@media (min-width: 641px) {
-  .app-introduction-images { max-width: 840px; margin: 0 auto 32px; }
-  #features .feature-media { height: 210px; margin-bottom: 18px; padding: 12px; }
+@media (max-width: 640px) {
+  .app-page .page-intro { font-size: 16px; }
+  .app-page .feature-card { padding: 24px; }
+  .app-page .feature-media { height: clamp(230px, 76vw, 330px); }
+  .app-page .info-card { padding: 24px; }
+  .app-page .demo-card { padding: 24px; }
 }
