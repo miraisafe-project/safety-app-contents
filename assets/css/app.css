@@ -1,12 +1,12 @@
 /* App overview only; shared pages keep their existing layout. */
 .app-page .app-intro { padding: calc(var(--header-height) + 32px) 0 32px; }
-.app-intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; }
+.app-intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: center; margin-top: 28px; }
 .app-intro-copy { min-width: 0; }
 .app-page .page-intro { margin: 22px 0 16px; font-size: 17px; line-height: 1.8; }
-.app-intro-demo { margin: 0 0 18px; color: var(--ink-soft); font-size: 16px; line-height: 1.8; }
+.app-intro-demo { max-width: 840px; margin: 0 0 18px; color: var(--ink-soft); font-size: 16px; line-height: 1.8; }
 .app-intro-visual { min-width: 0; margin: 0; }
 .app-intro-visual img { display: block; width: 100%; height: auto; border-radius: 18px; box-shadow: 0 6px 22px rgb(27 89 94 / 8%); }
-.app-intro-details { max-width: 1100px; margin: 24px auto 0; }
+.app-intro-details { min-width: 0; margin: 0; }
 .app-intro-details p:last-child { margin-bottom: 0; }
 .app-page .page-section { padding: 32px 0; }
 .app-page .feature-grid { gap: 22px; margin-top: 28px; }
