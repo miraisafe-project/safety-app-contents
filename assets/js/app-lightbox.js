@@ -1,10 +1,8 @@
 (() => {
   'use strict';
-  const triggers = document.querySelectorAll('.app-page .feature-zoom');
-  if (!triggers.length) return;
   const dialog = document.createElement('dialog');
   dialog.className = 'app-lightbox';
-  dialog.setAttribute('aria-label', 'アプリ紹介画像の拡大表示');
+  dialog.setAttribute('aria-label', '画像の拡大表示');
   const close = document.createElement('button');
   close.type = 'button';
   close.className = 'app-lightbox-close';
@@ -14,7 +12,9 @@
   dialog.append(close, image);
   document.body.append(dialog);
   let source, position, previousStyle;
-  triggers.forEach(trigger => trigger.addEventListener('click', () => {
+  document.addEventListener('click', event => {
+    const trigger = event.target.closest('.feature-zoom, [data-image-zoom]');
+    if (!trigger) return;
     if (dialog.open) return;
     source = trigger;
     const thumbnail = trigger.querySelector('img');
@@ -26,7 +26,7 @@
     Object.assign(document.body.style, { position: 'fixed', top: `-${position.y}px`, left: `-${position.x}px`, width: '100%', overflow: 'hidden' });
     dialog.showModal();
     close.focus({ preventScroll: true });
-  }));
+  });
   close.addEventListener('click', () => dialog.close());
   dialog.addEventListener('keydown', event => {
     if (event.key === 'Tab') {

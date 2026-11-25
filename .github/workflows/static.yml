@@ -37,7 +37,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html 404.html robots.txt sitemap.xml _site/
-          cp -R about app assets _site/
+          cp -R about app assets news website _site/
           cp -R crowdfunding _site/crowdfunding
           cp -R data _site/data
           cp -R terms _site/terms
@@ -51,6 +51,13 @@ jobs:
           test -f _site/data/stories/index.json
           test -f _site/terms/index.html
           test -f _site/privacy/index.html
+          test -f _site/news/index.html
+          test -f _site/news/detail/index.html
+          test -f _site/website/news/website_news.json
+          test -f _site/assets/css/lightbox.css
+          node --check assets/js/website-news.js
+          node --check assets/js/app-lightbox.js
+          node -e "JSON.parse(require('fs').readFileSync('website/news/website_news.json', 'utf8'))"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:

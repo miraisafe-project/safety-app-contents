@@ -6,6 +6,7 @@
   const heroContent = document.querySelector('.hero-content');
   const heroCopy = heroContent?.querySelector('.hero-copy');
   const heroActions = heroCopy?.querySelector('.actions');
+  const heroNews = heroCopy?.querySelector('.hero-news');
   if (heroContent && heroCopy && heroActions) {
     const mobileHero = window.matchMedia('(max-width: 640px)');
     const placeHeroActions = () => {
@@ -15,6 +16,7 @@
         ? document.activeElement
         : null;
       parent.append(heroActions);
+      if (heroNews) parent.append(heroNews);
       focusedControl?.focus({ preventScroll: true });
     };
     placeHeroActions();

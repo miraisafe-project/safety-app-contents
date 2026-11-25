@@ -1,0 +1,5 @@
+.app-lightbox { position: fixed; inset: 0; box-sizing: border-box; width: 100%; max-width: none; height: 100%; max-height: none; margin: 0; padding: max(64px, env(safe-area-inset-top)) max(2.5vw, env(safe-area-inset-right), env(safe-area-inset-left)) max(20px, env(safe-area-inset-bottom)); border: 0; background: transparent; overflow: hidden; }
+.app-lightbox[open] { display: flex; align-items: center; justify-content: center; }
+.app-lightbox::backdrop { background: rgb(8 27 31 / 86%); }
+.app-lightbox > img { display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
+.app-lightbox-close { position: absolute; top: max(8px, env(safe-area-inset-top)); right: max(12px, env(safe-area-inset-right)); display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 1px solid rgb(255 255 255 / 65%); border-radius: 50%; background: #173f44; color: white; font-size: 32px; line-height: 1; cursor: pointer; }

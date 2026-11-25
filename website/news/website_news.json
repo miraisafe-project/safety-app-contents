@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "app-demo",
+      "date": "2026-10-07",
+      "title": "ミライセーフアプリの体験版を公開しました",
+      "category": "アプリ",
+      "action": "link",
+      "url": "./#demo",
+      "published": true
+    },
+    {
+      "id": "official-sns",
+      "date": "2026-11-01",
+      "title": "公式SNSアカウントを開設しました",
+      "category": "活動情報",
+      "action": "detail",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "ミライセーフプロジェクトの公式SNSアカウントを、X（旧Twitter）とInstagramに開設しました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "公式SNSでは、ミライセーフアプリの開発状況やプロジェクトの活動報告、クラウドファンディングに関する情報などを発信していきます。"
+        },
+        {
+          "type": "paragraph",
+          "text": "ぜひフォローして、今後の活動をご覧ください。"
+        },
+        {
+          "type": "social",
+          "service": "x",
+          "label": "X（旧Twitter）",
+          "account": "@MiraiSafe",
+          "url": "https://x.com/MiraiSafe"
+        },
+        {
+          "type": "social",
+          "service": "instagram",
+          "label": "Instagram",
+          "account": "@miraisafe",
+          "url": "https://www.instagram.com/miraisafe"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "crowdfunding-start",
+      "date": "2026-11-21",
+      "title": "クラウドファンディングを開始しました",
+      "category": "活動情報",
+      "action": "link",
+      "url": "crowdfunding/",
+      "published": true
+    },
+    {
+      "id": "crowdfunding-meikan",
+      "date": "2026-11-25",
+      "title": "クラウドファンディング名鑑に掲載されました",
+      "category": "活動情報",
+      "action": "detail",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "現在実施しているミライセーフプロジェクトのクラウドファンディングが、クラウドファンディング情報サイト「クラウドファンディング名鑑」に掲載されました。"
+        },
+        {
+          "type": "image",
+          "src": "assets/website/news/crowdfunding_meikan.webp",
+          "alt": "クラウドファンディング名鑑に掲載されたミライセーフプロジェクトの紹介ページ",
+          "width": 1238,
+          "height": 1932,
+          "caption": "クラウドファンディング名鑑 掲載ページ（2026年11月25日時点）"
+        },
+        {
+          "type": "paragraph",
+          "text": "掲載ページでは、プロジェクトの活動目的やミライセーフアプリの概要、クラウドファンディングの内容などが紹介されています。"
+        },
+        {
+          "type": "paragraph",
+          "text": "クラウドファンディングの募集期間は、2027年1月10日（日）までです。"
+        },
+        {
+          "type": "link",
+          "label": "クラウドファンディング名鑑の掲載ページを見る",
+          "url": "https://crowdfunding.meikan.org/project/forgood-1004679/"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
