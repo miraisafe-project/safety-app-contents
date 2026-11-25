@@ -68,6 +68,17 @@
         content.append(a);
       }
     }
+    if (item.layout === 'text-image') {
+      const nodes = [...content.children];
+      const figures = nodes.filter(node => node.tagName === 'FIGURE');
+      const text = nodes.filter(node => node.tagName !== 'FIGURE');
+      if (figures.length && text.length) {
+        const copy = el('div', '', 'news-split-copy'), media = el('div', '', 'news-split-media');
+        copy.append(...text); media.append(...figures);
+        content.classList.add('news-body--split');
+        content.replaceChildren(copy, media);
+      }
+    }
     article.append(content, link('お知らせ一覧に戻る', 'news/', 'text-link')); host.append(crumb, article);
   }
   fetch(new URL('website/news/website_news.json', root), { cache: 'no-cache' })

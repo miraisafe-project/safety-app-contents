@@ -28,6 +28,14 @@
 .news-meta { display: flex; gap: 16px; align-items: baseline; color: var(--ink-soft); font-size: 14px; }
 .news-article h1 { font-size: clamp(24px, 2.4vw, 30px); padding-bottom: 20px; border-bottom: 1px solid var(--line); margin: 16px 0 24px; }
 .news-body { font-size: 16px; line-height: 1.8; }
+.news-body--split { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 28px; align-items: start; }
+.news-split-copy, .news-split-media { min-width: 0; }
+.news-split-media .news-figure { max-width: 320px; margin: 0 auto 24px; }
+.news-split-media .news-figure:last-child { margin-bottom: 0; }
+.news-split-media figcaption { text-align: center; }
+@media (max-width: 800px) {
+  .news-body--split { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}
 .news-figure { max-width: 360px; margin: 24px auto; }
 .news-image-zoom { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: pointer; }
 .news-image-zoom img { display: block; width: 100%; height: auto; }
