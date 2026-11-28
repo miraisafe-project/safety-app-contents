@@ -1,0 +1,2812 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-29",
+  "scope": "47都道府県の一次調査。各分野・全サイトを網羅した調査ではない。自治体の総合案内・子ども若者向け案内を優先し、公開条件を満たさない候補は保留した。",
+  "methodology": [
+    "公式ページ本文、分野別リンク・検索導線、対象者を確認。HTTP成功だけで掲載可とはしない。",
+    "各候補のフッターやサイト内の利用案内から適用規約をたどり、個別ページへのリンク条件を確認。",
+    "掲載後の通知を含め、連絡を求める候補は今回は保留。連絡・許可申請は行っていない。",
+    "画像・ロゴ・電話番号・受付時間は転載せず、紹介文は独自に作成。",
+    "対応分野は確認できた案内範囲。未対応分野は相談先が存在しないという意味ではない。",
+    "保留台帳はアプリ配信用JSONに混ぜない。既存の全国向け案内データは編集しない。"
+  ],
+  "topicDefinitions": [
+    "子ども・若者の悩み全般",
+    "学校生活・いじめ・不登校",
+    "こころの悩み・精神的な不調",
+    "発達障害・発達特性",
+    "家庭環境・虐待",
+    "ヤングケアラー",
+    "ひきこもり",
+    "性・妊娠に関する悩み",
+    "犯罪被害・少年相談",
+    "人権・差別・嫌がらせ",
+    "インターネット上の被害",
+    "生活困窮・経済的な悩み",
+    "労働・アルバイト"
+  ],
+  "summary": {
+    "surveyedPrefectures": 47,
+    "publishedPrefectures": 17,
+    "publishedPages": 19,
+    "heldPages": 30
+  },
+  "prefectures": [
+    {
+      "prefectureCode": "01",
+      "prefectureName": "北海道",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "死にたい気持ちになったときの相談窓口",
+          "url": "https://www.pref.hokkaido.lg.jp/hf/shf/131386.html",
+          "provider": "北海道",
+          "topics": [
+            "こころの悩み・精神的な不調"
+          ],
+          "targetUsers": "道内の本人など。札幌市内外で担当窓口が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "深刻なこころの悩みに関する道内の電話・SNS相談と保健所の案内。",
+          "termsUrl": "https://www.pref.hokkaido.lg.jp/site-info/sitepolicy.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "トップページ以外へのリンクは各ページの管理者への問い合わせを求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "トップページ以外へのリンクは各ページの管理者への問い合わせを求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "02",
+      "prefectureName": "青森県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "aomori_consultation_directory",
+          "name": "相談窓口のご案内",
+          "url": "https://www.pref.aomori.lg.jp/kenminno-koe/consultation_index.html",
+          "provider": "青森県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ヤングケアラー",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。事業者向けや保護者向けの項目も含む。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "子ども・若者、発達、ヤングケアラー、こころ、生活、労働などの分野別リンクを確認。",
+          "termsUrl": "https://www.pref.aomori.lg.jp/contents/copyright.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "営利・非営利を問わず原則自由。事前許可・連絡の要求はなく、県サイトと明記し独立性を保つ。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "03",
+      "prefectureName": "岩手県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "岩手県",
+          "url": "https://www.pref.iwate.jp/kurashikankyou/fukushi/ryouiku/1004168.html",
+          "provider": "岩手県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ"
+          ],
+          "targetUsers": "子ども・若者本人、保護者など。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "子ども・若者に向けて、こころ、いじめ・体罰・虐待などの相談先を紹介。",
+          "termsUrl": "https://www.pref.iwate.jp/about/link.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページは担当課への問い合わせが必要。トップページもリンク元URLの連絡を求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページは担当課への問い合わせが必要。トップページもリンク元URLの連絡を求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "04",
+      "prefectureName": "宮城県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "分野別の各相談窓口",
+          "url": "https://www.pref.miyagi.jp/soshiki/kohou/life.html",
+          "provider": "宮城県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。窓口ごとに地域・対象条件が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "医療、福祉、家庭、教育、仕事、生活などの分野別一覧を確認。",
+          "termsUrl": "https://www.pref.miyagi.jp/soshiki/kohou/site-riyou.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページは担当課への問い合わせが必要。トップページでも掲載後の連絡を求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページは担当課への問い合わせが必要。トップページでも掲載後の連絡を求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "05",
+      "prefectureName": "秋田県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "ふきのとうホットライン～心の健康相談窓口一覧～",
+          "url": "https://www.pref.akita.lg.jp/pages/archive/1375",
+          "provider": "秋田県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。事業者・高齢者向けも含む。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "ふきのとうホットラインの分野別相談一覧。心、青少年、労働、生活等の導線を確認。",
+          "termsUrl": "https://www.pref.akita.lg.jp/pages/about-copyright",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "トップページ以外は各ページ下欄の部署への問い合わせを求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "トップページ以外は各ページ下欄の部署への問い合わせを求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "06",
+      "prefectureName": "山形県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "いろいろな相談窓口 – やまがた子育て応援サイト",
+          "url": "https://kosodate.pref.yamagata.jp/support/adviser-counter",
+          "provider": "山形県（やまがた子育て応援サイト）",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "主に県内の子育て家庭。子ども・若者本人向け窓口も含むが、すべてが本人向けではない。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "子ども・家庭、若者相談支援拠点、こころ、女性、仕事と家庭の両立の案内。",
+          "termsUrl": "https://kosodate.pref.yamagata.jp/privacy-policy",
+          "termsScope": "やまがた子育て応援サイト固有の規約。",
+          "contactRequirement": "notification_required",
+          "decisionBasis": "特設サイト自身のプライバシーポリシーにリンク元URLの連絡を求める記載がある。県本体の条件を流用しない。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "特設サイト自身のプライバシーポリシーにリンク元URLの連絡を求める記載がある。県本体の条件を流用しない。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "07",
+      "prefectureName": "福島県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "県の相談窓口一覧について",
+          "url": "https://www.pref.fukushima.lg.jp/sec/01010e/koucho6-002.html",
+          "provider": "福島県",
+          "topics": [],
+          "targetUsers": "県の相談先を探す本人、家族など。個別の利用条件は未精査。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "令和8年度の相談窓口一覧PDFとカテゴリ別相談案内への導線を確認。PDF全項目は未精査。",
+          "termsUrl": "https://www.pref.fukushima.lg.jp/sec/01010d/koho-chosakuken.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "notification_required",
+          "decisionBasis": "事前連絡は不要だが、掲載後にリンク元URLを連絡する必要がある。今回の連絡不要という条件に合わない。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "事前連絡は不要だが、掲載後にリンク元URLを連絡する必要がある。今回の連絡不要という条件に合わない。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "08",
+      "prefectureName": "茨城県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "ヤングケアラー",
+        "人権・差別・嫌がらせ"
+      ],
+      "candidates": [
+        {
+          "id": "ibaraki_youth_consultation_directory",
+          "name": "青少年と保護者のための相談窓口一覧",
+          "url": "https://www.pref.ibaraki.jp/bugai/josei/seishonen/sodan2/pc/pichiran.html",
+          "provider": "茨城県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "インターネット上の被害",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "青少年本人と保護者。市町村ごとの窓口・対象条件もある。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "家庭・学校・心と体・非行・職業・その他に分かれた青少年向け一覧。",
+          "termsUrl": "https://www.pref.ibaraki.jp/bugai/koho/kenmin/misc/shitepolicy.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "原則自由で事前連絡不要。個別ページへのリンクも変更時のリンク切れに注意する条件で認められている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "09",
+      "prefectureName": "栃木県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "ヤングケアラー",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み"
+      ],
+      "candidates": [
+        {
+          "id": "tochigi_youth_consultation_directory",
+          "name": "青少年に関する相談窓口一覧",
+          "url": "https://www.pref.tochigi.lg.jp/c01/advice/kurashi/seishounen/000_soudan.html",
+          "provider": "栃木県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "子ども・若者本人、保護者、家族など。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "学校、就労・ひきこもり、犯罪、こころ、障害、虐待・DVの分野別案内。",
+          "termsUrl": "https://www.pref.tochigi.lg.jp/kensei/kouhou/hp/chosakuken/index.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "県へのリンクと明記し、独立したHTMLページへのリンク等の条件を守れば承諾・報告不要。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "10",
+      "prefectureName": "群馬県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "こころの悩み・精神的な不調",
+        "家庭環境・虐待",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "学校生活・いじめ・不登校",
+        "発達障害・発達特性",
+        "ヤングケアラー",
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "gunma_consultation_directory",
+          "name": "相談窓口一覧（ぐんま男女共同参画センター）",
+          "url": "https://www.pref.gunma.jp/site/sankakuse/174527.html",
+          "provider": "群馬県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。女性専用窓口を含み、全窓口がすべての人を対象とするわけではない。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "女性・DVだけでなく、子ども、こころ、ひきこもり、労働、消費生活、法律の一覧。",
+          "termsUrl": "https://www.pref.gunma.jp/page/15257.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "県ホームページへのリンクは原則自由、事前連絡不要。独立性を保ち県の情報と分かる形で掲載する。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "11",
+      "prefectureName": "埼玉県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "saitama_youth_support_directory",
+          "name": "各種相談窓口・支援機関等の紹介",
+          "url": "https://www.pref.saitama.lg.jp/a0307/wakamonoshien-kyougikai/soudan-shienkikan-syoukai.html",
+          "provider": "埼玉県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ヤングケアラー",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "子ども・若者本人、家族、支援者など。保護者・支援者向け情報も含む。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "若者支援の総合相談、居場所、こころ、働く、発達、不登校、ケアラー等のリンク集。",
+          "termsUrl": "https://www.pref.saitama.lg.jp/a0301/tyosaku-rinku.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "リンクは原則自由で事前連絡不要。県サイトへのリンクと明記し、フレーム内に表示しない。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "12",
+      "prefectureName": "千葉県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "学校生活・いじめ・不登校",
+        "家庭環境・虐待",
+        "犯罪被害・少年相談",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "chiba_consultation_search",
+          "name": "相談・問い合わせ窓口",
+          "url": "https://www.pref.chiba.lg.jp/soudan-toiawase/soudan/index.html",
+          "provider": "千葉県",
+          "topics": [
+            "学校生活・いじめ・不登校",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "県の相談先を探す本人、家族など。窓口ごとに対象が異なる。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "くらし・福祉・健康、教育、防災・安全、仕事などから検索・分類選択できる。",
+          "termsUrl": "https://www.pref.chiba.lg.jp/homepage/about-site/link.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "サイト内の各ページへのリンクに特段の制限なし。県サイトと明記し独立性を保つ。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "13",
+      "prefectureName": "東京都",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "子供・青少年（いじめ、ひきこもり、親子関係等）に関する悩みについて|相談窓口等|東京都保健医療局",
+          "url": "https://www.hokeniryo.metro.tokyo.lg.jp/kenkou/tokyokaigi/madoguti/kodomo",
+          "provider": "東京都保健医療局",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み"
+          ],
+          "targetUsers": "子ども・若者本人、保護者、教員など。窓口ごとの年齢・地域制限がある。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "子供・青少年のいじめ、ひきこもり、親子関係等の一覧。本人向け教育・チャット相談を確認。",
+          "termsUrl": "https://www.hokeniryo.metro.tokyo.lg.jp/policy",
+          "termsScope": "東京都保健医療局固有の規約。",
+          "contactRequirement": "permission_required",
+          "decisionBasis": "保健医療局固有のポリシーがトップページ以外のリンクに事前許諾を求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "保健医療局固有のポリシーがトップページ以外のリンクに事前許諾を求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "14",
+      "prefectureName": "神奈川県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "ひとりで悩みを抱えずに相談してみませんか？",
+          "url": "https://www.pref.kanagawa.jp/docs/nf5/kokoro/cnt/consultation.html",
+          "provider": "神奈川県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。窓口ごとに対象条件が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "こころ、学校、家庭、妊娠、虐待・DV、人権、仕事、お金などの分野別案内。",
+          "termsUrl": "https://www.pref.kanagawa.jp/master/index.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "公式ウェブサイト利用案内が個別ページの所管所属への問い合わせを求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "公式ウェブサイト利用案内が個別ページの所管所属への問い合わせを求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "15",
+      "prefectureName": "新潟県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "「こころの相談　にいがた」（こころの相談　新潟）のページです",
+          "url": "https://www.pref.niigata.lg.jp/sec/shougaifukushi/kokoronosoudan.html",
+          "provider": "新潟県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "県内の本人など。新潟市内外などで担当する地域が分かれる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "こころの相談にいがたの各種相談窓口一覧を確認。",
+          "termsUrl": "https://www.pref.niigata.lg.jp/site/userguide/chosakuken.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "unclear",
+          "decisionBasis": "個別ページはリンク自由マーク付きの場合のみ自由。それ以外は事前連絡が必要で、候補ページで該当マークを確証できなかった。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "リンク自由の例外マークを確認できず、個別ページへの事前連絡不要と判断できない。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "16",
+      "prefectureName": "富山県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "ヤングケアラー",
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "toyama_consultation_directory",
+          "name": "各種相談窓口一覧",
+          "url": "https://www.pref.toyama.jp/1021/kensei/kenseiunei/kensei/soudan.html",
+          "provider": "富山県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。子ども本人向けの窓口と保護者向けの窓口が混在する。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "健康・医療・福祉、子ども・教育、家庭、消費生活、労働などの一覧。",
+          "termsUrl": "https://www.pref.toyama.jp/1021/kensei/kouhou/0.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "原則自由。個別ページの変更・リンク切れに注意し、フレームに取り込まない。許可・連絡の要求なし。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "17",
+      "prefectureName": "石川県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "こころの問題等に関する相談窓口 | 石川県",
+          "url": "https://www.pref.ishikawa.lg.jp/fukusi/oshirase/jisatsuboushi.html",
+          "provider": "石川県",
+          "topics": [
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み"
+          ],
+          "targetUsers": "本人、家族など。県内の管轄地域により窓口が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "こころ、DV・性暴力、消費生活・多重債務、いじめなどの一覧。",
+          "termsUrl": "https://www.pref.ishikawa.lg.jp/about_site/sitepolicy/index.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページへのリンクは担当課への問い合わせを求めている。トップページにも掲載後連絡の規定がある。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページへのリンクは担当課への問い合わせを求めている。トップページにも掲載後連絡の規定がある。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "18",
+      "prefectureName": "福井県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "悩んでないで、相談してみよう！  | 福井県ホームページ",
+          "url": "https://www.pref.fukui.lg.jp/doc/kenan/seisyounenikusei/soudan.html",
+          "provider": "福井県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "犯罪被害・少年相談"
+          ],
+          "targetUsers": "青少年本人、保護者など。窓口によって利用者が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "青少年の非行、福祉、虐待、こころ、ひきこもり、発達などの相談先一覧。",
+          "termsUrl": "https://www.pref.fukui.lg.jp/doc/dx-suishin/intro.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "各課のページへのリンク可否は各課へ個別に問い合わせるよう求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "各課のページへのリンク可否は各課へ個別に問い合わせるよう求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "19",
+      "prefectureName": "山梨県",
+      "publishedCount": 2,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "こころの悩み・精神的な不調",
+        "性・妊娠に関する悩み",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み"
+      ],
+      "notConfirmedTopics": [
+        "ひきこもり",
+        "犯罪被害・少年相談",
+        "インターネット上の被害",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": "yamanashi_education_consultation_directory",
+          "name": "教育・子育て",
+          "url": "https://www.pref.yamanashi.jp/toiawase/sodan/kyouikukosodate.html",
+          "provider": "山梨県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ヤングケアラー"
+          ],
+          "targetUsers": "子ども本人、保護者など。子育て相談など保護者向けの窓口も含みます。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "教育相談、子育て相談、児童相談所等を一覧にし、本人のいじめ・不登校・発達・ヤングケアラー相談を案内。",
+          "termsUrl": "https://www.pref.yamanashi.jp/info/howto_site.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "県ホームページへ自由にリンクできる。県へのリンクと明記し、自サイトの一部のように表示しない。連絡の要求なし。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        },
+        {
+          "id": "yamanashi_health_welfare_directory",
+          "name": "相談窓口（医療・健康・福祉）",
+          "url": "https://www.pref.yamanashi.jp/iryo/sodan/",
+          "provider": "山梨県",
+          "topics": [
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み"
+          ],
+          "targetUsers": "本人、家族など。保護者向け情報、制度・指定機関の情報も含む。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "医療・健康・福祉の相談先一覧。生活困窮、こころ、障害、人権、女性・児童の案内がある。",
+          "termsUrl": "https://www.pref.yamanashi.jp/info/howto_site.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "県ホームページへ自由にリンクできる。県へのリンクと明記し、自サイトの一部のように表示しない。連絡の要求なし。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "20",
+      "prefectureName": "長野県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "各種相談窓口一覧／長野県",
+          "url": "https://www.pref.nagano.lg.jp/kurashi/sodan/index.html",
+          "provider": "長野県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "青少年本人、保護者など。本人向けと保護者向けをページ内で区分。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "本人向け青少年相談と保護者向けの項目を区別した分野別一覧。",
+          "termsUrl": "https://www.pref.nagano.lg.jp/koho/kensei/koho/homepage/link.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページは担当課への問い合わせが必要。トップページも設置後の連絡を求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページは担当課への問い合わせが必要。トップページも設置後の連絡を求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "21",
+      "prefectureName": "岐阜県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み"
+      ],
+      "notConfirmedTopics": [
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "インターネット上の被害",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": "gifu_police_consultation_directory",
+          "name": "相談窓口のご案内",
+          "url": "https://www.pref.gifu.lg.jp/site/ena-sho/7677.html",
+          "provider": "岐阜県警察（恵那警察署）",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み"
+          ],
+          "targetUsers": "被害や生活上の悩みがある本人、家族など。県内の相談先を含む。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "警察相談を中心に、青少年、教育、こころ、発達、消費生活、法律の窓口も紹介。",
+          "termsUrl": "https://www.pref.gifu.lg.jp/page/79328.html",
+          "termsScope": "候補ページ自身が示す県公式サイトの規約。教育委員会・警察等の他サイトに一律適用するものではない。",
+          "contactRequirement": "none",
+          "decisionBasis": "候補ページのフッターが県のリンク規定を案内。原則自由・事前連絡不要で、個別のリンク制限注記も確認されなかった。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "22",
+      "prefectureName": "静岡県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "困ったときの各種相談窓口｜静岡県公式ホームページ",
+          "url": "https://www.pref.shizuoka.jp/kensei/pr/hiroba/1002014/1007460.html",
+          "provider": "静岡県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。相談対象は窓口ごとに異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "こころ、教育、生活、仕事などの各種相談案内を確認。",
+          "termsUrl": "https://www.pref.shizuoka.jp/about/link.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "notification_required",
+          "decisionBasis": "個別ページへのリンクを拒まないが、掲載後にリンク元とリンク先のURLを連絡する必要がある。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページへのリンクを拒まないが、掲載後にリンク元とリンク先のURLを連絡する必要がある。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "23",
+      "prefectureName": "愛知県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "相談窓口一覧（検索で確認した候補）",
+          "url": "https://www.pref.aichi.jp/site/userguide/soudan-list.html",
+          "provider": "愛知県",
+          "topics": [],
+          "targetUsers": "未確定。本文確認後に判定する。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": false,
+          "httpStatus": null,
+          "contentEvidence": "検索で県の相談窓口一覧を発見したが、取得時403。現行本文と適用規約の確認を完了できなかった。",
+          "termsUrl": "https://www.pref.aichi.jp/site/userguide/about.html",
+          "termsScope": "適用規約の本文取得ができず未確定。",
+          "contactRequirement": "unclear",
+          "decisionBasis": "本文取得が403、利用ガイド候補もリダイレクトエラーとなり、掲載条件を確定できなかった。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "候補本文の取得が403、規約候補はリダイレクトエラー。現行内容と掲載条件を確認できない。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "24",
+      "prefectureName": "三重県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "三重県：各種相談窓口",
+          "url": "https://www.pref.mie.lg.jp/s_kencho/KENCHO/GYOUMU/index.htm",
+          "provider": "三重県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。行政手続・事業者向け相談も含む。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "部局・教育委員会・警察別の各種相談窓口へ進める一覧を確認。",
+          "termsUrl": "https://www.pref.mie.lg.jp/info/chosaku.htm",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "notification_required",
+          "decisionBasis": "リンクした場合はリンク元URLの連絡を求めている。記載のリンク自由範囲もトップページを基本としている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "リンクした場合はリンク元URLの連絡を求めている。記載のリンク自由範囲もトップページを基本としている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "25",
+      "prefectureName": "滋賀県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "こころの悩み・精神的な不調",
+        "家庭環境・虐待",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "学校生活・いじめ・不登校",
+        "発達障害・発達特性",
+        "ヤングケアラー",
+        "ひきこもり",
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "shiga_consultation_directory",
+          "name": "各種電話相談窓口のご案内",
+          "url": "https://www.pref.shiga.lg.jp/ab00/7727.html",
+          "provider": "滋賀県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。女性専用・保護者向けや事業者向けの窓口も含む。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "労働、就労、子ども、女性・DV、こころ、性暴力、犯罪被害、消費生活の一覧。",
+          "termsUrl": "https://www.pref.shiga.lg.jp/ab00/9916.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "県ホームページへのリンク設定は自由。法令・公序良俗等の条件を除き、許可・連絡の要求なし。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "26",
+      "prefectureName": "京都府",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "家庭環境・虐待",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "発達障害・発達特性",
+        "ヤングケアラー",
+        "ひきこもり",
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "kyoto_consultation_directory",
+          "name": "相談窓口",
+          "url": "https://www.pref.kyoto.jp/yorisoi/soudannmadoguguchi.html",
+          "provider": "京都府",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。京都市内外などで担当窓口が分かれる。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "深刻な悩み、子ども、こころ、家庭、性暴力、消費生活、仕事、警察の案内。",
+          "termsUrl": "https://www.pref.kyoto.jp/copyright.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "トップページ以外も自由と明示。担当課への連絡は問い合わせる際の手順であり、リンク時の義務とはされていない。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "27",
+      "prefectureName": "大阪府",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "悩みの相談窓口一覧／大阪府（おおさかふ）ホームページ [Osaka Prefectural Government]",
+          "url": "https://www.pref.osaka.lg.jp/o100220/kokoronokenko/soudankikan/jisatsu_soudan.html",
+          "provider": "大阪府",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。大阪市・堺市と他地域で窓口が異なる場合がある。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "こころ、依存、借金、犯罪、DV、人権、子ども、ひきこもり等の一覧。",
+          "termsUrl": "https://www.pref.osaka.lg.jp/o070050/koho/information/use.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "notification_required",
+          "decisionBasis": "トップページも個別ページも、リンク先・リンク元のURLを所管先へ知らせる必要がある。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "トップページも個別ページも、リンク先・リンク元のURLを所管先へ知らせる必要がある。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "28",
+      "prefectureName": "兵庫県",
+      "publishedCount": 2,
+      "coveredTopics": [
+        "家庭環境・虐待",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み",
+        "こころの悩み・精神的な不調",
+        "ひきこもり"
+      ],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "発達障害・発達特性",
+        "ヤングケアラー",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "インターネット上の被害",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": "hyogo_consultation_directory",
+          "name": "相談窓口一覧（兵庫県民総合相談センター）",
+          "url": "https://web.pref.hyogo.lg.jp/sg01/ac18_000000003.html",
+          "provider": "兵庫県",
+          "topics": [
+            "家庭環境・虐待",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み"
+          ],
+          "targetUsers": "県民の本人など。専門相談には予約・利用条件がある。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "県民総合相談センターのくらし・法律・家事・外国人相談などの一覧。",
+          "termsUrl": "https://web.pref.hyogo.lg.jp/about_link.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "原則自由で、個別ページへのリンクも可と明示。フレーム表示禁止、URL変更・削除に注意。連絡の要求なし。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        },
+        {
+          "id": "hyogo_mental_health_directory",
+          "name": "心の健康に関する相談窓口",
+          "url": "https://web.pref.hyogo.lg.jp/kf09/kokoronokenkousoudan.html",
+          "provider": "兵庫県",
+          "topics": [
+            "こころの悩み・精神的な不調",
+            "ひきこもり"
+          ],
+          "targetUsers": "兵庫県内の本人、家族など。神戸市内外など、住んでいる地域により窓口が異なります。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "県・神戸市・保健所等の担当区域を区別したこころの相談一覧。ひきこもりや依存症の相談も紹介。",
+          "termsUrl": "https://web.pref.hyogo.lg.jp/about_link.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "原則自由で、個別ページへのリンクも可と明示。フレーム表示禁止、URL変更・削除に注意。連絡の要求なし。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "29",
+      "prefectureName": "奈良県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "家庭環境・虐待",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "発達障害・発達特性",
+        "ヤングケアラー",
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "nara_consultation_directory",
+          "name": "県民相談窓口",
+          "url": "https://www.pref.nara.lg.jp/kenseijouhou/kouhou/kenminsoudan/index.html",
+          "provider": "奈良県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。県政・事業者・保護者向け情報も含む。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "県民相談窓口を、子育て・福祉・健康・人権・労働・警察・教育等から選べる。",
+          "termsUrl": "https://www.pref.nara.lg.jp/link.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "リンクに特段の制限を設けず、個別ページへのリンクも想定。フレームに取り込まない。許可・報告の要求なし。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "30",
+      "prefectureName": "和歌山県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "地域にある資源 | 和歌山県",
+          "url": "https://www.pref.wakayama.lg.jp/prefg/050301/050301/sigenn.html",
+          "provider": "和歌山県",
+          "topics": [
+            "こころの悩み・精神的な不調"
+          ],
+          "targetUsers": "本人、家族、支援者など。福祉制度・事業者向け情報も含む。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "市町村のこころの相談・精神保健福祉関連機関等の一覧への案内。",
+          "termsUrl": "https://www.pref.wakayama.lg.jp/prefg/000200/copyright.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページへのリンクは所管課室への事前連絡を求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページへのリンクは所管課室への事前連絡を求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "31",
+      "prefectureName": "鳥取県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "子ども・若者に関する主な相談機関/とりネット/鳥取県公式サイト",
+          "url": "https://www.pref.tottori.lg.jp/317126.htm",
+          "provider": "鳥取県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "子ども・若者本人、家族など。窓口ごとに対象が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "子ども・若者の教育、家庭、犯罪被害、ハラスメント、消費生活等の相談案内。",
+          "termsUrl": "https://www.pref.tottori.lg.jp/9320.htm",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "トップページ以外は担当所属への問い合わせを求め、トップページも掲載後連絡を求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "トップページ以外は担当所属への問い合わせを求め、トップページも掲載後連絡を求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "32",
+      "prefectureName": "島根県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "家庭環境・虐待",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "発達障害・発達特性",
+        "ヤングケアラー",
+        "ひきこもり",
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "shimane_consultation_directory",
+          "name": "相談機関一覧",
+          "url": "https://www.pref.shimane.lg.jp/medical/fukushi/jishi/jisitaisaku_joho_c/soudanmadoguchi-icihran.html",
+          "provider": "島根県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。市町村の管轄や窓口ごとの条件がある。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "令和8年7月のこころ、人権、生活、学校、家族、仕事等の相談機関一覧。",
+          "termsUrl": "https://www.pref.shimane.lg.jp/cl.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "原則自由で承認メール不要。個別ページのURL変更に注意し、県へのリンクと明記する。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "33",
+      "prefectureName": "岡山県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "家庭環境・虐待",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "発達障害・発達特性",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "インターネット上の被害"
+      ],
+      "candidates": [
+        {
+          "id": "okayama_consultation_directory",
+          "name": "県の相談窓口",
+          "url": "https://www.pref.okayama.lg.jp/page/detail-59911.html",
+          "provider": "岡山県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。事業者・保護者向けの項目も含む。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "県の総合一覧、福祉・県民生活、教育委員会、警察の相談先案内へのリンク。",
+          "termsUrl": "https://www.pref.okayama.lg.jp/page/detail-4318.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "営利・非営利を問わず原則自由、報告不要。県へのリンクと明記しフレーム内に取り込まない。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "34",
+      "prefectureName": "広島県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "相談窓口一覧",
+          "url": "https://www.pref.hiroshima.lg.jp/site/consultation-counter/index.html",
+          "provider": "広島県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ヤングケアラー",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。保護者・事業者向け情報も含む。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "教育、こころ、ヤングケアラー、健康、子ども・家庭、人権、労働等の一覧。",
+          "termsUrl": "https://www.pref.hiroshima.lg.jp/soshiki/19/1173052529569.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "掲載後連絡を求め、トップページ以外は担当課との相談も求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "掲載後連絡を求め、トップページ以外は担当課との相談も求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "35",
+      "prefectureName": "山口県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "人権関係相談機関の紹介・目次",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/36/14883.html",
+          "provider": "山口県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "インターネット上の被害",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。窓口ごとに対象条件がある。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "人権、青少年、福祉、健康、労働、警察、ネット上の誹謗中傷等の案内。",
+          "termsUrl": "https://www.pref.yamaguchi.lg.jp/soshiki/21/26951.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "notification_required",
+          "decisionBasis": "リンク設定後に県へ知らせるよう求めている。個別設置サイトには別条件があり得る。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "リンク設定後に県へ知らせるよう求めている。個別設置サイトには別条件があり得る。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "36",
+      "prefectureName": "徳島県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "相談窓口｜とくしま自殺予防センター",
+          "url": "https://www.pref.tokushima.lg.jp/jisatsuyobou/soudanmadoguchi.html/",
+          "provider": "徳島県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。窓口ごとに利用条件が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "こころ、学校、家庭、生活、消費生活、人権等の相談窓口を確認。",
+          "termsUrl": "https://www.pref.tokushima.lg.jp/sitepolicy/",
+          "termsScope": "県本体の規約。特設ページ側で別条件を確認できなかったため、公開条件を満たすとは扱わない。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "県サイト内の特設ページ。独自のリンク許諾表示は確認できず、本体規約は個別ページへの問い合わせ・掲載後連絡を求めるため保留。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "県サイト内の特設ページ。独自のリンク許諾表示は確認できず、本体規約は個別ページへの問い合わせ・掲載後連絡を求めるため保留。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "37",
+      "prefectureName": "香川県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "各種相談窓口のご案内｜香川県",
+          "url": "https://www.pref.kagawa.lg.jp/kocho/shokai/kencho/soudan.html",
+          "provider": "香川県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。事業者・保護者向けも含む。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "子ども、健康、障害、安全、消費生活、女性、人権、雇用等の一覧。",
+          "termsUrl": "https://www.pref.kagawa.lg.jp/kocho/koho/kohosonota/about.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "notification_required",
+          "decisionBasis": "原則自由だが、リンク元URL・リンク先URL・連絡先メールアドレスの報告を求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "原則自由だが、リンク元URL・リンク先URL・連絡先メールアドレスの報告を求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "38",
+      "prefectureName": "愛媛県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "各種相談窓口のご案内",
+          "url": "https://www.pref.ehime.jp/page/15080.html",
+          "provider": "愛媛県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。窓口ごとに対象条件が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "子どもと家庭、教育、福祉、人権、警察、労働・雇用などの相談一覧。",
+          "termsUrl": "https://www.pref.ehime.jp/page/14959.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページへのリンクは当該ページの担当所属への問い合わせを求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページへのリンクは当該ページの担当所属への問い合わせを求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "39",
+      "prefectureName": "高知県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "日常生活における様々な悩みに関する相談窓口の一覧 | 高知県",
+          "url": "https://www.pref.kochi.lg.jp/doc/konnannanayamisoudan/",
+          "provider": "高知県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。女性限定・対象年齢などは窓口ごとに異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "女性・男性、DV、性暴力、妊娠、子ども、心、就労、人権等の一覧。",
+          "termsUrl": "https://www.pref.kochi.lg.jp/reference/policy.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページは管理所属への問い合わせを求め、トップページにも掲載後連絡の規定がある。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページは管理所属への問い合わせを求め、トップページにも掲載後連絡の規定がある。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "40",
+      "prefectureName": "福岡県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "相談窓口一覧（３　健康・福祉・子育て）",
+          "url": "https://www.pref.fukuoka.lg.jp/contents/mado-3.html",
+          "provider": "福岡県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ヤングケアラー",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "生活困窮・経済的な悩み"
+          ],
+          "targetUsers": "本人、家族など。医療・保護者向け窓口も含む。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "健康・福祉・子育ての相談一覧。若者自立・こころ・家庭等の案内を確認。",
+          "termsUrl": "https://www.pref.fukuoka.lg.jp/contents/this-site-mensekietc.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "notification_required",
+          "decisionBasis": "リンク掲載後、リンク元URL・所属氏名・連絡先を記したメールを求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "リンク掲載後、リンク元URL・所属氏名・連絡先を記したメールを求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "41",
+      "prefectureName": "佐賀県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "佐賀県の主な相談窓口 / 佐賀県",
+          "url": "https://www.pref.saga.lg.jp/kiji00326853/index.html",
+          "provider": "佐賀県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。窓口ごとに対象条件が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "健康、福祉、青少年、教育、男女共同参画、労働などの分野別案内。",
+          "termsUrl": "https://www.pref.saga.lg.jp/kiji00348029/index.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページは担当課への問い合わせを求める。掲載後連絡も必要。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページは担当課への問い合わせを求める。掲載後連絡も必要。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "42",
+      "prefectureName": "長崎県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "相談窓口の紹介",
+          "url": "https://www.pref.nagasaki.jp/soudan/",
+          "provider": "長崎県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "犯罪被害・少年相談",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。窓口ごとに対象条件が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "福祉・保健、子ども・教育、仕事、DV・虐待、健康、消費生活等の案内。",
+          "termsUrl": "https://www.pref.nagasaki.jp/pages/site_info.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページは担当課との相談が必要で、掲載後のリンク元名称・URLの連絡も求める。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページは担当課との相談が必要で、掲載後のリンク元名称・URLの連絡も求める。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "43",
+      "prefectureName": "熊本県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "～つなぐ～相談機関一覧",
+          "url": "https://www.pref.kumamoto.jp/soshiki/39/258706.html",
+          "provider": "熊本県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。窓口ごとに地域・対象条件が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "こころ、子ども・家庭、お金、仕事などの相談機関一覧を確認。",
+          "termsUrl": "https://www.pref.kumamoto.jp/soshiki/1/56078.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "notification_required",
+          "decisionBasis": "掲載後にリンク元URLと責任者の氏名・所属・メールアドレスの連絡が必要。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "掲載後にリンク元URLと責任者の氏名・所属・メールアドレスの連絡が必要。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "44",
+      "prefectureName": "大分県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "こころ、いのちの相談窓口",
+          "url": "https://www.pref.oita.jp/site/kokoroinotisoudan/",
+          "provider": "大分県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ヤングケアラー",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "生活困窮・経済的な悩み",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "本人、家族など。窓口ごとに地域・対象条件が異なる。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "こころ、生活、仕事、子ども、ひきこもり、性暴力、人権等の一覧。",
+          "termsUrl": "https://www.pref.oita.jp/site/userguide/menseki.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページへのリンクは担当課への問い合わせを求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページへのリンクは担当課への問い合わせを求めている。"
+        }
+      ]
+    },
+    {
+      "prefectureCode": "45",
+      "prefectureName": "宮崎県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "ヤングケアラー",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み"
+      ],
+      "candidates": [
+        {
+          "id": "miyazaki_youth_consultation_directory",
+          "name": "青少年に関する相談窓口一覧",
+          "url": "https://www.pref.miyazaki.lg.jp/kodomo-katei/kyoikukosodate/kodomo/page00053.html",
+          "provider": "宮崎県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "青少年本人、保護者など。更生保護・養育など対象の限られた窓口も含む。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "国・県・その他の青少年相談を、相談内容と利用方法の表で紹介。",
+          "termsUrl": "https://www.pref.miyazaki.lg.jp/kohosenryaku/kense/koho/index-02.html",
+          "termsScope": "候補ページと同一サイトの規約。外部の特設サイト・警察・教育機関等には自動適用しない。",
+          "contactRequirement": "none",
+          "decisionBasis": "自由にリンクでき事前連絡不要。個別ページの変更・削除に注意し、県へのリンクと明記する。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "46",
+      "prefectureName": "鹿児島県",
+      "publishedCount": 1,
+      "coveredTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "労働・アルバイト"
+      ],
+      "notConfirmedTopics": [
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み"
+      ],
+      "candidates": [
+        {
+          "id": "kagoshima_youth_family_directory",
+          "name": "一人で悩まないで！ 相談窓口",
+          "url": "https://www.pref.kagoshima.jp/ba07/katei_kyouiku/consultation.html",
+          "provider": "鹿児島県教育委員会",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "学校生活・いじめ・不登校",
+            "こころの悩み・精神的な不調",
+            "発達障害・発達特性",
+            "家庭環境・虐待",
+            "ヤングケアラー",
+            "ひきこもり",
+            "性・妊娠に関する悩み",
+            "犯罪被害・少年相談",
+            "人権・差別・嫌がらせ",
+            "労働・アルバイト"
+          ],
+          "targetUsers": "子ども・若者本人と保護者など。子育て・家庭教育の保護者向け窓口も含む。",
+          "eligibility": "相談先ごとに対象年齢、住んでいる地域、予約などの条件が異なる。すべての窓口が子ども本人向けではない。利用時はリンク先で確認する。",
+          "status": "published",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "教育、児童・家庭、発達、ヤングケアラー、こころ、性・妊娠などの一覧。",
+          "termsUrl": "https://www.pref.kagoshima.jp/copyright.html",
+          "termsScope": "候補ページ自身が示す県公式サイトの規約。教育委員会・警察等の他サイトに一律適用するものではない。",
+          "contactRequirement": "none",
+          "decisionBasis": "県教育委員会のページ自身が県のリンク規定を案内。原則フリーで県へのリンクと明記する。許可・連絡の要求なし。",
+          "checkedAt": "2026-11-29",
+          "holdReason": null
+        }
+      ]
+    },
+    {
+      "prefectureCode": "47",
+      "prefectureName": "沖縄県",
+      "publishedCount": 0,
+      "coveredTopics": [],
+      "notConfirmedTopics": [
+        "子ども・若者の悩み全般",
+        "学校生活・いじめ・不登校",
+        "こころの悩み・精神的な不調",
+        "発達障害・発達特性",
+        "家庭環境・虐待",
+        "ヤングケアラー",
+        "ひきこもり",
+        "性・妊娠に関する悩み",
+        "犯罪被害・少年相談",
+        "人権・差別・嫌がらせ",
+        "インターネット上の被害",
+        "生活困窮・経済的な悩み",
+        "労働・アルバイト"
+      ],
+      "candidates": [
+        {
+          "id": null,
+          "name": "性や体、こころに関する相談窓口｜沖縄県公式ホームページ",
+          "url": "https://www.pref.okinawa.jp/kyoiku/jido/1007994/1035385.html",
+          "provider": "沖縄県",
+          "topics": [
+            "子ども・若者の悩み全般",
+            "こころの悩み・精神的な不調",
+            "家庭環境・虐待",
+            "性・妊娠に関する悩み"
+          ],
+          "targetUsers": "年齢・性別不問の窓口、子ども向け、若年妊婦向け、女性向けなどが混在。",
+          "eligibility": "個別窓口の年齢・地域などの条件はリンク先で確認する。保留候補はアプリから案内しない。",
+          "status": "held",
+          "contentVerified": true,
+          "httpStatus": 200,
+          "contentEvidence": "性・健康・妊娠、子どもの性、若年妊娠、女性の悩みの複数窓口を紹介。",
+          "termsUrl": "https://www.pref.okinawa.lg.jp/about/1018114.html",
+          "termsScope": "県公式サイトの利用規約。",
+          "contactRequirement": "inquiry_required",
+          "decisionBasis": "個別ページは担当課への問い合わせが必要。トップページも掲載後のリンク元URLの連絡を求めている。",
+          "checkedAt": "2026-11-29",
+          "holdReason": "個別ページは担当課への問い合わせが必要。トップページも掲載後のリンク元URLの連絡を求めている。"
+        }
+      ]
+    }
+  ],
+  "existingNationalLinks": [
+    {
+      "id": "mhlw_support_information_search",
+      "name": "支援情報検索サイト",
+      "url": "https://shienjoho.go.jp/",
+      "usage": "悩み・相談方法・地域等からの全国向け案内。地域別データの空白分野を補完する。",
+      "checkedAt": "2026-11-29"
+    },
+    {
+      "id": "cfa_children_consultation_guide",
+      "name": "こども相談ガイド",
+      "url": "https://www.bridge.cfa.go.jp/",
+      "usage": "子ども本人向けの横断案内として補完する。JavaScriptを使うため、地域連携のUIは実装時に実機確認する。",
+      "checkedAt": "2026-11-29"
+    },
+    {
+      "id": "mext_children_sos_directory",
+      "name": "子供のSOSの相談窓口",
+      "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/06112211.html",
+      "usage": "子どものSOS・教育関係の全国向け案内。地域の案内が少ない場合にも提示する。",
+      "checkedAt": "2026-11-29"
+    },
+    {
+      "id": "mhlw_hikikomori_support_directory",
+      "name": "全国のひきこもり相談窓口",
+      "url": "https://hikikomori-voice-station.mhlw.go.jp/support/",
+      "usage": "全国の地域別ひきこもり相談先を探す導線として活用する。",
+      "checkedAt": "2026-11-29"
+    },
+    {
+      "id": "npa_prefectural_youth_counseling",
+      "name": "都道府県警察の少年相談窓口",
+      "url": "https://www.npa.go.jp/bureau/safetylife/syonen/soudan.html",
+      "usage": "都道府県ごとの少年相談窓口一覧。子ども本人・家族の相談を区別して案内する。",
+      "checkedAt": "2026-11-29"
+    },
+    {
+      "id": "npa_crime_victim_support_directory",
+      "name": "犯罪被害者のための支援一覧",
+      "url": "https://www.npa.go.jp/hanzaihigai/portal/search/kensaku/support/",
+      "usage": "地域・支援内容から犯罪被害者の支援を探す導線として活用する。",
+      "checkedAt": "2026-11-29"
+    },
+    {
+      "id": "mhlw_livelihood_support_directory",
+      "name": "生活困窮者自立支援制度",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000059425.html",
+      "usage": "制度ページ内の自立相談支援機関窓口一覧への導線を案内する。",
+      "checkedAt": "2026-11-29"
+    },
+    {
+      "id": "mhlw_employment_labor_consultations",
+      "name": "雇用・労働相談窓口等一覧",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/soudanmadogutitou/itiran/index.html",
+      "usage": "都道府県労働局等の案内をたどる補完リンク。すべての項目が地域検索ではない。",
+      "checkedAt": "2026-11-29"
+    },
+    {
+      "id": "mhlw_hiv_testing_map",
+      "name": "HIV検査・相談マップ",
+      "url": "https://www.mhlw.go.jp/hivkensa/",
+      "usage": "都道府県を選ぶ検査・相談施設検索として活用する。位置情報検索を前提にしない。",
+      "checkedAt": "2026-11-29"
+    },
+    {
+      "id": "mhlw_sti_testing_map",
+      "name": "性感染症検査・相談マップ",
+      "url": "https://www.mhlw.go.jp/stikensa/",
+      "usage": "都道府県を選ぶ検査・相談施設検索として活用する。位置情報検索を前提にしない。",
+      "checkedAt": "2026-11-29"
+    }
+  ],
+  "newNationalCandidates": [
+    {
+      "name": "あなたはひとりじゃない",
+      "url": "https://notalone-cao.go.jp/",
+      "provider": "内閣府孤独・孤立対策推進室",
+      "reason": "県の案内から発見した全国横断の支援案内。旧URLからの転送とページ本文を確認した。地域別JSONに重複登録せず、全国向け案内への別途追加候補とする。",
+      "termsReview": "未実施。追加する場合は適用規約・対象者・地域検索の現行動作を別途確認する。",
+      "checkedAt": "2026-11-29"
+    }
+  ],
+  "topicCoverage": [
+    {
+      "topic": "子ども・若者の悩み全般",
+      "pages": 15,
+      "prefectures": [
+        "02",
+        "08",
+        "09",
+        "10",
+        "11",
+        "16",
+        "19",
+        "21",
+        "25",
+        "26",
+        "29",
+        "32",
+        "33",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "topic": "学校生活・いじめ・不登校",
+      "pages": 14,
+      "prefectures": [
+        "02",
+        "08",
+        "09",
+        "11",
+        "12",
+        "16",
+        "19",
+        "21",
+        "26",
+        "29",
+        "32",
+        "33",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "topic": "こころの悩み・精神的な不調",
+      "pages": 16,
+      "prefectures": [
+        "02",
+        "08",
+        "09",
+        "10",
+        "11",
+        "16",
+        "19",
+        "21",
+        "25",
+        "26",
+        "28",
+        "29",
+        "32",
+        "33",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "topic": "発達障害・発達特性",
+      "pages": 9,
+      "prefectures": [
+        "02",
+        "08",
+        "09",
+        "11",
+        "16",
+        "19",
+        "21",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "topic": "家庭環境・虐待",
+      "pages": 18,
+      "prefectures": [
+        "02",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "16",
+        "19",
+        "21",
+        "25",
+        "26",
+        "28",
+        "29",
+        "32",
+        "33",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "topic": "ヤングケアラー",
+      "pages": 4,
+      "prefectures": [
+        "02",
+        "11",
+        "19",
+        "46"
+      ]
+    },
+    {
+      "topic": "ひきこもり",
+      "pages": 10,
+      "prefectures": [
+        "02",
+        "08",
+        "09",
+        "10",
+        "11",
+        "16",
+        "28",
+        "29",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "topic": "性・妊娠に関する悩み",
+      "pages": 13,
+      "prefectures": [
+        "02",
+        "08",
+        "09",
+        "10",
+        "11",
+        "16",
+        "19",
+        "25",
+        "26",
+        "29",
+        "32",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "topic": "犯罪被害・少年相談",
+      "pages": 15,
+      "prefectures": [
+        "02",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "16",
+        "21",
+        "25",
+        "26",
+        "29",
+        "32",
+        "33",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "topic": "人権・差別・嫌がらせ",
+      "pages": 13,
+      "prefectures": [
+        "02",
+        "10",
+        "16",
+        "19",
+        "21",
+        "25",
+        "26",
+        "28",
+        "29",
+        "32",
+        "33",
+        "45",
+        "46"
+      ]
+    },
+    {
+      "topic": "インターネット上の被害",
+      "pages": 1,
+      "prefectures": [
+        "08"
+      ]
+    },
+    {
+      "topic": "生活困窮・経済的な悩み",
+      "pages": 14,
+      "prefectures": [
+        "02",
+        "08",
+        "10",
+        "11",
+        "12",
+        "16",
+        "19",
+        "21",
+        "25",
+        "26",
+        "28",
+        "29",
+        "32",
+        "33"
+      ]
+    },
+    {
+      "topic": "労働・アルバイト",
+      "pages": 14,
+      "prefectures": [
+        "02",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "16",
+        "25",
+        "26",
+        "29",
+        "32",
+        "33",
+        "45",
+        "46"
+      ]
+    }
+  ]
+}
