@@ -1,0 +1,21 @@
+/* Prepared text uses local BudouX candidates, not the browser's second parser. */
+html:lang(ja):not([data-wrap-mode="css"]):not([data-wrap-mode="off"]) body :is(main, .legal-main) [data-jp-ready] {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-break: strict;
+}
+html:not([data-wrap-mode="css"]):not([data-wrap-mode="off"]) [data-jp-group-fit] {
+  display: inline-block;
+  width: max-content;
+  max-width: 100%;
+  white-space: normal;
+  vertical-align: baseline;
+}
+html[data-wrap-mode="css"] wbr[data-jp-auto], html[data-wrap-mode="off"] wbr[data-jp-auto] { display: none; }
+html:lang(ja):not([data-wrap-mode="css"]):not([data-wrap-mode="off"]) body :is(main, .legal-main) [data-jp-ready].jp-evaluated {
+  text-wrap: wrap;
+  overflow-wrap: normal;
+  /* Selected runs must not enlarge an ancestor's automatic grid track. */
+  contain: inline-size;
+}
+.jp-evaluated wbr:not([data-jp-selected]) { display: none; }

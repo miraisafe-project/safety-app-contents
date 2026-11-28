@@ -1,0 +1,1 @@
+{"name":"miraisafe-website-tools","private":true,"type":"module","scripts":{"build":"node build.mjs","test":"node --test tests/*.test.mjs"},"dependencies":{"budoux":"0.10.4","linkedom":"0.18.12"},"devDependencies":{"esbuild":"0.25.12","playwright":"1.62.1"}}

@@ -50,7 +50,12 @@
     document.querySelector('meta[property="og:url"]').content = document.querySelector('link[rel=canonical]').href;
     const content = el('div', '', 'news-body');
     for (const block of item.blocks || []) {
-      if (block.type === 'paragraph' && typeof block.text === 'string') content.append(el('p', block.text));
+      if (block.type === 'paragraph' && typeof block.text === 'string') {
+        const paragraph = el('p', block.text);
+        if (Array.isArray(block.wrapGroups)) paragraph.setAttribute('data-wrap-groups', JSON.stringify(block.wrapGroups));
+        if (Array.isArray(block.wrapBreaksAfter)) paragraph.setAttribute('data-wrap-breaks-after', JSON.stringify(block.wrapBreaksAfter));
+        content.append(paragraph);
+      }
       if (block.type === 'image' && url(block.src)) {
         const f = el('figure', '', 'news-figure'), button = el('button', '', 'news-image-zoom'), img = el('img');
         button.type = 'button'; button.setAttribute('data-image-zoom', ''); button.setAttribute('aria-haspopup', 'dialog'); button.setAttribute('aria-label', `${block.alt || 'お知らせ画像'}を拡大表示`);
@@ -106,5 +111,6 @@
         const nav = el('nav', '', 'news-pagination'); nav.setAttribute('aria-label', 'お知らせのページ切り替え');
         for (let n = 1; n <= pages; n++) { const a = link(String(n), `news/?page=${n}`); if (n === page) a.setAttribute('aria-current', 'page'); nav.append(a); } host.append(nav);
       }
+      document.dispatchEvent(new CustomEvent('website:content'));
     }).catch(() => { host.replaceChildren(el('p', 'お知らせを読み込めませんでした。時間をおいて再度お試しください。')); });
 })();

@@ -1,0 +1,5 @@
+BudouX 0.10.4
+Copyright Google LLC
+Apache License 2.0
+https://github.com/google/budoux/tree/v0.10.4
+Bundled with the Japanese model; no external service is used.
