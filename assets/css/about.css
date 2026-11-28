@@ -27,3 +27,39 @@
   .app-guide { padding: 28px; }
   .app-guide h2 { font-size: var(--title-section); }
 }
+
+/* About-page narratives use one column by default, two only when media exists. */
+.about-page .challenge-row { display: block; }
+.about-page .challenge-row:has(> .project-figure) { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: start; }
+.about-page .challenge-row > .prose, .about-page .project-background .project-reading { max-width: none; }
+.about-page .challenge-row > .project-figure { align-self: start; }
+.about-page .prose p:last-child { margin-bottom: 0; }
+.about-page .challenge-sources { margin-top: 24px; font-size: 14px; line-height: 1.8; color: var(--ink-soft); }
+.about-page .challenge-survey { margin-top: 28px; }
+.about-page .challenge-survey > p:first-child { color: var(--teal-dark); font-weight: 600; }
+.about-page .survey-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; margin: 20px 0; }
+.about-page .survey-results > div { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.about-page .survey-results dt { max-width: 25em; }
+.about-page .survey-results dd { order: -1; margin: 0 0 10px; color: var(--teal); font-size: clamp(36px, 4vw, 48px); font-weight: 700; line-height: 1.2; }
+.about-page .survey-results dd span { font-size: .55em; }
+.about-page .project-background-points { margin: 24px 0; padding: 16px 20px 16px 40px; border-left: 3px solid #91c6c7; background: var(--pale); }
+.about-page .project-background-points li + li { margin-top: 10px; }
+.about-page .project-values .value-card { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; text-align: center; }
+.about-page .project-values .project-icon { width: 88px; height: 88px; margin-bottom: 18px; border-radius: 50%; background: #e6f3fa; color: #387ca8; }
+.about-page .project-values .value-card:nth-child(2) .project-icon { background: #e6f3eb; color: #3b825f; }
+.about-page .project-values .value-card:nth-child(3) .project-icon { background: #fff2cf; color: #967321; }
+.about-page .project-values .project-icon svg { width: 44px; height: 44px; }
+.about-page .project-values .value-card h3 { min-height: 2.9em; }
+.about-page .project-values .value-card p + p { margin-top: 16px; }
+.about-page .project-values .value-grid { gap: 32px; }
+.about-page .project-goal p + p { margin-top: 16px; }
+.about-page .goals-intro { margin-top: 24px; }
+@media (max-width: 900px) {
+  .about-page .challenge-row:has(> .project-figure) { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .about-page .survey-results { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .about-page .project-values .project-icon { width: 80px; height: 80px; }
+  .about-page .project-values .project-icon svg { width: 40px; height: 40px; }
+  .about-page .project-values .value-card h3 { min-height: 0; }
+}
