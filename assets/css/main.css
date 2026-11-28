@@ -308,3 +308,29 @@ p { margin: 0 0 1.25em; }
   .legal-main .document-meta { margin-top: 32px; padding: 20px; }
   .error-card { padding: 40px; }
 }
+
+/* Shared Japanese typography: no changes to font metrics or container geometry.
+   Normal wrapping is the fallback; anywhere is an emergency exit for long URLs.
+   The specificity intentionally supersedes page-local keep-all declarations.
+   UI controls/labels keep their existing wrapping and fixed hero step labels.
+*/
+html:lang(ja) body :is(main, .legal-main) :is(p, li, dt, dd, blockquote, figcaption, h1, h2, h3, h4, h5, h6, .tile-copy, .tile-copy :where(strong), .news-row-title):not(:where(nav *, button, button *, .button, .button *, .text-link, .app-feature-labels *, .concept-step *, .news-meta *, .news-breadcrumb, .news-breadcrumb *, .news-pagination *)) {
+  word-break: normal;
+  line-break: strict;
+  overflow-wrap: anywhere;
+  text-wrap: wrap;
+  word-break: var(--japanese-word-break, normal);
+}
+@supports (word-break: auto-phrase) {
+  :root { --japanese-word-break: auto-phrase; }
+}
+@supports (text-wrap: pretty) {
+  html:lang(ja) body :is(main, .legal-main) :is(p, li, dt, dd, blockquote, figcaption, .tile-copy):not(:where(nav *, button *, .button *, .app-feature-labels *, .concept-step *, .news-meta *, .news-breadcrumb *, .news-pagination *)) {
+    text-wrap: pretty;
+  }
+}
+@supports (text-wrap: balance) {
+  html:lang(ja) body :is(main, .legal-main) :is(h1, h2, h3, h4, h5, h6, .project-catch, .tile-copy :where(strong), .news-row-title) {
+    text-wrap: balance;
+  }
+}
