@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-28",
+  "updatedAt": "2026-11-29",
   "officialSiteLinks": [
     {
       "id": "mhlw_mental_health_phone",
@@ -87,6 +87,398 @@
       "verifiedAt": "2026-10-18"
     },
     {
+      "id": "mhlw_support_information_search",
+      "name": "支援情報検索サイト",
+      "url": "https://shienjoho.go.jp/",
+      "provider": "厚生労働省",
+      "description": "悩みの内容や地域、希望する相談方法などから、自分に合った相談先を探せます。",
+      "categoryIds": [
+        "feelings",
+        "distress",
+        "unsure"
+      ],
+      "categoryNames": [
+        "こころ・気持ちのこと",
+        "生きるのがつらい・消えたいとき",
+        "どれを選べばいいか分からない"
+      ],
+      "keywords": [
+        "自殺",
+        "じさつ",
+        "死にたい",
+        "消えたい",
+        "生きるのがつらい",
+        "生きづらい",
+        "心の悩み",
+        "こころの悩み",
+        "うつ病",
+        "孤独",
+        "精神的な悩み",
+        "電話相談",
+        "メール相談",
+        "SNS相談",
+        "チャット相談"
+      ],
+      "displayOrder": 3,
+      "termsUrl": "https://shienjoho.go.jp/sitepolicy.html",
+      "verifiedAt": "2026-11-29"
+    },
+    {
+      "id": "cfa_children_consultation_guide",
+      "name": "こども相談ガイド",
+      "url": "https://www.bridge.cfa.go.jp/",
+      "provider": "こども家庭庁",
+      "description": "子どもや若者のさまざまな悩みについて、自分に合った相談先を探せます。",
+      "categoryIds": [
+        "school",
+        "family",
+        "relationships",
+        "bullying",
+        "feelings",
+        "distress",
+        "health",
+        "sexuality",
+        "internet",
+        "money",
+        "violence",
+        "unsure"
+      ],
+      "categoryNames": [
+        "学校のこと",
+        "家族・家のこと",
+        "友達・人間関係",
+        "いじめ・嫌がらせ",
+        "こころ・気持ちのこと",
+        "生きるのがつらい・消えたいとき",
+        "からだ・健康のこと",
+        "性・妊娠などのこと",
+        "インターネット・SNS",
+        "お金・契約・詐欺",
+        "暴力・犯罪・危険なこと",
+        "どれを選べばいいか分からない"
+      ],
+      "keywords": [
+        "学校",
+        "いじめ",
+        "不登校",
+        "友達",
+        "家族",
+        "虐待",
+        "ぎゃくたい",
+        "親が怖い",
+        "家に帰れない",
+        "居場所がない",
+        "ヤングケアラー",
+        "家族の世話",
+        "発達障害",
+        "心の悩み",
+        "こころの悩み",
+        "自殺",
+        "じさつ",
+        "死にたい",
+        "消えたい",
+        "生きづらい",
+        "性被害",
+        "妊娠",
+        "貧困",
+        "犯罪被害",
+        "ネットいじめ",
+        "相談先が分からない",
+        "どこに相談すればいい",
+        "生きるのがつらい"
+      ],
+      "displayOrder": 4,
+      "termsUrl": "https://www.bridge.cfa.go.jp/link-banner-preview/",
+      "verifiedAt": "2026-11-29"
+    },
+    {
+      "id": "mext_children_sos_directory",
+      "name": "子供のSOSの相談窓口",
+      "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/06112211.html",
+      "provider": "文部科学省",
+      "description": "学校生活やいじめなど、子どものさまざまな悩みに対応する相談窓口を探せます。",
+      "categoryIds": [
+        "school",
+        "relationships",
+        "bullying",
+        "feelings",
+        "unsure"
+      ],
+      "categoryNames": [
+        "学校のこと",
+        "友達・人間関係",
+        "いじめ・嫌がらせ",
+        "こころ・気持ちのこと",
+        "どれを選べばいいか分からない"
+      ],
+      "keywords": [
+        "学校",
+        "いじめ",
+        "不登校",
+        "ふとうこう",
+        "友達",
+        "先生",
+        "仲間外れ",
+        "仲間はずれ",
+        "学校に行きたくない",
+        "学校に行けない",
+        "学校生活",
+        "子供SOS",
+        "子どもSOS"
+      ],
+      "displayOrder": 5,
+      "termsUrl": "https://www.mext.go.jp/b_menu/about_link.htm",
+      "verifiedAt": "2026-11-29"
+    },
+    {
+      "id": "npa_youth_consultation_guide",
+      "name": "ぴったり相談窓口",
+      "url": "https://www.npa.go.jp/bureau/safetylife/syonen/annai/",
+      "provider": "警察庁",
+      "description": "学校や家庭での悩み、犯罪被害など、子どもの悩みに応じた相談先を探せます。",
+      "categoryIds": [
+        "school",
+        "family",
+        "relationships",
+        "bullying",
+        "violence",
+        "unsure",
+        "internet",
+        "sexuality",
+        "feelings",
+        "health",
+        "work"
+      ],
+      "categoryNames": [
+        "学校のこと",
+        "家族・家のこと",
+        "友達・人間関係",
+        "いじめ・嫌がらせ",
+        "暴力・犯罪・危険なこと",
+        "どれを選べばいいか分からない",
+        "インターネット・SNS",
+        "性・妊娠などのこと",
+        "こころ・気持ちのこと",
+        "からだ・健康のこと",
+        "仕事・アルバイトのこと"
+      ],
+      "keywords": [
+        "少年相談",
+        "いじめ",
+        "虐待",
+        "家庭の悩み",
+        "学校の悩み",
+        "友人関係",
+        "非行",
+        "犯罪被害",
+        "警察相談",
+        "少年サポートセンター"
+      ],
+      "displayOrder": 6,
+      "termsUrl": "https://www.npa.go.jp/rules/index.html",
+      "verifiedAt": "2026-11-29"
+    },
+    {
+      "id": "mhlw_youth_local_mental_health",
+      "name": "身近にある地域の相談窓口",
+      "url": "https://www.mhlw.go.jp/kokoro/youth/consultation/window/window_01.html",
+      "provider": "厚生労働省",
+      "description": "こころの不調や依存症などについて相談できる、地域の相談窓口を探せます。",
+      "categoryIds": [
+        "feelings",
+        "health"
+      ],
+      "categoryNames": [
+        "こころ・気持ちのこと",
+        "からだ・健康のこと"
+      ],
+      "keywords": [
+        "こころの不調",
+        "心の不調",
+        "うつ病",
+        "鬱",
+        "不安障害",
+        "眠れない",
+        "不眠",
+        "精神疾患",
+        "心の病気",
+        "精神保健福祉センター",
+        "保健所",
+        "依存症",
+        "精神医療",
+        "思春期の悩み"
+      ],
+      "displayOrder": 7,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
+      "verifiedAt": "2026-11-29"
+    },
+    {
+      "id": "mhlw_youth_school_development_support",
+      "name": "不登校やいじめ、ひきこもりなどの相談窓口",
+      "url": "https://www.mhlw.go.jp/kokoro/youth/consultation/window/window_02.html",
+      "provider": "厚生労働省",
+      "description": "不登校やいじめ、ひきこもり、発達障害などについて相談できる窓口を紹介しています。",
+      "categoryIds": [
+        "school",
+        "family",
+        "bullying",
+        "feelings",
+        "health"
+      ],
+      "categoryNames": [
+        "学校のこと",
+        "家族・家のこと",
+        "いじめ・嫌がらせ",
+        "こころ・気持ちのこと",
+        "からだ・健康のこと"
+      ],
+      "keywords": [
+        "不登校",
+        "ふとうこう",
+        "学校に行けない",
+        "学校に行きたくない",
+        "いじめ",
+        "ひきこもり",
+        "引きこもり",
+        "発達障害",
+        "はったつしょうがい",
+        "教育センター",
+        "児童相談所",
+        "ADHD",
+        "ASD",
+        "感覚過敏"
+      ],
+      "displayOrder": 8,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
+      "verifiedAt": "2026-11-29"
+    },
+    {
+      "id": "mhlw_hikikomori_support_directory",
+      "name": "全国のひきこもり相談窓口",
+      "url": "https://hikikomori-voice-station.mhlw.go.jp/support/",
+      "provider": "厚生労働省（ひきこもりVOICE STATION）",
+      "description": "ひきこもりについて、本人や家族などが相談できる地域の支援機関を探せます。",
+      "categoryIds": [
+        "family",
+        "feelings"
+      ],
+      "categoryNames": [
+        "家族・家のこと",
+        "こころ・気持ちのこと"
+      ],
+      "keywords": [
+        "ひきこもり",
+        "引きこもり",
+        "引き籠もり",
+        "外に出られない",
+        "家から出られない",
+        "人と会うのが怖い",
+        "社会参加",
+        "ひきこもり地域支援センター"
+      ],
+      "displayOrder": 9,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/index.html",
+      "verifiedAt": "2026-11-29"
+    },
+    {
+      "id": "npa_prefectural_youth_counseling",
+      "name": "都道府県警察の少年相談窓口",
+      "url": "https://www.npa.go.jp/bureau/safetylife/syonen/soudan.html",
+      "provider": "警察庁",
+      "description": "子どもの犯罪被害やいじめなどについて相談できる、各都道府県警察の窓口を探せます。",
+      "categoryIds": [
+        "school",
+        "family",
+        "bullying",
+        "violence"
+      ],
+      "categoryNames": [
+        "学校のこと",
+        "家族・家のこと",
+        "いじめ・嫌がらせ",
+        "暴力・犯罪・危険なこと"
+      ],
+      "keywords": [
+        "少年相談",
+        "少年サポートセンター",
+        "ヤングテレホン",
+        "犯罪被害",
+        "いじめ",
+        "非行",
+        "警察相談",
+        "脅迫",
+        "恐喝"
+      ],
+      "displayOrder": 10,
+      "termsUrl": "https://www.npa.go.jp/rules/index.html",
+      "verifiedAt": "2026-11-29"
+    },
+    {
+      "id": "npa_crime_victim_support_directory",
+      "name": "犯罪被害者のための支援一覧",
+      "url": "https://www.npa.go.jp/hanzaihigai/portal/search/kensaku/support/",
+      "provider": "警察庁",
+      "description": "犯罪被害に遭ったときに利用できる相談先や、さまざまな支援制度を探せます。",
+      "categoryIds": [
+        "violence",
+        "sexuality"
+      ],
+      "categoryNames": [
+        "暴力・犯罪・危険なこと",
+        "性・妊娠などのこと"
+      ],
+      "keywords": [
+        "犯罪被害",
+        "犯罪被害者",
+        "被害者支援",
+        "犯罪に巻き込まれた",
+        "暴力被害",
+        "傷害",
+        "ストーカー",
+        "DV",
+        "性被害",
+        "性犯罪",
+        "損害賠償",
+        "犯罪被害の相談"
+      ],
+      "displayOrder": 11,
+      "termsUrl": "https://www.npa.go.jp/rules/index.html",
+      "verifiedAt": "2026-11-29"
+    },
+    {
+      "id": "mhlw_livelihood_support_directory",
+      "name": "生活困窮者自立支援制度",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000059425.html",
+      "provider": "厚生労働省",
+      "description": "生活費や住まいなどの生活上の困りごとについて、利用できる支援制度や相談先を探せます。",
+      "categoryIds": [
+        "family",
+        "money",
+        "work"
+      ],
+      "categoryNames": [
+        "家族・家のこと",
+        "お金・契約・詐欺",
+        "仕事・アルバイトのこと"
+      ],
+      "keywords": [
+        "生活困窮",
+        "貧困",
+        "生活費",
+        "生活費が足りない",
+        "お金がない",
+        "住まい",
+        "住む場所がない",
+        "家賃が払えない",
+        "生活の悩み",
+        "生活支援",
+        "自立相談支援機関"
+      ],
+      "displayOrder": 12,
+      "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
+      "verifiedAt": "2026-11-29"
+    },
+    {
       "id": "mhlw_mental_health_other",
       "name": "その他の相談先",
       "url": "https://www.mhlw.go.jp/mamorouyokokoro/soudan/sonota/",
@@ -124,7 +516,7 @@
         "家に帰れない",
         "居場所がない"
       ],
-      "displayOrder": 3,
+      "displayOrder": 13,
       "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
       "verifiedAt": "2026-10-18"
     },
@@ -167,7 +559,7 @@
         "シフトの強要",
         "長時間労働"
       ],
-      "displayOrder": 4,
+      "displayOrder": 14,
       "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
       "verifiedAt": "2026-10-18"
     },
@@ -198,7 +590,7 @@
         "エイズ検査",
         "感染したか心配"
       ],
-      "displayOrder": 5,
+      "displayOrder": 15,
       "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
       "verifiedAt": "2026-10-18"
     },
@@ -229,7 +621,7 @@
         "性病検査",
         "感染したか心配"
       ],
-      "displayOrder": 6,
+      "displayOrder": 16,
       "termsUrl": "https://www.mhlw.go.jp/chosakuken/",
       "verifiedAt": "2026-10-18"
     },
@@ -272,7 +664,7 @@
         "仲間外れ",
         "仲間はずれ"
       ],
-      "displayOrder": 7,
+      "displayOrder": 17,
       "termsUrl": "https://www.gov-online.go.jp/tos/",
       "verifiedAt": "2026-10-18"
     },
@@ -310,7 +702,7 @@
         "債務整理",
         "自己破産"
       ],
-      "displayOrder": 8,
+      "displayOrder": 18,
       "termsUrl": "https://www.gov-online.go.jp/tos/",
       "verifiedAt": "2026-10-18"
     },
@@ -338,7 +730,7 @@
         "携帯料金",
         "通信料の請求"
       ],
-      "displayOrder": 9,
+      "displayOrder": 19,
       "termsUrl": "https://www.gov-online.go.jp/tos/",
       "verifiedAt": "2026-10-18"
     },
@@ -376,7 +768,7 @@
         "犯罪に巻き込まれた",
         "性的な脅迫"
       ],
-      "displayOrder": 10,
+      "displayOrder": 20,
       "termsUrl": "https://www.gov-online.go.jp/tos/",
       "verifiedAt": "2026-10-18"
     },
@@ -401,7 +793,7 @@
         "どこに相談すればいい",
         "相談窓口がわからない"
       ],
-      "displayOrder": 11,
+      "displayOrder": 21,
       "termsUrl": "https://www.gov-online.go.jp/tos/",
       "verifiedAt": "2026-10-18"
     }
