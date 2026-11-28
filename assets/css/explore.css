@@ -3,17 +3,20 @@
 .explore .section-heading { margin-bottom: 28px; }
 .explore .tile-grid { grid-auto-rows: 1fr; gap: 16px; }
 .explore .tile {
+  position: relative;
   min-height: 0;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  padding: 24px;
+  padding: 24px 24px 46px;
   border: 1px solid var(--tile-border);
   border-radius: 18px;
   background: var(--tile-color);
   color: var(--ink);
   text-align: center;
   box-shadow: 0 4px 14px rgb(27 89 94 / 5%);
+  cursor: pointer;
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
 }
 .explore .tile-project { --tile-color: #edf4fc; --tile-border: #c6d9ee; --tile-accent: #427eb7; }
 .explore .tile-app { --tile-color: #edf9fa; --tile-border: #bfe4e7; --tile-accent: #23878f; }
@@ -23,10 +26,14 @@
 .explore .tile-copy { min-width: 0; max-width: none; text-shadow: none; }
 .explore .tile-copy strong { min-height: 3.1em; margin-bottom: 10px; font-size: 18px; line-height: 1.55; word-break: keep-all; text-wrap: balance; }
 .explore .tile-copy > span { color: var(--ink-soft); font-size: 14px; line-height: 1.75; }
-.explore .tile:hover { border-color: var(--tile-accent); }
+.explore .tile-arrow { position: absolute; right: 20px; bottom: 14px; color: var(--tile-accent); font-size: 26px; line-height: 1; transition: transform .18s ease; }
+@media (hover: hover) and (pointer: fine) {
+  .explore .tile:hover { border-color: var(--tile-accent); transform: translateY(-3px); box-shadow: 0 8px 20px rgb(27 89 94 / 11%); }
+  .explore .tile:hover .tile-arrow { transform: translateX(3px); }
+}
 @media (min-width: 1280px) {
   .explore .tile-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .explore .tile { aspect-ratio: 1; padding: 24px; }
+  .explore .tile { aspect-ratio: 1; }
   .explore .tile-copy strong { font-size: 16px; }
 }
 @media (min-width: 641px) {
@@ -36,6 +43,9 @@
   .explore { padding: 48px 0 56px; }
   .explore .section-heading { margin-bottom: 24px; }
   .explore .tile-grid { gap: 12px; }
-  .explore .tile { padding: 20px; }
+  .explore .tile { padding: 20px 20px 46px; }
   .explore .tile-icon { width: 48px; height: 48px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .explore .tile, .explore .tile-arrow { transition: none; }
 }
