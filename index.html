@@ -28,6 +28,9 @@
   <script src="assets/js/main.js?v=20261125-news" defer></script>
   <link rel="stylesheet" href="assets/css/news.css?v=20261125-columns">
   <script src="assets/js/website-news.js?v=20261125-columns" defer></script>
+  <link rel="stylesheet" href="assets/css/project-overview.css?v=20261128">
+  <link rel="stylesheet" href="assets/css/lightbox.css?v=20261125">
+  <script src="assets/js/app-lightbox.js?v=20261125" defer></script>
 </head>
 <body class="home-page">
   <a class="skip-link" href="#main">本文へ移動</a>
@@ -112,7 +115,7 @@
 
     <section class="tiles explore" aria-labelledby="explore-title">
       <div class="section-heading wrap">
-        <h2 id="explore-title">知りたいことから見る</h2>
+        <h2 id="explore-title">プロジェクト・アプリのご案内</h2>
       </div>
       <div class="tile-grid">
         <a class="tile tile-project" href="about/">
@@ -134,24 +137,39 @@
       </div>
     </section>
 
-    <section class="content-section" id="about-app">
+    <section class="content-section home-app-intro" id="about-app" aria-labelledby="home-app-title">
       <div class="wrap">
-        <h2>ミライセーフアプリとは</h2>
-        <div class="prose">
-          <p class="app-summary"><span class="app-summary-phrase">安全に関する知識や、</span><wbr><span class="app-summary-phrase">自分自身や</span><wbr><span class="app-summary-phrase">周囲の人について</span><wbr><span class="app-summary-phrase">考えるきっかけ、</span><br><span class="app-summary-phrase">困ったときに</span><wbr><span class="app-summary-phrase">次の一歩を見つけるための</span><wbr><span class="app-summary-phrase">情報を届けるアプリです。</span></p>
-          <p>SNSやAIに潜む危険性、詐欺や闇バイト、学校や家庭での悩み、からだやこころのことなど、身近でありながら知る機会の少ないさまざまなテーマを扱います。</p>
-          <p>知識を得るだけでなく、自分の悩みや置かれている状況について整理したり、必要に応じて相談先を探したりするための入り口となることも目指しています。</p>
-          <p>悩みを抱えているときにも、そうでないときにも、知ることが自身や周囲の人への理解につながり、これからを少し変えるきっかけになるかもしれません。</p>
-          <p>掲載内容が役に立つと感じる方であれば、世代に関わらず、どなたでも利用できます。</p>
+        <h2 id="home-app-title">ミライセーフアプリとは</h2>
+        <div class="home-app-split">
+          <div class="prose">
+            <p class="project-catch">知ることを、守る力と、理解する力へ。</p>
+            <p>犯罪やトラブルの予防、自分自身や周囲の人が抱える悩みへの理解、困ったときの相談先など、さまざまな情報を届けるアプリです。</p>
+            <p>SNSやAIに潜む危険性、詐欺や闇バイト、学校や家庭での悩み、からだやこころのことなど、幅広いテーマを扱います。</p>
+            <p>若い世代を主な対象としていますが、掲載内容が役に立つと感じる方であれば、世代に関わらず、どなたでも利用できます。</p>
+            <ul class="app-feature-labels" aria-label="アプリの特徴"><li>無料</li><li>広告なし</li><li>登録不要</li></ul>
+            <a class="button button-secondary" href="app/">アプリについて詳しく見る</a>
+          </div>
+          <figure class="project-figure">
+          <button class="project-zoom" type="button" data-image-zoom aria-haspopup="dialog" aria-label="アプリのホーム画面を拡大表示"><img src="assets/website/screenshot_home.webp" width="390" height="844" alt="ミライセーフアプリのホーム画面。知っておきたいこと、ケースファイル、みんなの情報ノート、相談先を探すなどのメニュー" loading="lazy" decoding="async"></button>
+          <figcaption><span class="zoom-hint">画像をタップ・クリックして拡大</span></figcaption>
+        </figure>
         </div>
-        <a class="text-link" href="app/">アプリについて詳しく見る ›</a>
       </div>
     </section>
-
-    <section class="content-section purpose-section">
+    <section class="content-section purpose-section home-purpose" aria-labelledby="purpose-title">
       <div class="wrap">
-        <h2>活動の目的</h2>
-        <div class="prose"><p>知っていれば避けられることや、知ることで気持ちが少し軽くなること、誰かへの見方が変わることがあります。</p><p>一方で、困ったときに何をすればいいのか、どこに相談すればいいのか分からず、一人で抱えてしまうこともあります。</p><p>ミライセーフプロジェクトでは、さまざまなテーマについて知るきっかけを届けるとともに、悩んでいる人が自分の状況を理解し、必要な情報や相談先へつながるための入り口をつくることを目指しています。</p><p>このアプリだけですべての知識や答えを提供することを目指しているわけではありません。<br>知ること、考えること、そして必要なときに次の一歩を見つけること。そのきっかけの一つになれればと考えています。</p></div>
+        <h2 id="purpose-title">活動の目的</h2>
+        <p class="project-catch">知ることが、自分や誰かを守る第一歩になる。</p>
+        <div class="prose project-reading">
+            <p>犯罪やトラブルを防ぐための知識、自分自身や周囲の人への理解、困ったときに頼れる場所についての情報。</p>
+            <p>ミライセーフプロジェクトは、こうした情報に誰もが気軽に触れられる環境を目指しています。</p>
+        </div>
+        <div class="purpose-grid">
+          <article class="purpose-card purpose-card--1"><span class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6Z"/><path d="m8 12 3 3 5-6"/></svg></span><h3>防ぐ</h3>            <p>犯罪やトラブルから自分や周囲の人を守るための知識を届ける。</p></article>
+          <article class="purpose-card purpose-card--2"><span class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21l8.8-8.3a5 5 0 0 0 0-7.1Z"/></svg></span><h3>理解する</h3>            <p>自分や周囲の人が抱える悩みや困難について知り、理解を深めるきっかけを届ける。</p></article>
+          <article class="purpose-card purpose-card--3"><span class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v19M4 6h13l4 4-4 4H4Z"/></svg></span><h3>つながる</h3>            <p>困ったときに、必要な情報や自分に合った相談先を見つけるための入り口をつくる。</p></article>
+        </div>
+        <a class="button button-secondary purpose-link" href="about/">プロジェクトについて詳しく見る</a>
       </div>
     </section>
 

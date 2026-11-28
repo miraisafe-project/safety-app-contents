@@ -1,0 +1,66 @@
+/* Styles for the two project-introduction pages only. */
+.project-catch {
+  margin: 0 0 22px;
+  color: var(--teal-dark);
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 700;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.project-split, .challenge-row, .home-app-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(28px, 4vw, 52px);
+  align-items: center;
+}
+.project-split > *, .challenge-row > *, .home-app-split > * { min-width: 0; }
+.project-figure { width: 100%; min-width: 0; margin: 0; }
+.project-zoom { display: block; width: 100%; margin: 0; padding: 0; border: 0; border-radius: 8px; background: transparent; cursor: zoom-in; }
+.project-zoom img { display: block; width: 100%; height: auto; object-fit: contain; }
+.project-figure figcaption { margin-top: 12px; color: var(--ink-soft); font-size: 14px; line-height: 1.75; }
+.zoom-hint { display: block; margin-bottom: 8px; color: var(--teal-dark); font-size: 14px; text-align: center; }
+.figure-sources { display: block; margin-top: 10px; }
+.figure-sources a { color: var(--teal-dark); }
+.challenge-row { align-items: start; padding: 36px 0; border-bottom: 1px solid var(--line); }
+.challenge-row:first-of-type { padding-top: 12px; }
+.challenge-row:last-child { padding-bottom: 0; border-bottom: 0; }
+.challenge-row h3 { margin: 0 0 18px; color: var(--ink); font-size: var(--title-card); line-height: 1.7; }
+.challenge-row--text { display: block; }
+.challenge-row--text .prose, .project-reading { max-width: 48em; }
+.project-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin-bottom: 16px; color: var(--teal); }
+.project-icon svg { display: block; width: 36px; height: 36px; }
+.project-values .value-card h3 { font-size: var(--title-card); }
+.values-note { margin-top: 28px; }
+.project-goal-grid, .purpose-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 28px; }
+.project-goal { padding: 4px 22px 4px 0; border-right: 1px solid var(--line); }
+.project-goal:last-child { padding-right: 0; border-right: 0; }
+.project-goal h3 { margin: 0 0 12px; color: var(--teal-dark); font-size: 22px; }
+.project-goal p { color: var(--ink-soft); font-size: 16px; line-height: 1.85; }
+.project-goal .goal-lead { color: var(--ink); font-weight: 700; }
+.project-goal p:last-child { margin-bottom: 0; }
+.home-app-split { grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr); }
+.home-app-split .project-figure { max-width: 230px; justify-self: center; }
+.home-app-split .project-zoom img { filter: drop-shadow(0 5px 10px rgb(27 89 94 / 12%)); }
+.app-feature-labels { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; padding: 0; list-style: none; }
+.app-feature-labels li { padding: 4px 16px; border: 1px solid var(--line); border-radius: 20px; background: #edf7f5; color: var(--teal-dark); font-size: 14px; font-weight: 600; }
+.purpose-card { padding: 24px; border: 1px solid rgb(24 123 131 / 13%); border-radius: 18px; }
+.purpose-card--1 { background: #e6f3fa; }
+.purpose-card--2 { background: #e6f3eb; }
+.purpose-card--3 { background: #fff5db; }
+.purpose-card h3 { margin: 0 0 12px; font-size: var(--title-card); }
+.purpose-card p { margin: 0; color: #344e53; font-size: 16px; line-height: 1.85; }
+.purpose-link { margin-top: 28px; }
+@media (max-width: 900px) {
+  .project-split, .challenge-row, .home-app-split { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .project-overview .project-figure { max-width: 640px; justify-self: center; }
+  .home-app-split .project-figure { max-width: 210px; }
+}
+@media (max-width: 640px) {
+  .project-goal-grid, .purpose-grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .project-goal { padding: 0 0 22px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .project-goal:last-child { padding-bottom: 0; border-bottom: 0; }
+  .project-catch { margin-bottom: 20px; }
+  .project-figure figcaption { font-size: 14px; }
+  .home-app-intro .button, .home-purpose .button { max-width: 100%; white-space: normal; text-align: center; }
+}
