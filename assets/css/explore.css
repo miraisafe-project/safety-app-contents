@@ -1,33 +1,32 @@
 /* Homepage exploration cards only. */
 .explore { padding: 64px 0 72px; }
 .explore .section-heading { margin-bottom: 28px; }
-.explore .tile-grid { grid-auto-rows: auto; gap: 16px; }
+.explore .tile-grid { grid-auto-rows: 1fr; gap: 16px; }
 .explore .tile {
   min-height: 0;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 14px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   padding: 24px;
   border: 1px solid var(--tile-border);
   border-radius: 18px;
   background: var(--tile-color);
   color: var(--ink);
-  text-align: left;
+  text-align: center;
   box-shadow: 0 4px 14px rgb(27 89 94 / 5%);
 }
 .explore .tile-project { --tile-color: #edf4fc; --tile-border: #c6d9ee; --tile-accent: #427eb7; }
 .explore .tile-app { --tile-color: #edf9fa; --tile-border: #bfe4e7; --tile-accent: #23878f; }
 .explore .tile-demo { --tile-color: #f2f8e9; --tile-border: #d4e5bc; --tile-accent: #628d32; }
 .explore .tile-contact { --tile-color: #fff8e7; --tile-border: #efdcaa; --tile-accent: #a97715; }
-.explore .tile-icon { width: 40px; height: 40px; color: var(--tile-accent); }
+.explore .tile-icon { width: 52px; height: 52px; color: var(--tile-accent); }
 .explore .tile-copy { min-width: 0; max-width: none; text-shadow: none; }
-.explore .tile-copy strong { margin-bottom: 8px; font-size: 18px; line-height: 1.55; word-break: keep-all; text-wrap: balance; }
+.explore .tile-copy strong { min-height: 3.1em; margin-bottom: 10px; font-size: 18px; line-height: 1.55; word-break: keep-all; text-wrap: balance; }
 .explore .tile-copy > span { color: var(--ink-soft); font-size: 14px; line-height: 1.75; }
 .explore .tile:hover { border-color: var(--tile-accent); }
 @media (min-width: 1280px) {
   .explore .tile-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .explore .tile { gap: 12px; padding: 20px 18px; }
-  .explore .tile-icon { width: 36px; height: 36px; }
+  .explore .tile { aspect-ratio: 1; padding: 24px; }
   .explore .tile-copy strong { font-size: 16px; }
 }
 @media (min-width: 641px) {
@@ -38,4 +37,5 @@
   .explore .section-heading { margin-bottom: 24px; }
   .explore .tile-grid { gap: 12px; }
   .explore .tile { padding: 20px; }
+  .explore .tile-icon { width: 48px; height: 48px; }
 }
